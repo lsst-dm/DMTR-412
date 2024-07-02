@@ -1,38 +1,116 @@
-\documentclass[DM,lsstdraft,toc]{lsstdoc}
+% generated from JIRA project LVV
+% using template at /usr/share/miniconda/envs/docsteady-env/lib/python3.12/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
+% using docsteady version 0.0.0
+% Please do not edit -- update information in Jira instead
+\documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
 \usepackage{arydshln}
+\usepackage{attachfile}
+\usepackage{array}
+\usepackage{dashrule}
 
-\input{meta.tex}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
+\input meta.tex
+
+\newcommand{\attachmentsUrl}{https://github.com/\gitorg/\lsstDocType-\lsstDocNum/blob/\gitref/attachments}
 \providecommand{\tightlist}{
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\setcounter{tocdepth}{4}
+
 \begin{document}
 
-\def\milestoneName{LDM-503-19a}
-\def\milestoneId{LVV-P72}
-\def\product{Data Management}
+\def\milestoneName{DM Acceptance Testing, Operations Rehearsal \#2}
+\def\milestoneId{}
+\def\product{Acceptance}
 
 \setDocCompact{true}
 
-\title{LVV-P72 LDM-503-19a Test Plan }
+\title{LVV-P72: DM Acceptance Testing, Operations Rehearsal \#2 Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{\vcsDate}
-\author{Leanne Guy}
+\date{ 2024-07-02 }
+\author{ Leanne Guy }
 
 \input{history_and_info.tex}
 
+
 \setDocAbstract{
-This is a stub test report created from a template.
-The content is being prepared.
+This is the test plan for
+\textbf{ DM Acceptance Testing, Operations Rehearsal \#2},
+an LSST milestone pertaining to the Data Management Subsystem.\\
+This document is based on content automatically extracted from the Jira test database on \docDate.
+The most recent change to the document repository was on \vcsDate.
 }
+
 
 \maketitle
 
 \section{Introduction}
-Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's content from Jira.
+\label{sect:intro}
+
+
+\subsection{Objectives}
+\label{sect:objectives}
+
+ This Acceptance Test campaign aims to verify a small number of~
+\href{https://lse-61.lsst.io/}{DMSR} (\citeds{LSE-61}) requirements related to
+the LSST Science Pipelines. It will be executed in conjunction with
+Operations Rehearsal \#2. This Test Plan aims to demonstrate that the
+included requirements have been met by the activities carried out during
+the Operations Rehearsal, and to thus fully verify their completion and
+readiness for LSST Operations.
+
+
+
+\subsection{System Overview}
+\label{sect:systemoverview}
+
+ The tests to be executed are intended to verify that the DM system
+satisfies a subset of the requirements outlined in the Data Management
+System Requirements (DMSR;~ \href{https://lse-61.lsst.io/}{LSE-61} ).
+This subset of requirements is related to pipeline algorithms, network
+and observing facility infrastructure, and some basic camera and data
+backbone functionalities. Additional DMSR requirements will be verified
+in later Acceptance Test Campaigns.\\
+\strut \\
+The tests will be performed using...\\
+\strut \\
+Planning for the Operations Rehearsal is being tracked at~
+\href{https://confluence.lsstcorp.org/display/DM/Operations+Rehearsal+\%232}{this
+Confluence page} .\\
+\strut \\
+\textbf{Applicable Documents:}\\
+\strut \\
+\citeds{LSE-61} Data Management System Requirements\\
+\citeds{LDM-503} Data Management Test Plan\\
+\citeds{LDM-639} LSST Data Management Acceptance Test Specification (issue 2.1)\\
+\citeds{LDM-643} Proposed DM Ops Rehearsals (Chapter 3 in particular)\\
+\citeds{LDM-732} Rubin Observatory Network Verification Baseline
+
+
+\subsection{Document Overview}
+\label{sect:docoverview}
+
+This document was generated from Jira, obtaining the relevant information from the
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72}
+~Jira Test Plan and related Test Cycles (
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159}
+).
+
+Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
+the applicable documentation, and explains how this document is organized.
+Section \ref{sect:testplan} provides additional information about the test plan, like for example the configuration
+used for this test or related documentation.
+Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
+
+Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary},
+an overall assessment statement and suggestions for possible improvements.
+Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
+
+The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} in Jira is \textbf{ Completed }.
 
 \subsection{References}
 \label{sect:references}
@@ -40,5 +118,168 @@ Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's
 \bibliography{lsst,refs,books,refs_ads,local}
 
 
-\input{appendix}
+\newpage
+\section{Test Plan Details}
+\label{sect:testplan}
+
+
+\subsection{Data Collection}
+
+  Observing is not required for this test campaign.
+
+\subsection{Verification Environment}
+\label{sect:hwconf}
+  Tests that require code and/or data analysis will use the
+"lsst-lsp-stable" instance of the Rubin Observatory/LSST Science
+Platform (LSP), hosted at the LDF, and the "lsst-dev" development
+cluster at NCSA.
+
+
+
+
+\subsection{Related Documentation}
+
+
+
+\subsection{PMCS Activity}
+
+Primavera milestones related to the test campaign:
+\begin{itemize}
+\item None
+\end{itemize}
+
+
+\newpage
+\section{Personnel}
+\label{sect:personnel}
+
+The personnel involved in the test campaign is shown in the following table.
+
+{\small
+\begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
+\hline
+\multicolumn{2}{r}{T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} owner:} &
+\multicolumn{2}{l}{\textbf{ Leanne Guy } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159} owner:} &
+\multicolumn{2}{l}{\textbf{
+Robert Gruendl }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
+& {\small Robert Gruendl } & {\small Robert Gruendl } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{LVV-T1934}
+& {\small Robert Gruendl } & {\small Robert Gruendl } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\end{longtable}
+}
+
+\newpage
+
+\section{Test Campaign Overview}
+\label{sect:overview}
+
+\subsection{Summary}
+\label{sect:summarytable}
+
+{\small
+\begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
+\toprule
+\multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ DM Acceptance Testing, Operations Rehearsal \#2 }} & Completed \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-11a: ComCam OPS Readiness }} & Done \\\hline
+\textbf{Test Cases} &  \textbf{Ver.}  \\\toprule
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
+&  1
+\\
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{LVV-T1934}
+&  1
+\\
+\\\hline
+\caption{Test Campaign Summary}
+\label{table:summary}
+\end{longtable}
+}
+
+\subsection{Overall Assessment}
+\label{sect:overallassessment}
+
+Not yet available.
+
+\subsection{Recommended Improvements}
+\label{sect:recommendations}
+
+\newpage
+\section{Detailed Tests}
+\label{sect:detailedtests}
+
+\subsection{Test Cycle LVV-C159 }
+
+Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C159}{LDM-503-11a: ComCam OPS Readiness}} in Jira.
+
+Test Cycle name: LDM-503-11a: ComCam OPS Readiness\\
+Status: Done
+
+Test that ComCam data can be received in the DBB, be made available and
+processed with results also made available to DM staff.
+
+\subsubsection{Software Version/Baseline}
+lsst\_distrib ~w\_2020\_30
+
+\subsubsection{Configuration}
+ComCam operating at Base/Summit in a test stand capable of delivering
+image to NCSA. ~Data Backbone endpoint and OODS (Observatory Operations
+Data Service) ready to receive and ingest data.
+
+\subsubsection{Test Cases in LVV-C159 Test Cycle}
+
+\paragraph{ LVV-T1935 - Demonstrate ComCam Data Processing Capability }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{\textit{ LVV-T1935 } }
+test case in Jira.
+
+To process raw ComCam data and demonstrate that the results are
+available either in the shared DM development environment/repository or
+in the RSP.
+
+\textbf{ Preconditions}:\\
+ComCam data acquisition and ingest are nominal. ~(LVV-T1934)
+
+Final comment:\\
+
+
+Detailed steps :
+
+\paragraph{ LVV-T1934 - ComCam Data Transfer and Ingestion }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{\textit{ LVV-T1934 } }
+test case in Jira.
+
+Verify that ComCam Archiver data taken are transferred to NCSA Data
+BackBone endpoint and Ingested
+
+\textbf{ Preconditions}:\\
+Operating ComCam and Base or Summit (test-stand or mounted on TMA)
+
+Final comment:\\
+
+
+Detailed steps :
+
+
+
+\input{appendix.tex}
 \end{document}
