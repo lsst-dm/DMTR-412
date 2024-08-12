@@ -28,11 +28,11 @@ jobs:
 
       - name: docugen
         env:
-          JIRA_USER: ${{ secrets.JIRA_USER }} 
-          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }} 
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
           source ${CONDA}/bin/activate docsteady-env
-          docsteady  --namespace DM generate-tpr LVV-P72  DMTR-412.tex
+          docsteady  --namespace DM generate-tpr LVV-P117  DMTR-412.tex
         shell: bash
 
       - name: Create commit
