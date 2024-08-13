@@ -26,23 +26,23 @@
 
 \begin{document}
 
-\def\milestoneName{DM Acceptance Testing, Operations Rehearsal \#2}
+\def\milestoneName{LDM-503-19a (All P1a DM requirements verified)}
 \def\milestoneId{}
 \def\product{Acceptance}
 
 \setDocCompact{true}
 
-\title{LVV-P72: DM Acceptance Testing, Operations Rehearsal \#2 Test Plan and Report}
+\title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2024-07-02 }
-\author{ Leanne Guy }
+\date{ 2024-08-13 }
+\author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
 
 
 \setDocAbstract{
 This is the test plan and report for
-\textbf{ DM Acceptance Testing, Operations Rehearsal \#2},
+\textbf{ LDM-503-19a (All P1a DM requirements verified)},
 an LSST milestone pertaining to the Data Management Subsystem.\\
 This document is based on content automatically extracted from the Jira test database on \docDate.
 The most recent change to the document repository was on \vcsDate.
@@ -58,49 +58,41 @@ The most recent change to the document repository was on \vcsDate.
 \subsection{Objectives}
 \label{sect:objectives}
 
- This Acceptance Test campaign aims to verify a small number of~
-\href{https://lse-61.lsst.io/}{DMSR} (\citeds{LSE-61}) requirements related to
-the LSST Science Pipelines. It will be executed in conjunction with
-Operations Rehearsal \#2. This Test Plan aims to demonstrate that the
-included requirements have been met by the activities carried out during
-the Operations Rehearsal, and to thus fully verify their completion and
-readiness for LSST Operations.
+ This DM acceptance test campaign will verify all DM priority 1a
+requirements that have not been verified as part of prior testing and
+milestones.
 
 
 
 \subsection{System Overview}
 \label{sect:systemoverview}
 
- The tests to be executed are intended to verify that the DM system
-satisfies a subset of the requirements outlined in the Data Management
-System Requirements (DMSR;~ \href{https://lse-61.lsst.io/}{LSE-61} ).
-This subset of requirements is related to pipeline algorithms, network
-and observing facility infrastructure, and some basic camera and data
-backbone functionalities. Additional DMSR requirements will be verified
-in later Acceptance Test Campaigns.\\
-\strut \\
-The tests will be performed using...\\
-\strut \\
-Planning for the Operations Rehearsal is being tracked at~
-\href{https://confluence.lsstcorp.org/display/DM/Operations+Rehearsal+\%232}{this
-Confluence page} .\\
+ This test campaign is intended to verify that the DM system satisfies
+all of the priority 1a requirements outlined in the Data Management
+System Requirements (DMSR; \href{https://lse-61.lsst.io/}{LSE-61} ),
+ensuring that we are progressing toward readiness for the installation
+and operation of LSSTCam. Additional DMSR requirements (priorities 1b,
+2, and 3) will be verified in later Acceptance Test Campaigns.\\
 \strut \\
 \textbf{Applicable Documents:}\\
-\strut \\
-\citeds{LSE-61} Data Management System Requirements\\
+\citeds{LSE-61}: Data Management System (DMS) Requirements\\
 \citeds{LDM-503} Data Management Test Plan\\
-\citeds{LDM-639} LSST Data Management Acceptance Test Specification (issue 2.1)\\
-\citeds{LDM-643} Proposed DM Ops Rehearsals (Chapter 3 in particular)\\
-\citeds{LDM-732} Rubin Observatory Network Verification Baseline
+\citeds{LDM-639}: Data Management Acceptance Test Specification\\
+\strut \\
+Tests in this campaign will use data products and artifacts from Data
+Preview 0.2, which consists of DESC Data Challenge 2 (DC2) simulated
+data reprocessed using the LSST Science Pipelines, on-sky data from
+auxTel imaging campaigns, precursor data from Subaru+HyperSuprime-Cam
+(HSC), and camera test-stand data, when appropriate.
 
 
 \subsection{Document Overview}
 \label{sect:docoverview}
 
 This document was generated from Jira, obtaining the relevant information from the
-\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72}
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P117}{LVV-P117}
 ~Jira Test Plan and related Test Cycles (
-\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159}
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C275}{LVV-C275}
 ).
 
 Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
@@ -113,7 +105,7 @@ Section \ref{sect:overview} provides a summary of the test results, including an
 an overall assessment statement and suggestions for possible improvements.
 Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
 
-The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} in Jira is \textbf{ Completed }.
+The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P117}{LVV-P117} in Jira is \textbf{ Draft }.
 
 \subsection{References}
 \label{sect:references}
@@ -132,10 +124,9 @@ The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jsp
 
 \subsection{Verification Environment}
 \label{sect:hwconf}
-  Tests that require code and/or data analysis will use the
-"lsst-lsp-stable" instance of the Rubin Observatory/LSST Science
-Platform (LSP), hosted at the LDF, and the "lsst-dev" development
-cluster at NCSA.
+  Most testing will be performed using the Rubin Science Platform (RSP)
+and the development cluster at the USDF. All tests will use the most
+recent available version of the Pipelines.
 
 
 
@@ -163,23 +154,481 @@ The personnel involved in the test campaign is shown in the following table.
 {\small
 \begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
 \hline
-\multicolumn{2}{r}{T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} owner:} &
-\multicolumn{2}{l}{\textbf{ Leanne Guy } }\\\hline
-\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159} owner:} &
+\multicolumn{2}{r}{T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P117}{LVV-P117} owner:} &
+\multicolumn{2}{l}{\textbf{ Jeffrey Carlin } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C275}{LVV-C275} owner:} &
 \multicolumn{2}{l}{\textbf{
-Robert Gruendl }
+Jeffrey Carlin }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
-\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
-& {\small Robert Gruendl } & {\small Robert Gruendl } &
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T83}{LVV-T83}
+& {\small Jim Bosch } & {\small  } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{LVV-T1934}
-& {\small Robert Gruendl } & {\small Robert Gruendl } &
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T85}{LVV-T85}
+& {\small Robert Lupton } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2303}{LVV-T2303}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T33}{LVV-T33}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T38}{LVV-T38}
+& {\small Eric Bellm } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T103}{LVV-T103}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T45}{LVV-T45}
+& {\small Eric Bellm } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T47}{LVV-T47}
+& {\small Eric Bellm } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T153}{LVV-T153}
+& {\small Robert Gruendl } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T88}{LVV-T88}
+& {\small Eli Rykoff } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T89}{LVV-T89}
+& {\small Eli Rykoff } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T148}{LVV-T148}
+& {\small Colin Slater } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{LVV-T1097}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (Rubin Observatory), Kian-Tat Lim (Rubin Observatory), Matt
+Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2338}{LVV-T2338}
+& {\small Wil O'Mullane } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small William O Mullane }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{LVV-T1168}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Mauricio Rojas
+(CTIO/CISS), Raylex, Coriant, Telefonica contractors }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{LVV-T1612}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Greg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T189}{LVV-T189}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T197}{LVV-T197}
+& {\small Robert Gruendl } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T198}{LVV-T198}
+& {\small Robert Gruendl } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T34}{LVV-T34}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T48}{LVV-T48}
+& {\small Jim Bosch } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1862}{LVV-T1862}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T115}{LVV-T115}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
+& {\small Robert Gruendl } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1987}{LVV-T1987}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T98}{LVV-T98}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1986}{LVV-T1986}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2693}{LVV-T2693}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2699}{LVV-T2699}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T154}{LVV-T154}
+& {\small Colin Slater } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T287}{LVV-T287}
+& {\small Michelle Butler [X] } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T191}{LVV-T191}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1250}{LVV-T1250}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1251}{LVV-T1251}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1847}{LVV-T1847}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T377}{LVV-T377}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1846}{LVV-T1846}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1843}{LVV-T1843}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1757}{LVV-T1757}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1842}{LVV-T1842}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1841}{LVV-T1841}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1840}{LVV-T1840}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1839}{LVV-T1839}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1838}{LVV-T1838}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1837}{LVV-T1837}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1836}{LVV-T1836}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2202}{LVV-T2202}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1746}{LVV-T1746}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1749}{LVV-T1749}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1750}{LVV-T1750}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1751}{LVV-T1751}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1752}{LVV-T1752}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1753}{LVV-T1753}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1831}{LVV-T1831}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2329}{LVV-T2329}
+& {\small Leanne Guy } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T129}{LVV-T129}
+& {\small Jeffrey Carlin } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T30}{LVV-T30}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T29}{LVV-T29}
+& {\small Kian-Tat Lim } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2297}{LVV-T2297}
+& {\small Leanne Guy } & {\small  } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -200,38 +649,657 @@ Robert Gruendl }
 {\small
 \begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
 \toprule
-\multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72}:} &
-\multicolumn{2}{p{10.9cm}}{\textbf{ DM Acceptance Testing, Operations Rehearsal \#2 }} & Completed \\\hline
-\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C159}{LVV-C159}:} &
-\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-11a: ComCam OPS Readiness }} & Done \\\hline
+\multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P117}{LVV-P117}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19a (All P1a DM requirements verified) }} & Draft \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C275}{LVV-C275}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19a (All P1a DM requirements verified) }} & Not Executed \\\hline
 \textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
-\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T83}{LVV-T83}
 &  1
 \\
- \hfill Execution & LVV-E1125
-& Pass &
+ \hfill Execution & LVV-E3502
+& Not Executed &
 \begin{minipage}[]{9cm}
 \smallskip
-Test script was executed by verifying that processing during OPS
-Rehearsal 2 generated the expected calibrations and ingested same into
-the calibration repository in the shared file area (currently
-/project/shared/comCam/CALIB).
+
 \medskip
 \end{minipage}
 &   \\\hline
-\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{LVV-T1934}
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T85}{LVV-T85}
 &  1
 \\
- \hfill Execution & LVV-E1124
-& Pass &
+ \hfill Execution & LVV-E3503
+& Not Executed &
 \begin{minipage}[]{9cm}
 \smallskip
-Data transfer from ComCam (temporarily installed in the Base Data
-Center) has been routinely performed since July 2020. ~ On the day this
-test was executed (2020-10-28) the Data BackBone endpoint at NCSA was
-checked for recently transferred data and then the shared repository was
-checked to make sure that the data were ingested and made generally
-available.
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2303}{LVV-T2303}
+&  1
+\\
+ \hfill Execution & LVV-E3504
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T33}{LVV-T33}
+&  1
+\\
+ \hfill Execution & LVV-E3505
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T38}{LVV-T38}
+&  1
+\\
+ \hfill Execution & LVV-E3506
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T103}{LVV-T103}
+&  1
+\\
+ \hfill Execution & LVV-E3507
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T45}{LVV-T45}
+&  1
+\\
+ \hfill Execution & LVV-E3508
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T47}{LVV-T47}
+&  1
+\\
+ \hfill Execution & LVV-E3509
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T153}{LVV-T153}
+&  1
+\\
+ \hfill Execution & LVV-E3510
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T88}{LVV-T88}
+&  1
+\\
+ \hfill Execution & LVV-E3511
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T89}{LVV-T89}
+&  1
+\\
+ \hfill Execution & LVV-E3512
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T148}{LVV-T148}
+&  1
+\\
+ \hfill Execution & LVV-E3514
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{LVV-T1097}
+&  1
+\\
+ \hfill Execution & LVV-E3515
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2338}{LVV-T2338}
+&  2
+\\
+ \hfill Execution & LVV-E3516
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{LVV-T1168}
+&  1
+\\
+ \hfill Execution & LVV-E3517
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{LVV-T1612}
+&  1
+\\
+ \hfill Execution & LVV-E3518
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T189}{LVV-T189}
+&  1
+\\
+ \hfill Execution & LVV-E3519
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T197}{LVV-T197}
+&  1
+\\
+ \hfill Execution & LVV-E3520
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T198}{LVV-T198}
+&  1
+\\
+ \hfill Execution & LVV-E3521
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T34}{LVV-T34}
+&  1
+\\
+ \hfill Execution & LVV-E3522
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T48}{LVV-T48}
+&  1
+\\
+ \hfill Execution & LVV-E3523
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1862}{LVV-T1862}
+&  1
+\\
+ \hfill Execution & LVV-E3524
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T115}{LVV-T115}
+&  1
+\\
+ \hfill Execution & LVV-E3525
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1935}{LVV-T1935}
+&  1
+\\
+ \hfill Execution & LVV-E3526
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1987}{LVV-T1987}
+&  1
+\\
+ \hfill Execution & LVV-E3527
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T98}{LVV-T98}
+&  1
+\\
+ \hfill Execution & LVV-E3528
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1986}{LVV-T1986}
+&  1
+\\
+ \hfill Execution & LVV-E3529
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2693}{LVV-T2693}
+&  1
+\\
+ \hfill Execution & LVV-E3530
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2699}{LVV-T2699}
+&  1
+\\
+ \hfill Execution & LVV-E3531
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T154}{LVV-T154}
+&  1
+\\
+ \hfill Execution & LVV-E3532
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T287}{LVV-T287}
+&  1
+\\
+ \hfill Execution & LVV-E3533
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T191}{LVV-T191}
+&  1
+\\
+ \hfill Execution & LVV-E3534
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1250}{LVV-T1250}
+&  1
+\\
+ \hfill Execution & LVV-E3535
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1251}{LVV-T1251}
+&  1
+\\
+ \hfill Execution & LVV-E3536
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1847}{LVV-T1847}
+&  1
+\\
+ \hfill Execution & LVV-E3537
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T377}{LVV-T377}
+&  1
+\\
+ \hfill Execution & LVV-E3538
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1846}{LVV-T1846}
+&  1
+\\
+ \hfill Execution & LVV-E3539
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1843}{LVV-T1843}
+&  1
+\\
+ \hfill Execution & LVV-E3540
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1757}{LVV-T1757}
+&  1
+\\
+ \hfill Execution & LVV-E3541
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1842}{LVV-T1842}
+&  1
+\\
+ \hfill Execution & LVV-E3542
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1841}{LVV-T1841}
+&  1
+\\
+ \hfill Execution & LVV-E3543
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1840}{LVV-T1840}
+&  1
+\\
+ \hfill Execution & LVV-E3544
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1839}{LVV-T1839}
+&  1
+\\
+ \hfill Execution & LVV-E3545
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1838}{LVV-T1838}
+&  1
+\\
+ \hfill Execution & LVV-E3546
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1837}{LVV-T1837}
+&  1
+\\
+ \hfill Execution & LVV-E3547
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1836}{LVV-T1836}
+&  1
+\\
+ \hfill Execution & LVV-E3548
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2202}{LVV-T2202}
+&  1
+\\
+ \hfill Execution & LVV-E3549
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1746}{LVV-T1746}
+&  1
+\\
+ \hfill Execution & LVV-E3550
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1749}{LVV-T1749}
+&  1
+\\
+ \hfill Execution & LVV-E3551
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1750}{LVV-T1750}
+&  1
+\\
+ \hfill Execution & LVV-E3552
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1751}{LVV-T1751}
+&  1
+\\
+ \hfill Execution & LVV-E3553
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1752}{LVV-T1752}
+&  1
+\\
+ \hfill Execution & LVV-E3554
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1753}{LVV-T1753}
+&  1
+\\
+ \hfill Execution & LVV-E3555
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1831}{LVV-T1831}
+&  1
+\\
+ \hfill Execution & LVV-E3556
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2329}{LVV-T2329}
+&  1
+\\
+ \hfill Execution & LVV-E3557
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T129}{LVV-T129}
+&  1
+\\
+ \hfill Execution & LVV-E3558
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T30}{LVV-T30}
+&  1
+\\
+ \hfill Execution & LVV-E3559
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T29}{LVV-T29}
+&  1
+\\
+ \hfill Execution & LVV-E3560
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2297}{LVV-T2297}
+&  1
+\\
+ \hfill Execution & LVV-E3561
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
 \medskip
 \end{minipage}
 &   \\\hline
@@ -254,25 +1322,655 @@ Not yet available.
 \section{Detailed Test Results}
 \label{sect:detailedtestresults}
 
-\subsection{Test Cycle LVV-C159 }
+\subsection{Test Cycle LVV-C275 }
 
-Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C159}{LDM-503-11a: ComCam OPS Readiness}} in Jira.
+Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C275}{LDM-503-19a (All P1a DM requirements verified)}} in Jira.
 
-Test Cycle name: LDM-503-11a: ComCam OPS Readiness\\
-Status: Done
+Test Cycle name: LDM-503-19a (All P1a DM requirements verified)\\
+Status: Not Executed
 
-Test that ComCam data can be received in the DBB, be made available and
-processed with results also made available to DM staff.
+Test campaign supporting milestone LDM-503-19a -\/- all P1a requirements
+verified.
 
 \subsubsection{Software Version/Baseline}
-lsst\_distrib ~w\_2020\_30
+Not provided.
 
 \subsubsection{Configuration}
-ComCam operating at Base/Summit in a test stand capable of delivering
-image to NCSA. ~Data Backbone endpoint and OODS (Observatory Operations
-Data Service) ready to receive and ingest data.
+Not provided.
 
-\subsubsection{Test Cases in LVV-C159 Test Cycle}
+\subsubsection{Test Cases in LVV-C275 Test Cycle}
+
+\paragraph{ LVV-T83 - Verify implementation of Bad Pixel Map }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T83}{\textit{ LVV-T83 } }
+test case in Jira.
+
+Verify that the DMS can produce a map of detector pixels that suffer
+from pathologies, and that these pathologies are encoded in at least
+32-bit values.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T83 LVV-E3502-3897:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T85 - Verify implementation of Crosstalk Correction Matrix }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T85}{\textit{ LVV-T85 } }
+test case in Jira.
+
+Verify that the DMS can generate a cross-talk correction matrix from
+appropriate calibration data.\\
+Verify that the DMS can measure the effectiveness of the cross-talk
+correction matrix.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T85 LVV-E3503-3898:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2303 - Verify Image Archive }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2303}{\textit{ LVV-T2303 } }
+test case in Jira.
+
+Verify that all image Data Products produced by the DMS (Processed
+Science Exposures, Calibration Exposures, Coadded Exposures) are either
+archived, or be capable of being recreated on-demand from inputs and
+processing provenance.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2303 LVV-E3504-3899:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T33 - Verify implementation of Raw Science Image Metadata }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T33}{\textit{ LVV-T33 } }
+test case in Jira.
+
+Verify successful ingestion of raw data and that image metadata is
+present and queryable.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T33 LVV-E3505-3900:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T38 - Verify implementation of Processed Visit Images }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T38}{\textit{ LVV-T38 } }
+test case in Jira.
+
+Verify that the DMS\\
+1. Successfully produces Processed Visit Images, where the instrument
+signature has been removed.\\
+2. Successfully combines images obtained during a standard visit.\\
+\strut \\
+The verification should include confirming that the images have been
+trimmed of the overscan, and that correction of the instrumental
+signature (including crosstalk) has been applied properly.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T38 LVV-E3506-3901:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T103 - Verify implementation of Generate Data Quality Report Within Specified
+Time }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T103}{\textit{ LVV-T103 } }
+test case in Jira.
+
+Verify that the DMS can generate a nightly L1 Data Quality Report within
+\textbf{dqReportComplTime = 4{[}hour{]}}, in both human- and
+machine-readable formats.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T103 LVV-E3507-3902:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T45 - Verify implementation of Prompt Processing Data Quality Report
+Definition }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T45}{\textit{ LVV-T45 } }
+test case in Jira.
+
+Verify that the DMS produces a Prompt Processing Data Quality Report.
+~Specifically check absolute value and temporal variation of\\
+1. Photometric zeropoint\\
+2. Sky brightness\\
+3. Seeing\\
+4. PSF\\
+5. Detection efficiency
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T45 LVV-E3508-3903:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T47 - Verify implementation of Prompt Processing Calibration Report Definition }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T47}{\textit{ LVV-T47 } }
+test case in Jira.
+
+Verify that the DMS produces a Prompt Processing Calibration Report.
+~Specifically check that this report is capable of identifying when
+aspects of the telescope or camera are changing with time.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T47 LVV-E3509-3904:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T153 - Verify implementation of Provide Engineering and Facility Database
+Archive }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T153}{\textit{ LVV-T153 } }
+test case in Jira.
+
+Demonstrate Engineering and Facilities Data (images, associated
+metadata, and observatory environment and control data) are archived and
+available for public access within \textbf{L1PublicT (24 hours)}.~
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T153 LVV-E3510-3905:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T88 - Verify implementation of Calibration Data Products }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T88}{\textit{ LVV-T88 } }
+test case in Jira.
+
+Verify that the DMS can produce and archive the required Calibration
+Data Products: cross talk correction, bias, dark, monochromatic dome
+flats, broad-band flats, fringe correction, and illumination
+corrections.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T88 LVV-E3511-3906:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T89 - Verify implementation of Calibration Image Provenance }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T89}{\textit{ LVV-T89 } }
+test case in Jira.
+
+Verify that the DMS records the required provenance information for the
+Calibration Data Products.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T89 LVV-E3512-3907:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T148 - Verify implementation of Unique Processing Coverage }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T148}{\textit{ LVV-T148 } }
+test case in Jira.
+
+Verify that a user-specified criterion can be used to process each
+record in a table exactly once.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T148 LVV-E3514-3909:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1097 - Verify Summit Facility Network Implementation }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{\textit{ LVV-T1097 } }
+test case in Jira.
+
+Verify that data acquired by a AuxTel DAQ can be transferred to Summit
+DWDM and loaded in the EFD without problems.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Summit Control Network and Camera Data Backbone installed and
+  operating properly.
+\item
+  Summit - Base Network installed and operating properly.
+\item
+  EITHER: AuxTel hardware and control systems are functional with
+  LATISS. AuxTel TCS, AuxTel EFD, AuxTel CCS, AuxTel DAQ are connected
+  via Control Network on Summit to Rubin Observatory DWDM (with at least
+  2 x 10 Gbps ethernet port client cards) OR: high-quality DAQ
+  application-level simulators that match the form, volume, file paths,
+  compressibility, and cadence of the expected instrument data, running
+  on end node computers that are the production hardware or equivalent
+  to it. Scientific validity of the data content is not essential.
+\item
+  AuxTel Archiver/forwarders installed in Summit and operating properly
+  running on end node computers that are the production hardware or
+  equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, LSSTCam) become
+available. ~Final verification will be tested at full operational
+volume. After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. ~This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1097 LVV-E3515-3910:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2338 - Replicated telemetry data agrees with telemetry produced at the summit }\mbox{}\\
+
+Version \textbf{2}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2338}{\textit{ LVV-T2338 } }
+test case in Jira.
+
+Show that telemetry data can be accessed from the replicated EFD.
+~Further, show that the values in the replicated database agree with the
+values in the summit EFD over a specified time range and set of
+topics.\\
+\strut \\
+This test case provides partial coverage of the requirement
+DMS-REQ-0168, Summit Facility Data Communications: "The DMS shall
+provide data communications infrastructure to accept science data and
+associated metadata read-outs, and \textbf{the collection of ancillary
+and engineering data}, for transfer to the base facility.", as adapted
+to the current design for EFD replication (see
+\href{https://dmtn-082.lsst.io}{DMTN-082}).
+
+\textbf{ Preconditions}:\\
+See prerequisites in the Test Plan LVV-P90
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2338 LVV-E3516-3911:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1168 - Verify Summit - Base Network Integration }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{\textit{ LVV-T1168 } }
+test case in Jira.
+
+Verify the integration of the summit to base network by demonstrating a
+sustained and uninterrupted transfer of data between summit and base
+over 1 day period at or exceeding rates specified in \citeds{LDM-142}. Done in 3
+phases in collaboration with equipment/installation vendors (see test
+procedure).
+
+\textbf{ Preconditions}:\\
+PMCS DMTC-7400-2330 COMPLETE\\
+By phase:
+
+\begin{enumerate}
+\tightlist
+\item
+  Posts from Cerro Pachon to AURA Gatehouse repaired/improved. ~Fiber
+  installed on posts from Cerro Pachon to AURA Gatehouse. ~Fiber
+  installed from AURA Gatehouse to AURA compound in La Serena. OTDR
+  purchased.
+\item
+  AURA DWDM installed in caseta on Cerro Pachon and in existing computer
+  room in La Serena. ~DTN installed in La Serena. ~DTN loaded with
+  software and test data staged.
+\item
+  Base Data Center (BDC) ready for installation of LSST DWDM. ~Fiber
+  connecting existing computer room to BDC. ~LSST DWDM equipment
+  installed in Summit Computer Room and BDC.
+\end{enumerate}
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1168 LVV-E3517-3912:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1612 - Verify Summit - Base Network Integration (System Level) }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{\textit{ LVV-T1612 } }
+test case in Jira.
+
+Verify ISO Layer 3 full (22 x 10 Gbps ethernet ports on DAQ side with
+test data from DAQ test stand, AURA, Camera DAQ team do test).
+Demonstrate transfer of data at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 COMPLETE
+\item
+  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/1401}{LVV-T1168}
+  Passed
+\item
+  EITHER: Full Camera DAQ installed on summit and loaded with data OR:
+  high-quality DAQ application-level simulators that match the form,
+  volume, file paths, compressibility, and cadence of the expected
+  instrument data, running on end node computers that are the production
+  hardware or equivalent to it. Scientific validity of the data content
+  is not essential.
+\item
+  Archiver/forwarders installed at Base running on end node computers
+  that are the production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational
+volume.After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1612 LVV-E3518-3913:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T189 - Verify implementation of Base Facility Infrastructure }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T189}{\textit{ LVV-T189 } }
+test case in Jira.
+
+Verify that the (a) planned infrastructure and (b) as-built
+infrastructure for the Base Facility satisfies the needs for data
+transfer and buffering, a copy of the Archive Facility, and support for
+Commissioning.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T189 LVV-E3519-3914:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T197 - Verify implementation of Archive Center }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T197}{\textit{ LVV-T197 } }
+test case in Jira.
+
+Verify that the Archive Center is sufficiently provisioned to support
+prompt processing, DRP, and data access needs.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T197 LVV-E3520-3915:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T198 - Verify implementation of Archive Center Disaster Recovery }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T198}{\textit{ LVV-T198 } }
+test case in Jira.
+
+Verify disaster recovery plan for Archive Center.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T198 LVV-E3521-3916:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T34 - Verify implementation of Guider Calibration Data Acquisition }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T34}{\textit{ LVV-T34 } }
+test case in Jira.
+
+{Verify successful}\\
+{~1. Ingestion of calibration frames from L1 Test Stand DAQ}\\
+{~2. Execution of CPP payloads}\\
+{~3. Availability of observed guider calibration products}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T34 LVV-E3522-3917:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T48 - Verify implementation of Exposure Catalog }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T48}{\textit{ LVV-T48 } }
+test case in Jira.
+
+Verify that the DMS creates an Exposure Catalog that includes\\
+1. Observation datetime, exposure time\\
+2. Filter\\
+3. Dome, telescope orientation and status\\
+4. Calibration status\\
+5. Airmass and zenith\\
+6. Environmental information\\
+7. Per-sensor information
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T48 LVV-E3523-3918:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1862 - Verify determining effectiveness of dark current frame }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1862}{\textit{ LVV-T1862 } }
+test case in Jira.
+
+Verify that the DMS can determine the effectiveness of a dark correction
+and determine how often it should be updated.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1862 LVV-E3524-3919:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T115 - Verify implementation of Calibration Production Processing }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T115}{\textit{ LVV-T115 } }
+test case in Jira.
+
+Execute CPP on a variety of representative cadences, and verify that the
+calibration pipeline correctly produces necessary calibration products.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T115 LVV-E3525-3920:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
 
 \paragraph{ LVV-T1935 - Demonstrate ComCam Data Processing Capability }\mbox{}\\
 
@@ -294,187 +1992,24 @@ Final comment:\\
 
 
 
-Detailed steps results LVV-C159-LVV-T1935 LVV-E1125-1505:\\
+Detailed steps results LVV-C275-LVV-T1935 LVV-E3526-3921:\\
 {\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E1125-1 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Obtain BIAS and FLAT sequences (minimum of 3 exposures each)
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-Acquired from ComCam Archiver.
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-Data acquired, ingested, and available in shared work space.
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-During OPS rehearsal \#2 (see DMTN-159) bias and flat sequences were
-acquired. ~Using the first night as an example:\\
-\strut \\
-cd /project/shared/comCam\\
-sqlite3 \_parent/registry.sqlite3\\
-select expId,dayObs,imageType,raftName,detectorName from raw where
-dayObs=\textquotesingle2020-07-27\textquotesingle;\\
-\strut \\
-Shows sufficient BIAS and FLAT data have been properly ingested to the
-shared work-space.
-
-}
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E1125-2 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Process BIAS frames
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-From Step 1
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Example Code \\
-{\footnotesize
-\begin{verbatim}
-# setup a current LSST stack, currently:
-/software/lsstsw/stack3/loadLSST.bash
-setup -v lsst_distrib
-
-setenv REPODIR=/project/shared/comCam
-setenv VER_DIR={verification_dir}
-
-constructBias.py $REPODIR --rerun $VER_DIR \
-    --id expId=2020070800001^2020070800002^2020070800003 --batch-type none -c isr.doCrosstalk=False -j 9
-
-ingestCalibs.py $REPODIR $REPODIR/rerun/$VER_DIR/bias/*/*.fits --validity 9999 --mode=link --calib $REPODIR/CALIB
-\end{verbatim}
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-Successful execution of BIAS reduction software (currently~
-
-\begin{verbatim}
-constructBias.py and ingestion)
-\end{verbatim}
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-The processing notes that accompany DMTN-159 (are available in the
-github
-repo~\href{https://github.com/lsst-dm/OPS_Rehearsal_2}{OPS\_Rehearsal\_2}).
-There we find that constructBias.py and ingestCalibs.py were executed
-and find in the calibration repo the associated ingested bias entries:\\
-\strut \\
-cd /project/shared/comCam\\
-sqlite3 CALIB/calibRegistry.sqlite3\\
-select * from bias where
-calibDate=\textquotesingle2020-07-27\textquotesingle;\\
-1\textbar NONE\textbar R22\textbar S00\textbar0\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-2\textbar NONE\textbar R22\textbar S01\textbar1\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-3\textbar NONE\textbar R22\textbar S02\textbar2\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-4\textbar NONE\textbar R22\textbar S10\textbar3\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-5\textbar NONE\textbar R22\textbar S11\textbar4\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-6\textbar NONE\textbar R22\textbar S12\textbar5\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-7\textbar NONE\textbar R22\textbar S20\textbar6\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-8\textbar NONE\textbar R22\textbar S21\textbar7\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-9\textbar NONE\textbar R22\textbar S22\textbar8\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28
-
-}
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E1125-3 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Process FLAT frames
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-From Step 1 (and step 2)
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Example Code \\
-{\footnotesize
-\begin{verbatim}
-# setup a current LSST stack, currently:
-/software/lsstsw/stack3/loadLSST.bash
-setup -v lsst_distrib
-
-setenv REPODIR=/project/shared/comCam
-setenv VER_DIR={verification_dir}
-\end{verbatim}
-
-\begin{verbatim}
-constructFlat.py $REPODIR --rerun $VER_DIR \
-    --id expId=2020070100152..2020070100154 filter=r --batch-type none -j 9 -c isr.doCrosstalk=False
-\end{verbatim}
-
-\begin{verbatim}
-ingestCalibs.py $REPODIR $REPODIR/rerun/$VER_DIR/flat/*/*.fits \
-    --validity 9999 --mode=link --calib $REPODIR/CALIB
-\end{verbatim}
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-Successful execution of FLAT reduction software (currently
-constructFlat.py and ingestion)
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-Similar to step 2:\\
-\strut \\
-select * from flat where
-calibDate=\textquotesingle2020-07-27\textquotesingle;\\
-1\textbar r\textbar R22\textbar S00\textbar0\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-2\textbar r\textbar R22\textbar S01\textbar1\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-3\textbar r\textbar R22\textbar S02\textbar2\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-4\textbar r\textbar R22\textbar S10\textbar3\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-5\textbar r\textbar R22\textbar S11\textbar4\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-6\textbar r\textbar R22\textbar S12\textbar5\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-7\textbar r\textbar R22\textbar S20\textbar6\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-8\textbar r\textbar R22\textbar S21\textbar7\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28\\
-9\textbar r\textbar R22\textbar S22\textbar8\textbar2020-07-27\textbar1993-03-12\textbar2020-07-28
-
-}
-
-\paragraph{ LVV-T1934 - ComCam Data Transfer and Ingestion }\mbox{}\\
+\paragraph{ LVV-T1987 - Run Calibration Products Processing (CPP) }\mbox{}\\
 
 Version \textbf{1}.
-Status \textbf{Deprecated}.
-Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1934}{\textit{ LVV-T1934 } }
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1987}{\textit{ LVV-T1987 } }
 test case in Jira.
 
-Verify that ComCam Archiver data taken are transferred to NCSA Data
-BackBone endpoint and Ingested
+Demonstrate that basic calibration processing from Gen2 era has been
+enabled within Gen3 environment. ~ This test is not concerned with large
+scales but merely demonstrates that Gen3 capability to generate
+calibration products (i.e. they are no longer required to be generated
+in Gen2 and then migrated to Gen3).
 
 \textbf{ Preconditions}:\\
-Operating ComCam and Base or Summit (test-stand or mounted on TMA)
+
 
 Execution status: {\bf  }
 
@@ -482,101 +2017,846 @@ Final comment:\\
 
 
 
-Detailed steps results LVV-C159-LVV-T1934 LVV-E1124-1504:\\
+Detailed steps results LVV-C275-LVV-T1987 LVV-E3527-3922:\\
 {\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E1124-1 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Trigger Exposure through OCS+Archiver
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-generated by ComCam as part of test
+\paragraph{ LVV-T98 - Verify implementation of Selection of Datasets }\mbox{}\\
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Example Code \\
-{\footnotesize
-\hfill\break
-\hfill\break
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T98}{\textit{ LVV-T98 } }
+test case in Jira.
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-Ingested ComCam exposure (9 files) at NCSA in shared Butler Repo (raw).
-~
+Verify that the DMS can identify and retrieve datasets consisting of
+logical groupings of Exposures, metadata, provenance, etc., or other
+groupings that are processed or produced as a logical unit.
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-Data are being routinely generate with ComCam installed at the Base Data
-Center. ~ I have verified that new data were generated today
-(2020-10-28) and transferred to NCSA and the DBB endpoint for raw data
-exists and has data ~(i.e. files transfer has been placing new data in:
-~/lsstdata/offline/teststand/comcam/Archiver/storage/2020-10-28 )
+\textbf{ Preconditions}:\\
 
-}
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E1124-2 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Check for presence of ingested raw data at NCSA
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-Data produced in Step 1
+Execution status: {\bf  }
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Example Code \\
-{\footnotesize
-\# note: currently assumes butler Gen2 (from NCSA machine)\\
-cd /project/shared/comCam\\
-sqlite3 \_parent/registry.sqlite3\\
-select expId,dayObs,raftName,detectorName from raw where expId=\{expo
-generated in step 1\};
+Final comment:\\
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-query of repo registry finds appropriate data entries showing a single
-raft and 9 detectors
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-Following the example above the most recent raw exposure to have arrived
-at NCSA had expId 2020102800060.\\
-The following was generated when using that expId:\\
+
+Detailed steps results LVV-C275-LVV-T98 LVV-E3528-3923:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1986 - Mini DC2 processing capability }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1986}{\textit{ LVV-T1986 } }
+test case in Jira.
+
+Demonstrate that a typical 3-tract DC2 data processing is possible using
+the Gen3 system and the nascent Batch Production Service (BPS). ~This
+test is meant to
+extend~\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1983}{LVV-T1983}
+(Mini RC2 processing capability) by demonstrating Gen3 + BPS systems are
+capable of supporting future Data Previews (which have been specified to
+use the DC2 image sim data rather than HSC data). ~
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1986 LVV-E3529-3924:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2693 - Verify implementation of Image Provenance Access }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2693}{\textit{ LVV-T2693 } }
+test case in Jira.
+
+Verify that available image data products\textquotesingle{} provenance
+information can be listed and retrieved.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2693 LVV-E3530-3925:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2699 - Verify implementation of Catalog Provenance Access }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2699}{\textit{ LVV-T2699 } }
+test case in Jira.
+
+Verify that available catalog data products\textquotesingle{} provenance
+can be listed and retrieved.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2699 LVV-E3531-3926:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T154 - Verify implementation of Raw Data Archiving Reliability }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T154}{\textit{ LVV-T154 } }
+test case in Jira.
+
+Verify that raw images are reliably archived.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T154 LVV-E3532-3927:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T287 - RAS-00-30: Raw Image Archiving Availability, Throughput, Reliability,
+and Heterogeneity }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T287}{\textit{ LVV-T287 } }
+test case in Jira.
+
+This test will check:\\
 \strut \\
-select expId,dayObs,raftName,detectorName from raw where
-expId=2020102800060;\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S00\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S01\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S02\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S10\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S11\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S12\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S20\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S21\\
-2020102800060\textbar2020-10-28\textbar R22\textbar S22\\
-\strut \\
-Confirming successful ingestion into the shared Gen2 repo at NCSA.
 
-}
+\begin{itemize}
+\tightlist
+\item
+  Raw Image Archiving meets availability requirements;
+\item
+  Raw Image Archiving meets throughput requirements;
+\item
+  Raw Image Archiving meets reliability requirements;
+\item
+  Raw Image Archiving meets heterogeneity requirements;
+\end{itemize}
+
+\hfill\break
+This test case need to be completed when more information is available.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T287 LVV-E3533-3928:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T191 - Verify implementation of Commissioning Cluster }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T191}{\textit{ LVV-T191 } }
+test case in Jira.
+
+Verify that the Commissioning Cluster has sufficient Compute/Storage/LAN
+at the Base Facility to support Commissioning.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T191 LVV-E3534-3929:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1250 - Verify implementation of minimum number of simultaneous DM EFD query
+users }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1250}{\textit{ LVV-T1250 } }
+test case in Jira.
+
+Verify that the DM EFD can support \textbf{dmEfdQueryUsers~= 5}
+simultaneous queries. The additional requirement that each query must
+last no more than \textbf{dmEfdQueryTime = 10 seconds~}will be verified
+separately in
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1251}{LVV-T1251},
+but these must be satisfied together.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1250 LVV-E3535-3930:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1251 - Verify implementation of maximum time to retrieve DM EFD query results }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1251}{\textit{ LVV-T1251 } }
+test case in Jira.
+
+Verify that the DM EFD can support \textbf{dmEfdQueryUsers~= 5}
+simultaneous queries, with each query must executing in no more than
+\textbf{dmEfdQueryTime = 10 seconds.~}The requirement on at least 5
+simultaneous queries will be verified separately in
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1250}{LVV-T1250},\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1251}{}
+but these must be satisfied together.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1251 LVV-E3536-3931:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1847 - Verify calculation of sensor fraction with unusable pixels }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1847}{\textit{ LVV-T1847 } }
+test case in Jira.
+
+Verify that the DM system provides software to assess whether the
+maximum allowable fraction of sensors with \textbf{PixFrac
+\textgreater{} 1} percent scientifically unusable pixels is less
+than~\textbf{SensorFraction = 15 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1847 LVV-E3537-3932:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T377 - Verify Calculation of Photometric Performance Metrics }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T377}{\textit{ LVV-T377 } }
+test case in Jira.
+
+Verify that the DMS system provides software to calculate photometric
+performance metrics, and that the algorithms are properly calculating
+the desired quantities. Note that because the DMS requirement is that
+the software shall be provided (and not on the actual measured values of
+the metrics), we verify all of the requirements via a single test case.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T377 LVV-E3538-3933:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1846 - Verify calculation of band-to-band color zero-point accuracy including
+u-band }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1846}{\textit{ LVV-T1846 } }
+test case in Jira.
+
+Verify that the DM system provides software to assess whether the
+accuracy of absolute band-to-band color zero-points for all colors
+constructed from any filter pair, including the u-band, is less than
+\textbf{PA5u = 10 millimagnitudes}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1846 LVV-E3539-3934:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1843 - Verify calculation of significance of imperfect crosstalk corrections }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1843}{\textit{ LVV-T1843 } }
+test case in Jira.
+
+Verify that the DM system provides software to assess whether the
+maximum local significance integrated over the PSF of imperfect
+crosstalk corrections is less than \textbf{Xtalk = 3 sigma}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1843 LVV-E3540-3935:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1757 - Verify calculation of photometric repeatability in gri filters }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1757}{\textit{ LVV-T1757 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the RMS
+photometric repeatability of bright non-saturated unresolved point
+sources in the g, r, and i filters, and assess whether it meets the
+requirement that it shall be less than \textbf{PA1gri = 5.0
+millimagnitudes}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1757 LVV-E3541-3936:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1842 - Verify calculation of zeropoint error fraction exceeding the outlier
+limit }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1842}{\textit{ LVV-T1842 } }
+test case in Jira.
+
+Verify that the DM system provides software to calculate the fraction of
+zeropoint errors that exceed the zero point error outlier limit, and
+confirm that it is less than \textbf{PF2 = 10 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1842 LVV-E3542-3937:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1841 - Verify calculation of scientifically unusable pixel fraction }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1841}{\textit{ LVV-T1841 } }
+test case in Jira.
+
+Verify that the DM system provides software to assess whether the
+maximum fraction of pixels scientifically unusable per sensor out of the
+total allowable fraction of sensors meeting this performance is less
+than~\textbf{PixFrac = 1 percent}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1841 LVV-E3543-3938:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1840 - Verify calculation of sky brightness precision }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1840}{\textit{ LVV-T1840 } }
+test case in Jira.
+
+Verify that the DM system provides software to assess whether the
+maximum error in the precision of the sky brightness determination is
+less than \textbf{SBPrec = 1 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1840 LVV-E3544-3939:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1839 - Verify calculation of RMS width of photometric zeropoint }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1839}{\textit{ LVV-T1839 } }
+test case in Jira.
+
+Verify that the DM system provides code to assess whether the RMS width
+of the internal photometric zero-point (precision of system uniformity
+across the sky) for all bands except u-band is less than \textbf{PA3 =
+10 millimagnitudes}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1839 LVV-E3545-3940:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1838 - Verify calculation of image fraction affected by ghosts }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1838}{\textit{ LVV-T1838 } }
+test case in Jira.
+
+Verify that the DM system provides code to assess whether the percentage
+of image area that has ghosts with surface brightness gradient amplitude
+of more than 1/3 of the sky noise over 1 arcsec is less than
+\textbf{GhostAF = 1 percent}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1838 LVV-E3546-3941:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1837 - Verify calculation of band-to-band color zero-point accuracy }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1837}{\textit{ LVV-T1837 } }
+test case in Jira.
+
+Verify that the DM system provides code to assess whether the accuracy
+of absolute band-to-band color zero-points for all colors constructed
+from any filter pair, excluding the u-band, is less than \textbf{PA5 = 5
+millimagnitudes}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1837 LVV-E3547-3942:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1836 - Verify calculation of resolved-to-unresolved flux ratio errors }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1836}{\textit{ LVV-T1836 } }
+test case in Jira.
+
+Verify that the DM system has provided code to assess whether the
+maximum RMS of the ratio of the error in integrated flux measurement
+between bright, isolated, resolved sources less than 10 arcsec in
+diameter and bright, isolated unresolved point sources is less than
+\textbf{ResSource = 2}.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1836 LVV-E3548-3943:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2202 - Verify that the of zero-point error outlier limit threshold (PA4) can be
+applied. }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2202}{\textit{ LVV-T2202 } }
+test case in Jira.
+
+Verify that the DMS has provided the code to apply the zero-point error
+outlier limit threshold (PA4) to computed values of metrics.~
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2202 LVV-E3549-3944:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1746 - Verify calculation of fraction of relative astrometric measurement error
+on 5 arcminute scales exceeding outlier limit }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1746}{\textit{ LVV-T1746 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the maximum
+fraction of relative astrometric measurements on 5 arcminute scales that
+exceed the 5 arcminute outlier limit \textbf{AD1 = 20 milliarcseconds},
+and assess whether it meets the requirement that it shall be less than
+\textbf{AF1 = 10 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1746 LVV-E3550-3945:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1749 - Verify calculation of fraction of relative astrometric measurement error
+on 20 arcminute scales exceeding outlier limit }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1749}{\textit{ LVV-T1749 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the maximum
+fraction of relative astrometric measurements on 20 arcminute scales
+that exceed the 20 arcminute outlier limit \textbf{AD2 = 20
+milliarcseconds}, and assess whether it meets the requirement that it
+shall be less than \textbf{AF2 = 10 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1749 LVV-E3551-3946:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1750 - Verify calculation of separations relative to r-band exceeding color
+difference outlier limit }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1750}{\textit{ LVV-T1750 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the
+separations measured relative to the r-band that exceed the color
+difference outlier limit \textbf{AB2 = 20 milliarcseconds}, and assess
+whether it meets the requirement that it shall be less than \textbf{ABF1
+= 10 percent.~}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1750 LVV-E3552-3947:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1751 - Verify calculation of median relative astrometric measurement error on
+200 arcminute scales }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1751}{\textit{ LVV-T1751 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the median
+relative astrometric measurement error on 200 arcminute scales and
+assess whether it meets the requirement that it shall be no more than
+AM3 = 15 milliarcseconds.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1751 LVV-E3553-3948:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1752 - Verify calculation of fraction of relative astrometric measurement error
+on 200 arcminute scales exceeding outlier limit }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1752}{\textit{ LVV-T1752 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the maximum
+fraction of relative astrometric measurements on 200 arcminute scales
+that exceed the 200 arcminute outlier limit \textbf{AD3 = 30
+milliarcseconds}, and assess whether it meets the requirement that it
+shall be less than \textbf{AF3 = 10 percent.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1752 LVV-E3554-3949:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1753 - Verify calculation of RMS difference of separations relative to r-band }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1753}{\textit{ LVV-T1753 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the
+separations measured relative to the r-band, and assess whether it meets
+the requirement that it shall be less than \textbf{AB1 =
+10~milliarcseconds.}
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1753 LVV-E3555-3950:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1831 - Verify Implementation of Data Management Nightly Reporting }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1831}{\textit{ LVV-T1831 } }
+test case in Jira.
+
+Verify that the LSST Data Management subsystem produces a searchable -
+interactive nightly report(s), from information published in the EFD by
+each subsystem, summarizing performance and behavior over a user defined
+period of time (e.g. the previous 24 hours).
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1831 LVV-E3556-3951:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2329 - Verify the archiving of ancilliary data }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2329}{\textit{ LVV-T2329 } }
+test case in Jira.
+
+Verufy that the Science Data Archive ~contains all necessary engineering
+and calibration data for the full understanding of the performance and
+operation of the Observatory.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2329 LVV-E3557-3952:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T129 - Verify implementation of Provide Calibrated Photometry }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T129}{\textit{ LVV-T129 } }
+test case in Jira.
+
+Verify that the DMS provides photometry calibrated in AB mags and fluxes
+(in nJy) for all measured objects and sources. Must be tested for both
+DRP and AP products.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T129 LVV-E3558-3953:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T30 - Verify implementation of Wavefront Sensor Data Acquisition }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T30}{\textit{ LVV-T30 } }
+test case in Jira.
+
+Verify successful ingestion of wavefront sensor data from L1 Test Stand
+DAQ while simulating all modes.
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T30 LVV-E3559-3954:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T29 - Verify implementation of Raw Science Image Data Acquisition }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Defined}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T29}{\textit{ LVV-T29 } }
+test case in Jira.
+
+Verify acquisition of raw data from L1 Test Stand DAQ while simulating
+all modes
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T29 LVV-E3560-3955:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T2297 - Verify implementation of Science Data Archive }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T2297}{\textit{ LVV-T2297 } }
+test case in Jira.
+
+Verify that a Science Data Archive has been created ~and that all LSST
+public data products have been archived together with the raw data
+necessary to reproduce them. ~Verify that the archive is scalable to the
+data from the full survey and all Data Releases.\\
+\strut \\
+This requirement will be verified by analysis. Verification must
+demonstrate that we have a a written plan for how data will be archived
+and that the storage systems needed exist. The plan should include
+details on recovery. ~This is needed before commissioning to support
+commissioning data taking.~
+
+\textbf{ Preconditions}:\\
+
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T2297 LVV-E3561-3956:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
 
 
 
