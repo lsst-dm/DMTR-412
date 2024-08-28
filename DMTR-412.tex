@@ -34,7 +34,6 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-
 \date{ 2024-08-28 }
 \author{ Jeffrey Carlin }
 
@@ -162,6 +161,32 @@ The personnel involved in the test campaign is shown in the following table.
 Jeffrey Carlin }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{LVV-T1612}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Greg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{LVV-T1168}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Mauricio Rojas
+(CTIO/CISS), Raylex, Coriant, Telefonica contractors }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{LVV-T1097}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (Rubin Observatory), Kian-Tat Lim (Rubin Observatory), Matt
+Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T83}{LVV-T83}
 & {\small Jim Bosch } & {\small  } &
 \begin{minipage}[]{6cm}
@@ -613,6 +638,39 @@ Jeffrey Carlin }
 \multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C275}{LVV-C275}:} &
 \multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19a (All P1a DM requirements verified) }} & Not Executed \\\hline
 \textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{LVV-T1612}
+&  1
+\\
+ \hfill Execution & LVV-E3647
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{LVV-T1168}
+&  1
+\\
+ \hfill Execution & LVV-E3648
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{LVV-T1097}
+&  1
+\\
+ \hfill Execution & LVV-E3649
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&   \\\hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T83}{LVV-T83}
 &  1
 \\
@@ -1243,6 +1301,155 @@ Not provided.
 Not provided.
 
 \subsubsection{Test Cases in LVV-C275 Test Cycle}
+
+\paragraph{ LVV-T1612 - Verify Summit - Base Network Integration (System Level) }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1612}{\textit{ LVV-T1612 } }
+test case in Jira.
+
+Verify ISO Layer 3 full (22 x 10 Gbps ethernet ports on DAQ side with
+test data from DAQ test stand, AURA, Camera DAQ team do test).
+Demonstrate transfer of data at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 COMPLETE
+\item
+  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/1401}{LVV-T1168}
+  Passed
+\item
+  EITHER: Full Camera DAQ installed on summit and loaded with data OR:
+  high-quality DAQ application-level simulators that match the form,
+  volume, file paths, compressibility, and cadence of the expected
+  instrument data, running on end node computers that are the production
+  hardware or equivalent to it. Scientific validity of the data content
+  is not essential.
+\item
+  Archiver/forwarders installed at Base running on end node computers
+  that are the production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational
+volume.After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1612 LVV-E3647-4042:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1168 - Verify Summit - Base Network Integration }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Approved}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1168}{\textit{ LVV-T1168 } }
+test case in Jira.
+
+Verify the integration of the summit to base network by demonstrating a
+sustained and uninterrupted transfer of data between summit and base
+over 1 day period at or exceeding rates specified in \citeds{LDM-142}. Done in 3
+phases in collaboration with equipment/installation vendors (see test
+procedure).
+
+\textbf{ Preconditions}:\\
+PMCS DMTC-7400-2330 COMPLETE\\
+By phase:
+
+\begin{enumerate}
+\tightlist
+\item
+  Posts from Cerro Pachon to AURA Gatehouse repaired/improved. ~Fiber
+  installed on posts from Cerro Pachon to AURA Gatehouse. ~Fiber
+  installed from AURA Gatehouse to AURA compound in La Serena. OTDR
+  purchased.
+\item
+  AURA DWDM installed in caseta on Cerro Pachon and in existing computer
+  room in La Serena. ~DTN installed in La Serena. ~DTN loaded with
+  software and test data staged.
+\item
+  Base Data Center (BDC) ready for installation of LSST DWDM. ~Fiber
+  connecting existing computer room to BDC. ~LSST DWDM equipment
+  installed in Summit Computer Room and BDC.
+\end{enumerate}
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1168 LVV-E3648-4043:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
+
+\paragraph{ LVV-T1097 - Verify Summit Facility Network Implementation }\mbox{}\\
+
+Version \textbf{1}.
+Status \textbf{Draft}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1097}{\textit{ LVV-T1097 } }
+test case in Jira.
+
+Verify that data acquired by a AuxTel DAQ can be transferred to Summit
+DWDM and loaded in the EFD without problems.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Summit Control Network and Camera Data Backbone installed and
+  operating properly.
+\item
+  Summit - Base Network installed and operating properly.
+\item
+  EITHER: AuxTel hardware and control systems are functional with
+  LATISS. AuxTel TCS, AuxTel EFD, AuxTel CCS, AuxTel DAQ are connected
+  via Control Network on Summit to Rubin Observatory DWDM (with at least
+  2 x 10 Gbps ethernet port client cards) OR: high-quality DAQ
+  application-level simulators that match the form, volume, file paths,
+  compressibility, and cadence of the expected instrument data, running
+  on end node computers that are the production hardware or equivalent
+  to it. Scientific validity of the data content is not essential.
+\item
+  AuxTel Archiver/forwarders installed in Summit and operating properly
+  running on end node computers that are the production hardware or
+  equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, LSSTCam) become
+available. ~Final verification will be tested at full operational
+volume. After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. ~This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Execution status: {\bf  }
+
+Final comment:\\
+
+
+
+Detailed steps results LVV-C275-LVV-T1097 LVV-E3649-4044:\\
+{\bf Note:} Steps "Not Executed" and with No Result are not shown in this report.\\
 
 \paragraph{ LVV-T83 - Verify implementation of Bad Pixel Map }\mbox{}\\
 
