@@ -1,0 +1,7 @@
+computeSite: summit
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTComCam/nightly-validation.yaml#step1"  # if problems, put full path to file
+payload:
+  butlerConfig: "/repo/LSSTComCam"
+  payloadName: "LVV-T191"
+  inCollection: "LSSTComCam/defaults"
+  dataQuery: "exposure.day_obs=20241027 and instrument='LSSTComCam' and exposure.observation_type IN ('science', 'acq')"

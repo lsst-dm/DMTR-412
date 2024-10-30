@@ -1,0 +1,22 @@
+(lsst-scipipe-9.0.0) [lguy@htcondor test_LVV-T191]$ bps report --id 1873.0
+ X   STATE   %S   ID   OPERATOR PROJECT CAMPAIGN PAYLOAD                RUN               
+--- ------- --- ------ -------- ------- -------- -------- --------------------------------
+  F RUNNING   4 1873.0     lguy                  LVV-T191 u_lguy_LVV-T191_20241029T010847Z
+
+
+Path: /home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z
+Global job id: htcondor.cp.lsst.org#1873.0#1730164161
+
+
+                        UNKNOWN MISFIT UNREADY READY PENDING RUNNING DELETED HELD SUCCEEDED FAILED PRUNED EXPECTED
+----------------------- ------- ------ ------- ----- ------- ------- ------- ---- --------- ------ ------ --------
+TOTAL                         0      0     634     0       0     139       0    0        38      1      0      812
+----------------------- ------- ------ ------- ----- ------- ------- ------- ---- --------- ------ ------ --------
+pipetaskInit                  0      0       0     0       0       0       0    0         1      0      0        1
+isr                           0      0       0     0       0     126       0    0        36      0      0      162
+characterizeImage             0      0     148     0       0      12       0    0         1      1      0      162
+calibrate                     0      0     161     0       0       1       0    0         0      0      0      162
+writePreSourceTable           0      0     162     0       0       0       0    0         0      0      0      162
+transformPreSourceTable       0      0     162     0       0       0       0    0         0      0      0      162
+finalJob                      0      0       1     0       0       0       0    0         0      0      0        1
+

@@ -1,0 +1,103 @@
+(lsst-scipipe-9.0.0) [lguy@htcondor test_LVV-T191]$ bps submit LVV-T191.yaml
+lsst.ctrl.bps.drivers INFO: DISCLAIMER: All values regarding memory consumption reported below are approximate and may not accurately reflect actual memory usage by the bps process.
+lsst.ctrl.bps.drivers INFO: The workflow is submitted to the local Data Facility.
+lsst.ctrl.bps.drivers INFO: Starting submission process
+lsst.ctrl.bps.drivers INFO: Initializing execution environment
+Submit dir: /home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z
+lsst.ctrl.bps.drivers INFO: Initializing execution environment completed: Took 6.7785 seconds; current memory usage: 0.199 Gibyte, delta: 0.012 Gibyte, peak delta: 0.017 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.204 Gibyte (main), 0.000 Gibyte (largest child process)
+lsst.ctrl.bps.drivers INFO: Starting acquire stage (generating and/or reading quantum graph)
+lsst.ctrl.bps.pre_transform INFO: Creating quantum graph
+lsst.ctrl.bps.pre_transform INFO: /project/stack/conda/envs/lsst-scipipe-9.0.0/share/eups/Linux64/ctrl_mpexec/g3abcffb608+e4b6b84164/bin/pipetask --long-log --log-level=VERBOSE qgraph --butler-config /repo/LSSTComCam -i LSSTComCam/defaults -o u/lguy/LVV-T191 --output-run u/lguy/LVV-T191/20241029T010847Z --pipeline /project/stack/conda/envs/lsst-scipipe-9.0.0/share/eups/Linux64/drp_pipe/g406d2130e7+9fa41d294b/pipelines/LSSTComCam/nightly-validation.yaml#step1 --save-qgraph /home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z/u_lguy_LVV-T191_20241029T010847Z.qgraph --qgraph-datastore-records -d "exposure.day_obs=20241027 and instrument='LSSTComCam' and exposure.observation_type IN ('science', 'acq')" 
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:03.706+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:344) - Processing pipeline subgraph 1 of 1 with 5 task(s).
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.706+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:350) - Subgraph tasks: [isr, characterizeImage, calibrate, writePreSourceTable, transformPreSourceTable]
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.708+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:495) - Querying for data IDs with arguments:
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.708+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:496) -   dimensions=['band', 'instrument', 'day_obs', 'detector', 'group', 'physical_filter', 'exposure', 'visit'],
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.709+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:497) -   dataId={'instrument': 'LSSTComCam'},
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.709+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:499) -   where="exposure.day_obs=20241027 and instrument='LSSTComCam' and exposure.observation_type IN ('science', 'acq')",
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.709+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:501) -   datasets=['raw'],
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:03.709+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:503) -   collections=['LSSTComCam/raw/all', 'LSSTComCam/calib/DM-46360/isrTaskLSST/flat-i.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/flat-r.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/flat-g.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/dark.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/bias.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/bfk.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/ptc.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/linearizer.20240926a', 'LSSTComCam/calib/DM-46360/isrTaskLSST/defects.20240926a', 'LSSTComCam/calib/DM-45877', 'LSSTComCam/calib/DM-45877/unbounded', 'refcats'],
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:03.935+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:163) - Iterating over query results to associate quanta with datasets.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.008+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:205) - Initial bipartite graph has 810 quanta, 3900 dataset nodes, and 4860 edges from 162 query row(s).
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.048+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:242) - Found 162 overall-input dataset(s) of type 'raw'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.100+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'defects' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.143+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'crosstalk' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.185+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'bias' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.226+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'dark' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.289+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'camera' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.371+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'bfk' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.412+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'ptc' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.473+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 162 prerequisite input edge(s) from dataset type 'linearizer' to task 'isr'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.591+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 454 prerequisite input edge(s) from dataset type 'the_monster_20240904' to task 'calibrate'.
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:04.685+00:00 lsst.pipe.base.quantum_graph_builder ()(all_dimensions_quantum_graph_builder.py:367) - Added 454 prerequisite input edge(s) from dataset type 'the_monster_20240904' to task 'calibrate'.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.755+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:572) - Generated 162 quanta for task isr.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.785+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:572) - Generated 162 quanta for task characterizeImage.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.837+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:572) - Generated 162 quanta for task calibrate.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.858+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:572) - Generated 162 quanta for task writePreSourceTable.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:04.879+00:00 lsst.pipe.base.quantum_graph_builder ()(quantum_graph_builder.py:572) - Generated 162 quanta for task transformPreSourceTable.
+
+lsst.ctrl.bps.pre_transform INFO: INFO 2024-10-29T01:09:11.244+00:00 lsst.ctrl.mpexec.cmdLineFwk ()(cmdLineFwk.py:909) - QuantumGraph contains 810 quanta for 5 tasks, graph ID: '1730164151.1788852-957876'
+Quanta          Tasks         
+------ -----------------------
+   162                     isr
+   162       characterizeImage
+   162               calibrate
+   162     writePreSourceTable
+   162 transformPreSourceTable
+
+lsst.ctrl.bps.pre_transform INFO: VERBOSE 2024-10-29T01:09:11.244+00:00 lsst.ctrl.mpexec.cmdLineFwk ()(cmdLineFwk.py:694) - Writing QuantumGraph to '/home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z/u_lguy_LVV-T191_20241029T010847Z.qgraph'.
+
+lsst.ctrl.bps.pre_transform INFO: Completed creating quantum graph: Took 19.2857 seconds
+lsst.ctrl.bps.pre_transform INFO: Reading quantum graph from '/home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z/u_lguy_LVV-T191_20241029T010847Z.qgraph'
+lsst.ctrl.bps.pre_transform INFO: Completed reading quantum graph: Took 6.2427 seconds
+lsst.ctrl.bps.drivers INFO: Acquire stage completed: Took 25.5348 seconds; current memory usage: 0.452 Gibyte, delta: 0.253 Gibyte, peak delta: 0.247 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.452 Gibyte (main), 0.482 Gibyte (largest child process)
+lsst.ctrl.bps.drivers INFO: Starting cluster stage (grouping quanta into jobs)
+lsst.ctrl.bps.drivers INFO: Cluster stage completed: Took 0.0314 seconds; current memory usage: 0.452 Gibyte, delta: 0.000 Gibyte, peak delta: 0.000 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.452 Gibyte (main), 0.482 Gibyte (largest child process)
+lsst.ctrl.bps.drivers INFO: ClusteredQuantumGraph contains 810 cluster(s)
+lsst.ctrl.bps.drivers INFO: Starting transform stage (creating generic workflow)
+lsst.ctrl.bps.drivers INFO: Generic workflow name 'u_lguy_LVV-T191_20241029T010847Z'
+lsst.ctrl.bps.drivers INFO: Transform stage completed: Took 0.1669 seconds; current memory usage: 0.453 Gibyte, delta: 0.001 Gibyte, peak delta: 0.001 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.453 Gibyte (main), 0.482 Gibyte (largest child process)
+lsst.ctrl.bps.drivers INFO: GenericWorkflow contains 812 job(s) (including final)
+lsst.ctrl.bps.drivers INFO: Starting prepare stage (creating specific implementation of workflow)
+lsst.ctrl.bps.htcondor.htcondor_service INFO: Completed HTCondor workflow creation: Took 0.0546 seconds
+lsst.ctrl.bps.htcondor.htcondor_service INFO: Completed writing out HTCondor workflow: Took 0.8290 seconds
+lsst.ctrl.bps.drivers INFO: Prepare stage completed: Took 0.8908 seconds; current memory usage: 0.457 Gibyte, delta: 0.004 Gibyte, peak delta: 0.004 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.457 Gibyte (main), 0.482 Gibyte (largest child process)
+lsst.ctrl.bps.drivers INFO: Starting submit stage
+lsst.ctrl.bps.submit INFO: Submitting run to a workflow management system for execution
+lsst.ctrl.bps.htcondor.htcondor_service INFO: Submitting from directory: /home/lguy/repos/dmtr-412/scripts/test_LVV-T191/submit/u/lguy/LVV-T191/20241029T010847Z
+lsst.ctrl.bps.submit INFO: Completed submitting to a workflow management system: Took 0.2570 seconds
+lsst.ctrl.bps.drivers INFO: Run 'u_lguy_LVV-T191_20241029T010847Z' submitted for execution with id '1873.0'
+lsst.ctrl.bps.drivers INFO: Completed submit stage: Took 0.2633 seconds; current memory usage: 0.458 Gibyte, delta: 0.001 Gibyte, peak delta: 0.001 Gibyte
+lsst.ctrl.bps.drivers INFO: Completed entire submission process: Took 33.7108 seconds; current memory usage: 0.458 Gibyte, delta: 0.271 Gibyte, peak delta: 0.271 Gibyte
+lsst.ctrl.bps.drivers INFO: Peak memory usage for bps process 0.458 Gibyte (main), 0.482 Gibyte (largest child process)
+Run Id: 1873.0
+Run Name: u_lguy_LVV-T191_20241029T010847Z
