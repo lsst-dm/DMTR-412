@@ -25,11 +25,12 @@ jobs:
 
       - name: docugen
         env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
-          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
         run: |
-          docsteady  --namespace DM generate-tpr --includeall True LVV-P117  DMTR-412.tex
+          pip install docsteady
+          docsteady  --namespace DM generate-tpr LVV-P117  DMTR-412.tex
         shell: bash
 
       - name: Create commit
