@@ -29,8 +29,7 @@ jobs:
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
-          pip install docsteady
-          docsteady  --namespace DM generate-tpr LVV-P117  DMTR-412.tex
+          docsteady  --namespace DM generate-tpr --includeall True LVV-P117  DMTR-412.tex
         shell: bash
 
       - name: Create commit
