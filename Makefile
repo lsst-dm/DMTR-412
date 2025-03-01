@@ -39,7 +39,7 @@ meta.tex: Makefile .FORCE
 
 
 generate: .FORCE
-	docsteady --namespace $(NAMESPACE) generate-tpr $(PLAN) $(DOCNAME).tex
+	docsteady --namespace $(NAMESPACE) generate-tpr --includeall True $(PLAN) $(DOCNAME).tex
 
 
 #Traditional acronyms are better in this document
