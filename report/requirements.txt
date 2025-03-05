@@ -1,0 +1,7 @@
+pandas
+bokeh
+selenium
+chromedriver-binary
+pandas-bokeh
+tabulate
+prettytable

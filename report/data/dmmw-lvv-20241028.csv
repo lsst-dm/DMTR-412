@@ -1,0 +1,128 @@
+Issue key,Issue id,Summary,Status,Custom field (Requirement Priority)
+LVV-19739,301503,DMS-MWBT-REQ-0014-V-01: Collection Layering: Data Release and external hardware_1,Not Covered,1a
+LVV-19740,293196,DMS-MWBT-REQ-0053-V-01: Enabling PipelineTasks to execute_1,Verified,1a
+LVV-19741,293193,DMS-MWBT-REQ-0067-V-01: Consistent Output Interface_1,Verified,1a
+LVV-19742,293197,DMS-MWST-REQ-0013-V-01: I/O via Butler_1,Verified,
+LVV-19743,293198,DMS-MWBT-REQ-0005-V-01: Repository Removal_1,Verified,1a
+LVV-19744,301646,DMS-MWBT-REQ-0023-V-01: Dimension Update_1,Not Covered,1b
+LVV-19745,301502,DMS-MWBT-REQ-0051-V-01: Override part of a composite dataset_1,Not Covered,1a
+LVV-19746,293199,DMS-MWBT-REQ-0073-V-01: Blocked write operation_1,Verified,1a
+LVV-19747,293202,DMS-MWBT-REQ-0074-V-01: No clobber_1,Verified,1a
+LVV-19748,293201,DMS-MWBT-REQ-0020-V-01: Sky Tile Definition_1,Verified,1a
+LVV-19749,293200,DMS-MWBT-REQ-0025-V-01: Format pluggability_1,Verified,1a
+LVV-19750,293203,DMS-MWST-REQ-0014-V-01: Butler dataset type configuration_1,Verified,
+LVV-19751,301647,DMS-MWBT-REQ-0011-V-01: Subsetting a DataRepository with data transfer_1,Not Covered,1a
+LVV-19752,301649,DMS-MWBT-REQ-0057-V-01: Queries as Datasets_1,Not Covered,1a
+LVV-19753,293204,DMS-MWBT-REQ-0054-V-01: Failure on missing input file_1,Verified,1a
+LVV-19754,304805,DMS-MWBT-REQ-0078-V-01: Filename invariance_1,Covered,1a
+LVV-19755,301504,DMS-MWBT-REQ-0079-V-01: Output Staging_1,Not Covered,1b
+LVV-19756,293205,DMS-MWBT-REQ-0034-V-01: Item from Composite Datasets_1,Verified,1a
+LVV-19757,293206,DMS-MWBT-REQ-0060-V-01: Writer configurability_1,Verified,1a
+LVV-19758,301506,DMS-MWBT-REQ-0050-V-01: Reading up-to-date visit metadata_1,Not Covered,1a
+LVV-19759,293207,DMS-MWBT-REQ-0075-V-01: Data Output references_1,Verified,1a
+LVV-19760,293208,DMS-MWBT-REQ-0082-V-01: Multiple parallel input Collections_1,Verified,1a
+LVV-19761,301505,DMS-MWBT-REQ-0035-V-01: Metadata merging_1,Not Covered,1a
+LVV-19762,293209,DMS-MWST-REQ-0001-V-01: Complete algorithmic work specification_1,Verified,
+LVV-19763,293210,DMS-MWST-REQ-0023-V-01: Butler instantiation_1,Verified,
+LVV-19764,293211,DMS-MWBT-REQ-0066-V-01: Output location_1,Verified,1a
+LVV-19765,301507,DMS-MWBT-REQ-0089-V-01: Filter by data quality_1,Not Covered,1a
+LVV-19766,304807,DMS-MWBT-REQ-0055-V-01: Local proxy_1,Covered,1a
+LVV-19767,293216,DMS-MWBT-REQ-0047-V-01: External Data Ingest and Serve_1,Verified,1a
+LVV-19768,301508,DMS-MWBT-REQ-0028-V-01: VOSpace_1,Not Covered,1a
+LVV-19769,293214,DMS-MWBT-REQ-0017-V-01: Collection Layering: Science Platform_1,Verified,1a
+LVV-19770,293212,DMS-MWST-REQ-0003-V-01: Programming API_1,Verified,
+LVV-19771,301509,DMS-MWBT-REQ-0096-V-01: Provenance in Datasets_1,Not Covered,2
+LVV-19772,293213,DMS-MWBT-REQ-0058-V-01: Local caching of remote resources_1,Verified,1a
+LVV-19773,293218,DMS-MWBT-REQ-0031-V-01: I/O using cloud storage_1,Verified,1a
+LVV-19774,293220,DMS-MWST-REQ-0005-V-01: Pipeline configuration_1,Verified,
+LVV-19775,301511,DMS-MWBT-REQ-0041-V-01: Querying the Engineering and Facility Database_1,Not Covered,1a
+LVV-19776,301510,DMS-MWBT-REQ-0044-V-01: Unified interface to summit/base EFD and transformed EFD_1,Not Covered,1a
+LVV-19777,293217,DMS-MWST-REQ-0018-V-01: Multiple specializations of execution environments_1,Verified,
+LVV-19778,304806,DMS-MWBT-REQ-0007-V-01: Repository Merging_1,Covered,1a
+LVV-19779,293215,DMS-MWBT-REQ-0059-V-01: Creation of new DatasetTypes_1,Verified,1a
+LVV-19780,293219,DMS-MWBT-REQ-0009-V-01: LSST Data Ingest: calibration_1,Verified,1a
+LVV-19781,292921,DMS-MWBT-REQ-0062-V-01: Writing FITS tables_1,Verified,1a
+LVV-19782,292923,DMS-MWBT-REQ-0048-V-01: Third party datasets_1,Verified,1a
+LVV-19783,301513,DMS-MWST-REQ-0030-V-01: Asynchronous data retrieval_1,Not Covered,
+LVV-19784,292925,DMS-MWBT-REQ-0081-V-01: Multiple chained input Collections_1,Verified,1a
+LVV-19785,292922,DMS-MWBT-REQ-0046-V-01: External Data Ingest_1,Verified,1a
+LVV-19786,301512,DMS-MWST-REQ-0009-V-01: Butler instances_1,Not Covered,
+LVV-19787,292924,DMS-MWBT-REQ-0064-V-01: Append to a DataRepository_1,Verified,1a
+LVV-19788,292929,DMS-MWBT-REQ-0013-V-01: Collection Layering: Data Release and Science Platform_1,Verified,1a
+LVV-19789,301514,DMS-MWST-REQ-0029-V-01: Alert and DIA Object transmission rate_1,Not Covered,
+LVV-19790,301516,DMS-MWBT-REQ-0090-V-01: Filter by config_1,Not Covered,1a
+LVV-19791,292926,DMS-MWST-REQ-0022-V-01: Serialization of workflow DAG_1,Verified,
+LVV-19792,292928,DMS-MWST-REQ-0002-V-01: Pipeline execution context_1,Verified,
+LVV-19793,301515,DMS-MWST-REQ-0031-V-01: Task memoization_1,Not Covered,
+LVV-19794,292927,DMS-MWST-REQ-0021-V-01: Generating a DAG_1,Verified,
+LVV-19795,292930,DMS-MWST-REQ-0004-V-01: Pipeline specification_1,Verified,
+LVV-19796,292933,DMS-MWST-REQ-0011-V-01: Phases of execution_1,Verified,
+LVV-19797,292932,DMS-MWBT-REQ-0004-V-01: Dataset Deletion_1,Verified,1a
+LVV-19798,292931,DMS-MWBT-REQ-0012-V-01: Collection Layering_1,Verified,1a
+LVV-19799,292934,DMS-MWBT-REQ-0068-V-01: Outputs from Data Release Production_1,Verified,1a
+LVV-19800,301519,DMS-MWST-REQ-0027-V-01: Campaign specifications_1,Not Covered,
+LVV-19801,301517,DMS-MWBT-REQ-0026-V-01: Dump current configuration_1,Not Covered,1a
+LVV-19802,292935,DMS-MWBT-REQ-0030-V-01: I/O using distributed file system_1,Verified,1a
+LVV-19803,301518,DMS-MWBT-REQ-0038-V-01: Access to outputs from notebook batch jobs_1,Not Covered,1a
+LVV-19804,301520,DMS-MWBT-REQ-0019-V-01: DataRepository Upload_1,Not Covered,1a
+LVV-19805,292936,DMS-MWST-REQ-0025-V-01: Execution logging mechanism_1,Verified,
+LVV-19806,292937,DMS-MWBT-REQ-0080-V-01: Dimension lookup: processing driven_1,Verified,1a
+LVV-19807,292940,DMS-MWBT-REQ-0063-V-01: One Dataset to multiple output storage_1,Verified,1a
+LVV-19808,301521,DMS-MWST-REQ-0026-V-01: Fine-grained provenance configuration_1,Not Covered,
+LVV-19809,292938,DMS-MWST-REQ-0012-V-01: Implied inputs_1,Verified,
+LVV-19810,292939,DMS-MWBT-REQ-0088-V-01: Filter by non-DatasetRef Database Entries_1,Verified,1a
+LVV-19811,301522,DMS-MWBT-REQ-0072-V-01: Publishing to external microservices_1,Not Covered,1a
+LVV-19812,301524,DMS-MWBT-REQ-0052-V-01: Input Staging_1,Not Covered,1b
+LVV-19813,292941,DMS-MWBT-REQ-0008-V-01: LSST Data Ingest: science_1,Verified,1a
+LVV-19814,292944,DMS-MWBT-REQ-0024-V-01: Registries of Collections_1,Verified,1a
+LVV-19815,292943,DMS-MWBT-REQ-0061-V-01: Writing FITS images_1,Verified,1a
+LVV-19816,301523,DMS-MWBT-REQ-0029-V-01: Science Platform VOSpace_1,Not Covered,1a
+LVV-19817,292942,DMS-MWBT-REQ-0002-V-01: Versioning of DataRepositories_1,Verified,1a
+LVV-19818,301527,DMS-MWBT-REQ-0094-V-01: Provenance tracing_1,Not Covered,1a
+LVV-19819,292945,DMS-MWBT-REQ-0006-V-01: Dataset Garbage Collection_1,Verified,1a
+LVV-19820,301525,DMS-MWBT-REQ-0040-V-01: Remote Input Storage_1,Not Covered,1a
+LVV-19821,292946,DMS-MWBT-REQ-0071-V-01: Outputs from test processing runs_1,Verified,1a
+LVV-19822,292947,DMS-MWBT-REQ-0036-V-01: Consistent Input Interface_1,Verified,1a
+LVV-19823,292948,DMS-MWBT-REQ-0037-V-01: Accessing official Data Releases_1,Verified,1a
+LVV-19824,292949,DMS-MWBT-REQ-0039-V-01: Access to outputs from test processing runs_1,Verified,1a
+LVV-19825,301526,DMS-MWBT-REQ-0095-V-01: Dataset lookup: provenance driven_1,Not Covered,1a
+LVV-19826,292950,DMS-MWBT-REQ-0033-V-01: Parameterized Subset of a Dataset_1,Verified,1a
+LVV-19827,292951,DMS-MWBT-REQ-0022-V-01: Multiple Cameras_1,Verified,1b
+LVV-19828,292952,DMS-MWBT-REQ-0076-V-01: Strong exception guarantee_1,Verified,1a
+LVV-19829,301528,DMS-MWBT-REQ-0045-V-01: Metadata association_1,Not Covered,1a
+LVV-19830,292953,DMS-MWBT-REQ-0077-V-01: Combining composite datasets for export_1,Verified,1a
+LVV-19831,301529,DMS-MWBT-REQ-0065-V-01: Remote Output DataRepositories_1,Not Covered,1a
+LVV-19832,301530,DMS-MWBT-REQ-0043-V-01: Read from the base EFD_1,Not Covered,1a
+LVV-19833,292954,DMS-MWBT-REQ-0092-V-01: Introspection for DatasetExpressions_1,Verified,3
+LVV-19834,301531,DMS-MWBT-REQ-0042-V-01: Read from transformed EFD_1,Not Covered,1a
+LVV-19835,292955,DMS-MWBT-REQ-0021-V-01: Multiple simultaneous sky tile definitions_1,Verified,2
+LVV-19836,301532,DMS-MWBT-REQ-0032-V-01: Reading persisted data_1,Not Covered,1a
+LVV-19837,301533,DMS-MWBT-REQ-0027-V-01: Dataset Storage Elision_1,Not Covered,1a
+LVV-19838,301535,DMS-MWBT-REQ-0091-V-01: DataRepository metadata lookup_1,Not Covered,1b
+LVV-19839,301534,DMS-MWBT-REQ-0093-V-01: Provenance to raw data_1,Not Covered,2
+LVV-19840,301536,DMS-MWBT-REQ-0010-V-01: Subsetting a DataRepository without data transfer_1,Not Covered,1a
+LVV-19841,301537,DMS-MWBT-REQ-0069-V-01: Outputs from Alert Production_1,Not Covered,1a
+LVV-19842,306028,DMS-MWBT-REQ-0015-V-01: Collection Layering: Data Release Production_1,In Verification,1a
+LVV-19843,301538,DMS-MWST-REQ-0028-V-01: Round trip time for DIA Sources and DIA Objects_1,Not Covered,
+LVV-19844,301539,DMS-MWST-REQ-0019-V-01: Mandatory supported specializations_1,Not Covered,
+LVV-19845,292956,DMS-MWST-REQ-0020-V-01: Standardized framework implementation_1,Verified,
+LVV-19846,301540,DMS-MWST-REQ-0024-V-01: Provenance discovery_1,Not Covered,
+LVV-19847,292957,DMS-MWBT-REQ-0084-V-01: Data Discovery for Data Release Production_1,Verified,1a
+LVV-19848,292960,DMS-MWBT-REQ-0083-V-01: Consistent Discovery Interface_1,Verified,1a
+LVV-19849,292958,DMS-MWBT-REQ-0003-V-01: Repository version migration_1,Verified,2
+LVV-19850,292959,DMS-MWST-REQ-0006-V-01: Dataset grouping_1,Verified,
+LVV-19851,292961,DMS-MWBT-REQ-0085-V-01: Data Discovery for test processing runs_1,Verified,1a
+LVV-19852,292962,DMS-MWBT-REQ-0001-V-01: Relocatability of DataRepositories_1,Verified,1a
+LVV-19853,301541,DMS-MWST-REQ-0015-V-01: Programmatic insertions_1,Not Covered,
+LVV-19854,301544,DMS-MWBT-REQ-0016-V-01: Collection Layering: Data Release Production intermediates to external hardware_1,Not Covered,1a
+LVV-19855,301545,DMS-MWBT-REQ-0086-V-01: Data Discovery for notebook batch processing_1,Not Covered,1a
+LVV-19856,292963,DMS-MWBT-REQ-0070-V-01: Outputs from Science Platform_1,Verified,1a
+LVV-19857,292964,DMS-MWST-REQ-0016-V-01: Pre-execution overrides_1,Verified,
+LVV-19858,306031,DMS-MWBT-REQ-0049-V-01: Reading raw data_1,In Verification,1a
+LVV-19859,292965,DMS-MWST-REQ-0007-V-01: Changes of parallelization_1,Verified,
+LVV-19860,292966,DMS-MWBT-REQ-0087-V-01: Dataset Overrides_1,Verified,1a
+LVV-19861,292968,DMS-MWST-REQ-0010-V-01: Executable by supervisory framework_1,Verified,
+LVV-19862,301542,DMS-MWBT-REQ-0056-V-01: Aliases to Selections on Catalogs_1,Not Covered,1a
+LVV-19863,292967,DMS-MWST-REQ-0008-V-01: Use of Tasks and configurations_1,Verified,
+LVV-19864,292971,DMS-MWST-REQ-0017-V-01: Pipeline specification definition_1,Verified,
+LVV-19865,301543,DMS-MWBT-REQ-0018-V-01: Collection Layering: Science Platform to external hardware_1,Not Covered,1a

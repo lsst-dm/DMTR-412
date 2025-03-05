@@ -1,0 +1,311 @@
+Issue key,Issue id,Summary,Status,Custom field (Requirement Priority)
+LVV-3,305177,DMS-REQ-0002-V-01: Transient Alert Distribution,In Verification,1b
+LVV-5,292078,DMS-REQ-0008-V-01: Pipeline Availability,Covered,1b
+LVV-6,305826,DMS-REQ-0009-V-01: Simulated Data,Verified,1b
+LVV-7,305830,DMS-REQ-0010-V-01: Difference Exposures,Verified,1b
+LVV-8,305178,DMS-REQ-0018-V-01: Raw Science Image Data Acquisition,Verified,1a
+LVV-9,305174,DMS-REQ-0020-V-01: Wavefront Sensor Data Acquisition,In Verification,1a
+LVV-10,302106,DMS-REQ-0022-V-01: Crosstalk Corrected Science Image Data Acquisition,Descoped,2
+LVV-11,305828,DMS-REQ-0024-V-01: Raw Image Assembly,Verified,1a
+LVV-12,305831,DMS-REQ-0029-V-01: Generate Photometric Zeropoint for Visit Image,Verified,1b
+LVV-13,305833,DMS-REQ-0030-V-01: Absolute accuracy of WCS,Verified,1a
+LVV-14,305176,DMS-REQ-0032-V-01: Image Differencing,In Verification,1b
+LVV-15,305832,DMS-REQ-0033-V-01: Provide Source Detection Software,Verified,1a
+LVV-16,292084,DMS-REQ-0034-V-01: Associate Sources to Objects,Covered,1b
+LVV-17,292073,DMS-REQ-0042-V-01: Provide Astrometric Model,Covered,1b
+LVV-18,293027,DMS-REQ-0043-V-01: Provide Calibrated Photometry,Monitoring,1a
+LVV-19,292075,DMS-REQ-0046-V-01: Provide Photometric Redshifts of Galaxies,Covered,2
+LVV-20,305835,DMS-REQ-0047-V-01: Provide PSF for Coadded Images,Verified,1b
+LVV-21,292091,DMS-REQ-0052-V-01: Enable a Range of Shape Measurement Approaches,Covered,1b
+LVV-22,305175,DMS-REQ-0059-V-01: Bad Pixel Map,In Verification,1a
+LVV-23,305837,DMS-REQ-0060-V-01: Bias Residual Image,Verified,1a
+LVV-24,305179,DMS-REQ-0061-V-01: Crosstalk Correction Matrix,In Verification,1a
+LVV-25,292081,DMS-REQ-0062-V-01: Illumination Correction Frame,Covered,1b
+LVV-26,292089,DMS-REQ-0063-V-01: Monochromatic Flatfield Data Cube,Covered,1b
+LVV-27,292096,DMS-REQ-0065-V-01: Provide Image Access Services,Covered,1b
+LVV-28,305180,DMS-REQ-0068-V-01: Raw Science Image Metadata,In Verification,1a
+LVV-29,305183,DMS-REQ-0069-V-01: Processed Visit Images,In Verification,1a
+LVV-30,305838,DMS-REQ-0070-V-01: Generate PSF for Visit Images,Verified,1b
+LVV-31,305843,DMS-REQ-0072-V-01: Processed Visit Image Content,Verified,1a
+LVV-32,292099,DMS-REQ-0074-V-01: Difference Exposure Attributes,Covered,1b
+LVV-33,305840,DMS-REQ-0075-V-01: Catalog Queries,Verified,1a
+LVV-34,292094,DMS-REQ-0077-V-01: Maintain Archive Publicly Accessible,Covered,1b
+LVV-35,305844,DMS-REQ-0078-V-01: Catalog Export Formats,Verified,1a
+LVV-36,292101,DMS-REQ-0089-V-01: Solar System Objects Available Within Specified Time,Covered,1b
+LVV-37,292110,DMS-REQ-0094-V-01: Keep Historical Alert Archive,Covered,1b
+LVV-38,292108,DMS-REQ-0096-V-01: Generate Data Quality Report Within Specified Time,In Verification,1a
+LVV-39,292106,DMS-REQ-0097-V-01: Level 1 Data Quality Report Definition,Monitoring,1a
+LVV-40,292104,DMS-REQ-0098-V-01: Generate DMS Performance Report Within Specified Time,Covered,1b
+LVV-41,292115,DMS-REQ-0099-V-01: Level 1 Performance Report Definition,Covered,1b
+LVV-42,292113,DMS-REQ-0100-V-01: Generate Calibration Report Within Specified Time,Covered,1b
+LVV-43,292118,DMS-REQ-0101-V-01: Level 1 Calibration Report Definition,In Verification,1a
+LVV-44,292124,DMS-REQ-0102-V-01: Provide Engineering & Facility Database Archive,In Verification,1a
+LVV-45,292121,DMS-REQ-0103-V-01: Produce Images for EPO,Covered,1b
+LVV-46,292123,DMS-REQ-0106-V-01: Coadded Image Provenance,Covered,1b
+LVV-47,292127,DMS-REQ-0119-V-01: DAC resource allocation for Level 3 processing,Covered,2
+LVV-48,292128,DMS-REQ-0120-V-01: Level 3 Data Product Self Consistency,Covered,2
+LVV-49,292125,DMS-REQ-0121-V-01: Provenance for Level 3 processing at DACs,Covered,2
+LVV-50,292130,DMS-REQ-0122-V-01: Access to catalogs for external Level 3 processing,Covered,2
+LVV-51,292126,DMS-REQ-0123-V-01: Access to input catalogs for DAC-based Level 3 processing,Covered,2
+LVV-52,292129,DMS-REQ-0124-V-01: Federation with external catalogs,Covered,2
+LVV-53,292131,DMS-REQ-0125-V-01: Software framework for Level 3 catalog processing,Covered,2
+LVV-54,292136,DMS-REQ-0126-V-01: Access to images for external Level 3 processing,Covered,2
+LVV-55,292132,DMS-REQ-0127-V-01: Access to input images for DAC-based Level 3 processing,Covered,2
+LVV-56,292133,DMS-REQ-0128-V-01: Software framework for Level 3 image processing,Covered,2
+LVV-57,305181,DMS-REQ-0130-V-01: Calibration Data Products,In Verification,1a
+LVV-58,292138,DMS-REQ-0131-V-01: Time allowed to process calibs,Covered,2
+LVV-59,305186,DMS-REQ-0132-V-01: Calibration Image Provenance,In Verification,1a
+LVV-60,292135,DMS-REQ-0155-V-01: Provide Data Access Services,In Verification,1a
+LVV-61,305841,DMS-REQ-0156-V-01: Provide Pipeline Execution Services,Verified,1a
+LVV-62,305184,DMS-REQ-0158-V-01: Provide Pipeline Construction Services,In Verification,1a
+LVV-63,292134,DMS-REQ-0160-V-01: Provide User Interface Services,Covered,1b
+LVV-64,292139,"DMS-REQ-0161-V-01: Optimization of Cost, Reliability and Availability in Order",Covered,1b
+LVV-65,292137,DMS-REQ-0162-V-01: Pipeline Throughput,Covered,1b
+LVV-66,291961,DMS-REQ-0163-V-01: Re-processing Capacity,Covered,1b
+LVV-67,291962,DMS-REQ-0164-V-01: Temporary Storage for Communications Links,Covered,1b
+LVV-68,292140,"DMS-REQ-0165-V-01: Infrastructure Sizing for ""catching up""",Covered,1b
+LVV-69,291965,DMS-REQ-0166-V-01: Incorporate Fault-Tolerance,Covered,1b
+LVV-70,291963,DMS-REQ-0167-V-01: Incorporate Autonomics,Covered,2
+LVV-71,291968,DMS-REQ-0168-V-01: Summit Facility Data Communications,In Verification,1a
+LVV-72,291964,DMS-REQ-0170-V-01: Prefer Computing and Storage Down,Covered,1b
+LVV-73,305182,DMS-REQ-0171-V-01: Summit to Base Network,In Verification,1a
+LVV-74,291966,DMS-REQ-0172-V-01: Summit to Base Network Availability,Covered,1b
+LVV-75,291967,DMS-REQ-0173-V-01: Summit to Base Network Reliability,Covered,1b
+LVV-76,291969,DMS-REQ-0174-V-01: Summit to Base Network Secondary Link,Covered,1b
+LVV-77,291970,DMS-REQ-0175-V-01: Summit to Base Network Ownership and Operation,In Verification,1b
+LVV-78,291972,DMS-REQ-0176-V-01: Base Facility Infrastructure,In Verification,1a
+LVV-79,302109,DMS-REQ-0177-V-01: Base Facility Temporary Storage,Descoped,
+LVV-80,305846,DMS-REQ-0178-V-01: Base Facility Co-Location with Existing Facility,Verified,1b
+LVV-81,291971,DMS-REQ-0180-V-01: Base to Archive Network,Covered,1b
+LVV-82,291973,DMS-REQ-0181-V-01: Base to Archive Network Availability,Covered,1b
+LVV-83,291975,DMS-REQ-0182-V-01: Base to Archive Network Reliability,Covered,1b
+LVV-84,291976,DMS-REQ-0183-V-01: Base to Archive Network Secondary Link,Covered,1b
+LVV-85,291980,DMS-REQ-0185-V-01: Archive Center,In Verification,1a
+LVV-86,291974,DMS-REQ-0186-V-01: Archive Center Disaster Recovery,In Verification,1a
+LVV-87,305849,DMS-REQ-0187-V-01: Archive Center Co-Location with Existing Facility,Verified,1b
+LVV-88,291977,DMS-REQ-0188-V-01: Archive to Data Access Center Network,Covered,1b
+LVV-89,291978,DMS-REQ-0189-V-01: Archive to Data Access Center Network Availability,Covered,1b
+LVV-90,291979,DMS-REQ-0190-V-01: Archive to Data Access Center Network Reliability,Covered,1b
+LVV-91,291986,DMS-REQ-0191-V-01: Archive to Data Access Center Network Secondary Link,Covered,1b
+LVV-92,291982,DMS-REQ-0193-V-01: Data Access Centers,Covered,1b
+LVV-93,291981,DMS-REQ-0194-V-01: Data Access Center Simultaneous Connections,Covered,1b
+LVV-94,291983,DMS-REQ-0196-V-01: Data Access Center Geographical Distribution,Covered,1b
+LVV-95,291988,DMS-REQ-0197-V-01: No Limit on Data Access Centers,Covered,2
+LVV-96,291985,DMS-REQ-0265-V-01: Guider Calibration Data Acquisition,In Verification,1a
+LVV-97,291987,DMS-REQ-0266-V-01: Exposure Catalog,In Verification,1a
+LVV-98,291984,DMS-REQ-0267-V-01: Source Catalog,Covered,1b
+LVV-99,305848,DMS-REQ-0268-V-01: Forced-Source Catalog,Verified,1b
+LVV-100,291989,DMS-REQ-0269-V-01: DIASource Catalog,Covered,1b
+LVV-101,291994,DMS-REQ-0270-V-01: Faint DIASource Measurements,Covered,2
+LVV-102,305190,DMS-REQ-0271-V-01: Max nearby galaxies associated with DIASource,In Verification,1b
+LVV-103,291990,DMS-REQ-0272-V-01: DIAObject Attributes,Covered,1b
+LVV-104,291995,DMS-REQ-0273-V-01: SSObject Catalog,Covered,2
+LVV-105,291996,DMS-REQ-0274-V-01: Alert Content,Covered,1b
+LVV-106,291991,DMS-REQ-0275-V-01: Object Catalog,Covered,1b
+LVV-107,291993,DMS-REQ-0276-V-01: Object Characterization,Covered,1b
+LVV-108,302120,DMS-REQ-0277-V-01: Coadd Source Catalog,Descoped,1b
+LVV-109,305853,DMS-REQ-0278-V-01: Coadd Image Method Constraints,Verified,1b
+LVV-110,291992,DMS-REQ-0279-V-01: Deep Detection Coadds,In Verification,1b
+LVV-111,305185,DMS-REQ-0280-V-01: Template Coadds,In Verification,1b
+LVV-112,292001,DMS-REQ-0281-V-01: Multi-band Coadds,In Verification,1b
+LVV-113,305851,DMS-REQ-0282-V-01: Dark Current Correction Frame Creation,Verified,1a
+LVV-114,305187,DMS-REQ-0283-V-01: Fringe Correction Frame,In Verification,1b
+LVV-115,292003,DMS-REQ-0284-V-01: Level-1 Production Completeness,Covered,1b
+LVV-116,291997,DMS-REQ-0285-V-01: Level 1 Source Association,Covered,1b
+LVV-117,292000,DMS-REQ-0286-V-01: SSObject Precovery,Covered,2
+LVV-118,291998,DMS-REQ-0287-V-01: Max look-back time for precovery,Covered,1b
+LVV-119,291999,DMS-REQ-0288-V-01: Use of External Orbit Catalogs,Covered,2
+LVV-120,305188,DMS-REQ-0289-V-01: Calibration Production Processing,In Verification,1a
+LVV-121,292002,DMS-REQ-0290-V-01: Level 3 Data Import,Covered,2
+LVV-122,292005,DMS-REQ-0291-V-01: Query Repeatability,Covered,1b
+LVV-123,305856,DMS-REQ-0292-V-01: Uniqueness of IDs Across Data Releases,Verified,1a
+LVV-124,292006,DMS-REQ-0293-V-01: Selection of Datasets,In Verification,1a
+LVV-125,305193,DMS-REQ-0294-V-01: Processing of Datasets,In Verification,1b
+LVV-126,292004,DMS-REQ-0295-V-01: Transparent Data Access,Covered,2
+LVV-127,305854,"DMS-REQ-0296-V-01: Pre-cursor, and Real Data",Verified,1a
+LVV-128,305859,DMS-REQ-0297-V-01: DMS Initialization Component,Verified,1a
+LVV-129,305191,DMS-REQ-0298-V-01: Data Product and Raw Data Access - Image Data Products,In Verification,1a
+LVV-130,305867,DMS-REQ-0299-V-01: Data Product Ingest,Verified,1a
+LVV-131,292007,DMS-REQ-0300-V-01: Bulk Download Service,In Verification,1b
+LVV-132,292011,DMS-REQ-0301-V-01: Control of Level-1 Production,Covered,1b
+LVV-133,305857,DMS-REQ-0302-V-01: Production Orchestration,Verified,1a
+LVV-134,305863,DMS-REQ-0303-V-01: Production Monitoring,Verified,1a
+LVV-135,305865,DMS-REQ-0304-V-01: Production Fault Tolerance,Verified,1a
+LVV-136,305861,DMS-REQ-0305-V-01: Task Specification,Verified,1a
+LVV-137,305869,DMS-REQ-0306-V-01: Task Configuration,Verified,1a
+LVV-138,292010,DMS-REQ-0307-V-01: Unique Processing Coverage,Covered,2
+LVV-139,305189,DMS-REQ-0308-V-01: Software Architecture to Enable Community Re-Use,In Verification,1b
+LVV-140,292008,DMS-REQ-0309-V-01: Raw Data Archiving Reliability,In Verification,1a
+LVV-141,292009,DMS-REQ-0310-V-01: Un-Archived Data Product Cache,Covered,1b
+LVV-142,292013,DMS-REQ-0311-V-01: Regenerate Un-archived Data Products (Software),Covered,1b
+LVV-143,292026,DMS-REQ-0312-V-01: Level 1 Data Product Access,Covered,1b
+LVV-144,292012,DMS-REQ-0313-V-01: Level 1 & 2 Catalog Access,Covered,1b
+LVV-145,305192,DMS-REQ-0314-V-01: Compute Platform Heterogeneity,In Verification,1b
+LVV-146,302111,DMS-REQ-0315-V-01: DMS Communication with OCS,Descoped,1a
+LVV-147,305194,DMS-REQ-0316-V-01: Commissioning Cluster,In Verification,1a
+LVV-148,305871,DMS-REQ-0317-V-01: DIAForcedSource Catalog,Verified,2
+LVV-149,292015,DMS-REQ-0318-V-01: Data Management Unscheduled Downtime,Covered,1b
+LVV-150,292016,DMS-REQ-0319-V-01: Characterizing Variability,In Verification,1b
+LVV-151,292019,DMS-REQ-0320-V-01: Processing of Data From Special Programs,Covered,2
+LVV-152,292029,DMS-REQ-0321-V-01: Level 1 Processing of Special Programs Data,Covered,2
+LVV-153,292021,DMS-REQ-0322-V-01: Special Programs Database,Covered,1b
+LVV-154,292023,DMS-REQ-0323-V-01: Calculating SSObject Parameters,In Verification,3
+LVV-155,292017,DMS-REQ-0324-V-01: Matching DIASources to Objects,In Verification,1b
+LVV-156,292027,DMS-REQ-0325-V-01: Regenerating L1 Data Products During Data Release Processing,Covered,2
+LVV-157,292031,DMS-REQ-0326-V-01: Storing Approximations of Per-pixel Metadata,Covered,2
+LVV-158,306392,DMS-REQ-0327-V-01: Background Model Calculation,Verified,1b
+LVV-159,292030,DMS-REQ-0328-V-01: Documenting Image Characterization,Covered,1b
+LVV-160,292024,DMS-REQ-0329-V-01: All-Sky Visualization of Data Releases,In Verification,2
+LVV-161,306389,DMS-REQ-0330-V-01: Best Seeing Coadds,Verified,2
+LVV-162,292022,DMS-REQ-0331-V-01: Computing Derived Quantities,Covered,1b
+LVV-163,292033,DMS-REQ-0332-V-01: Denormalizing Database Tables,Covered,2
+LVV-164,292042,DMS-REQ-0333-V-01: Maximum Likelihood Values and Covariances,Covered,1b
+LVV-165,306404,DMS-REQ-0334-V-01: Persisting Data Products,Verified,1b
+LVV-166,306400,DMS-REQ-0335-V-01: PSF-Matched Coadds,Verified,2
+LVV-167,305196,DMS-REQ-0336-V-01: Regenerating Data Products from Previous Data Releases,In Verification,1b
+LVV-168,292035,DMS-REQ-0337-V-01: Detecting faint variable objects,In Verification,2
+LVV-169,292043,DMS-REQ-0338-V-01: Targeted Coadds,In Verification,2
+LVV-170,292038,DMS-REQ-0339-V-01: Tracking Characterization Changes Between Data Releases,Covered,2
+LVV-171,292045,DMS-REQ-0340-V-01: Access Controls of Level 3 Data Products,In Verification,2
+LVV-172,292036,DMS-REQ-0341-V-01: Max elapsed time for precovery results,In Verification,1b
+LVV-173,292051,DMS-REQ-0342-V-01: Alert Filtering Service,Covered,2
+LVV-174,292040,DMS-REQ-0343-V-01: Number of full-size alerts,Covered,2
+LVV-175,292047,DMS-REQ-0004-V-01: Time to L1 public release,Covered,1b
+LVV-176,292048,DMS-REQ-0345-V-01: Logging of catalog queries,Covered,2
+LVV-177,305195,DMS-REQ-0346-V-01: Data Availability,In Verification,1b
+LVV-178,306398,DMS-REQ-0347-V-01: Measurements in catalogs,Verified,1b
+LVV-179,292050,DMS-REQ-0348-V-01: Pre-defined alert filters,Covered,2
+LVV-180,292063,DMS-REQ-0349-V-01: Detecting extended  low surface brightness objects,Covered,2
+LVV-181,292055,DMS-REQ-0350-V-01: Associating Objects across data releases,Covered,2
+LVV-182,306395,DMS-REQ-0351-V-01: Provide Beam Projector Coordinate Calculation Software,Verified,1a
+LVV-183,292053,DMS-REQ-0352-V-01: Base Wireless LAN (WiFi),Verified,2
+LVV-184,292057,DMS-REQ-0353-V-01: Publishing predicted visit schedule,Covered,1b
+LVV-185,305197,DMS-REQ-0354-V-01: Result latency for high-volume complex queries,In Verification,1b
+LVV-186,292058,DMS-REQ-0355-V-01: Max time to retrieve Prompt Products Database query results,Covered,1b
+LVV-187,292060,DMS-REQ-0356-V-01: Radius for low-volume query,Covered,1b
+LVV-188,305199,DMS-REQ-0357-V-01: Result latency for high-volume full-sky queries on the Object table,In Verification,1b
+LVV-189,292070,DMS-REQ-0363-V-01: Access to Previous Data Releases,Covered,3
+LVV-190,292069,DMS-REQ-0364-V-01: Total number of data releases,Covered,3
+LVV-191,292065,DMS-REQ-0365-V-01: Operations Subsets,Covered,2
+LVV-192,292062,DMS-REQ-0366-V-01: Subsets Support,Covered,2
+LVV-193,292067,DMS-REQ-0367-V-01: Access Services Performance,Covered,2
+LVV-194,292072,DMS-REQ-0368-V-01: Implementation Provisions,Covered,3
+LVV-195,305198,DMS-REQ-0369-V-01: Evolution,In Verification,1b
+LVV-196,292074,DMS-REQ-0370-V-01: Older Release Behavior,Covered,3
+LVV-197,292085,DMS-REQ-0371-V-01: Query Availability,Covered,3
+LVV-3394,291910,DMS-REQ-0377-V-01: Min number of simultaneous single-CCD coadd cutout image users,Covered,1b
+LVV-3395,291912,"DMS-REQ-0374-V-01: Max time to retrieve single-CCD, single-visit PVI image",Covered,1b
+LVV-3396,291914,DMS-REQ-0376-V-01: Max time to retrieve all PVI images for single visit,Covered,1b
+LVV-3397,291911,DMS-REQ-0373-V-01: Min number of simultaneous large-area coadd image users,Covered,2
+LVV-3398,291921,DMS-REQ-0375-V-01: Max time to retrieve single-object postage stamp images,Covered,2
+LVV-3399,291915,DMS-REQ-0378-V-01: Simultaneous Image Access Performance,Covered,2
+LVV-3400,291913,DMS-REQ-0358-V-01: Min number of simultaneous DM EFD query users,In Verification,1a
+LVV-3401,306362,DMS-REQ-0359-V-01: RMS photometric repeatability in uzy,Verified,1a
+LVV-3402,306363,DMS-REQ-0360-V-01: Median astrometric error on 20 arcmin scales,Verified,1a
+LVV-3403,305606,DMS-REQ-0361-V-01: Simultaneous users for high-volume queries,In Verification,1b
+LVV-3404,305609,DMS-REQ-0362-V-01: Median residual PSF ellipticity correlations on 5 arcmin scales,In Verification,1b
+LVV-9637,307021,DMS-REQ-0372-V-01: Archiving Camera Test Data,Verified,1a
+LVV-9740,292154,DMS-REQ-0004-V-02: Latency of reporting optical transients,Covered,1b
+LVV-9741,306967,DMS-REQ-0030-V-02: Minimum astrometric standards per CCD,Verified,1a
+LVV-9742,291959,DMS-REQ-0271-V-02: Max nearby stars associated with DIASource,Covered,1b
+LVV-9743,291960,DMS-REQ-0271-V-03: Radius considered nearby,Covered,1b
+LVV-9744,292159,DMS-REQ-0344-V-02: Latency of reporting optical transients,Covered,2
+LVV-9745,292157,DMS-REQ-0131-V-02: Max number of calibs to be processed,Covered,2
+LVV-9746,292165,DMS-REQ-0287-V-02: Max time from acquisition to L1 data release,Covered,1b
+LVV-9747,292162,DMS-REQ-0287-V-03: Lifetime of archived L1 data products,Covered,1b
+LVV-9748,292167,DMS-REQ-0343-V-02: Number of simultaneous users,Covered,2
+LVV-9749,292170,DMS-REQ-0341-V-02: Min number of precovery service connections,Covered,1b
+LVV-9750,298002,DMS-REQ-0364-V-02: Length of survey,Not Covered,3
+LVV-9751,292187,DMS-REQ-0359-V-02: Max fraction of sensors with excess unusable pixels,In Verification,1a
+LVV-9752,306943,DMS-REQ-0359-V-03: Max fraction of outliers among non-saturated sources,Verified,1a
+LVV-9753,292172,DMS-REQ-0359-V-04: Accuracy of zero point for colors with u-band,In Verification,1a
+LVV-9754,306983,DMS-REQ-0359-V-05: Repeatability outlier limit in gri,Verified,1a
+LVV-9755,292175,DMS-REQ-0359-V-06: Accuracy of photometric transformation,In Verification,1a
+LVV-9756,292178,DMS-REQ-0359-V-07: RMS width of zero point in u-band,In Verification,1a
+LVV-9757,292180,DMS-REQ-0359-V-08: Max cross-talk imperfections,In Verification,1a
+LVV-9758,306955,DMS-REQ-0359-V-09: Repeatability outlier limit in uzy,Verified,1a
+LVV-9759,293030,DMS-REQ-0359-V-10: RMS photometric repeatability in gri,Verified,1a
+LVV-9760,292182,DMS-REQ-0359-V-11: Fraction of zero point outliers,In Verification,1a
+LVV-9761,292185,DMS-REQ-0359-V-12: Max fraction of unusable pixels per sensor,In Verification,1a
+LVV-9762,292192,DMS-REQ-0359-V-13: Max sky brightness error,In Verification,1a
+LVV-9763,292194,DMS-REQ-0359-V-14: RMS width of zero point in all bands except u,In Verification,1a
+LVV-9764,292190,DMS-REQ-0359-V-15: Percentage of image area with ghosts,In Verification,1a
+LVV-9765,292206,DMS-REQ-0359-V-16: Accuracy of zero point for colors without u-band,In Verification,1a
+LVV-9766,292199,DMS-REQ-0359-V-17: Max RMS of resolved/unresolved flux ratio,Verified,1a
+LVV-9767,293024,DMS-REQ-0360-V-02: Max fraction exceeding limit on 5 arcmin scales,Verified,1a
+LVV-9768,306963,DMS-REQ-0360-V-03: Median astrometric error on 5 arcmin scales,Verified,1a
+LVV-9769,306976,"DMS-REQ-0360-V-04: Median absolute error in RA, Dec",Verified,1a
+LVV-9770,293029,DMS-REQ-0360-V-05: Outlier limit on 20 arcmin scales,Verified,1a
+LVV-9771,293032,DMS-REQ-0360-V-06: Color difference outlier limit relative to r-band,Verified,1a
+LVV-9773,293035,DMS-REQ-0360-V-07: Outlier limit on 5 arcmin scales,Verified,1a
+LVV-9774,293034,DMS-REQ-0360-V-08: Median astrometric error on 200 arcmin scales,Monitoring,1a
+LVV-9775,293045,DMS-REQ-0360-V-09: Outlier limit on 200 arcmin scales,Monitoring,1a
+LVV-9776,293039,DMS-REQ-0360-V-10: Max fraction exceeding limit on 20 arcmin scales,Verified,1a
+LVV-9777,293037,DMS-REQ-0360-V-11: Max fraction of r-band color difference outliers,Verified,1a
+LVV-9778,293047,DMS-REQ-0360-V-12: RMS difference between r-band and other filter separation,Verified,1a
+LVV-9779,305552,DMS-REQ-0360-V-13: Max fraction exceeding limit on 200 arcmin scales,Monitoring,1a
+LVV-9780,305554,DMS-REQ-0362-V-02: Max fraction of excess ellipticity residuals on 1 and 5 arcmin scales,In Verification,1b
+LVV-9781,305563,DMS-REQ-0362-V-03: Outlier limit on 5 arcmin scales - ellipticity,In Verification,1b
+LVV-9782,305555,DMS-REQ-0362-V-04: Median residual PSF ellipticity correlations on 1 arcmin scales,In Verification,1b
+LVV-9783,305562,DMS-REQ-0362-V-05: Outlier limit on scales < 5 arcmin - ellipticity,In Verification,1b
+LVV-9784,292197,DMS-REQ-0355-V-02: Min number of simultaneous Prompt Products query users,Covered,1b
+LVV-9785,298004,DMS-REQ-0356-V-02: Max size of low-volume query results,Not Covered,1b
+LVV-9786,305557,DMS-REQ-0356-V-03: Min number of simultaneous low-volume query users,In Verification,1b
+LVV-9787,305556,DMS-REQ-0356-V-04: Max time to retrieve low-volume query results,In Verification,1b
+LVV-9788,292201,DMS-REQ-0358-V-02: Max time to retrieve DM EFD query results,In Verification,1a
+LVV-9789,298003,DMS-REQ-0373-V-02: Max time to retrieve large-area coadd image,Not Covered,2
+LVV-9790,298006,DMS-REQ-0374-V-02: Min number of simultaneous PVI image users,Not Covered,1b
+LVV-9791,298005,DMS-REQ-0374-V-03: Uncached L1 data product lifetime - single-CCD,Not Covered,1b
+LVV-9792,298009,DMS-REQ-0375-V-02: Min size of postage stamp cutout,Not Covered,2
+LVV-9793,298013,DMS-REQ-0375-V-03: Uncached L1 data product lifetime - postage stamp,Not Covered,2
+LVV-9794,292204,DMS-REQ-0375-V-04: Min number of simultaneous postage stamp users,Covered,2
+LVV-9795,298007,DMS-REQ-0376-V-02: Min number of simultaneous users retrieving all PVI images,Not Covered,1b
+LVV-9796,298008,DMS-REQ-0376-V-03: Uncached L1 data product lifetime - focal-plane,Not Covered,1b
+LVV-9797,299700,DMS-REQ-0377-V-02: Max time to retrieve single-CCD coadd cutout image,Covered,1b
+LVV-9803,299698,DMS-REQ-0004-V-03: Time to availability of Solar System Object orbits,Covered,1b
+LVV-18222,304689,DMS-REQ-0384-V-01: Export MOCs As FITS_1,Covered,1b
+LVV-18223,304688,DMS-REQ-0381-V-01: HiPS Linkage to Coadds_1,Covered,2
+LVV-18224,292677,DMS-REQ-0380-V-01: HiPS Service_IVOA-compliant,Verified,1b
+LVV-18225,292272,DMS-REQ-0382-V-01: HiPS Visualization_PRTL,Verified,1b
+LVV-18226,304693,DMS-REQ-0385-V-01: MOC Visualization_1,Covered,1b
+LVV-18227,292276,DMS-REQ-0379-V-01: Produce All-Sky HiPS Map_1,Verified,1b
+LVV-18228,304690,DMS-REQ-0383-V-01: Produce MOC Maps_1,Covered,1b
+LVV-18229,304692,DMS-REQ-0344-V-01: Time to L1 public release,Covered,2
+LVV-18230,304691,DMS-REQ-0386-V-01: Archive Processing Provenance_1,Covered,1b
+LVV-18231,304694,DMS-REQ-0387-V-01: Serve Archived Provenance_1,Covered,1b
+LVV-18232,304696,DMS-REQ-0388-V-01: Provide Re-Run Tools_1,Covered,1b
+LVV-18233,304695,DMS-REQ-0390-V-01: Re-Runs on Other Systems_1,Covered,1b
+LVV-18234,304697,DMS-REQ-0389-V-01: Re-Runs on Similar Systems_1,Covered,1b
+LVV-18295,304699,DMS-REQ-0394-V-01: Data Management Nightly Reporting_1,In Verification,1a
+LVV-18297,304698,DMS-REQ-0391-V-01: Alert Stream Distribution nStreams,Covered,2
+LVV-18298,304701,DMS-REQ-0392-V-01: Fraction of Alerts Transmitted,Covered,2
+LVV-18299,304700,DMS-REQ-0393-V-01: Average Number of Alerts Per Visit,Covered,2
+LVV-18339,304710,DMS-REQ-0359-V-18: Outlier limit on zero points,In Verification,1a
+LVV-18465,292294,DMS-REQ-0395-V-01: Scientific Visualization of Camera Image Data_1,Verified,1a
+LVV-18491,304713,DMS-REQ-0352-V-02: Base Voice Over IP (VOIP),Covered,2
+LVV-18841,304606,DMS-REQ-0396-V-01: Data Products Processing Infrastructure_1,Covered,2
+LVV-18847,304618,DMS-REQ-0397-V-01: Prompt/DR Processing of Data from Special Programs_1,Covered,2
+LVV-18881,305878,DMS-REQ-0282-V-02: Dark Current Correction Frame Effectiveness,In Verification,1a
+LVV-18911,304639,DMS-REQ-0391-V-02: Alert Stream Distribution Latency,Covered,2
+LVV-19214,305138,DMS-REQ-0392-V-02: Max Alert Failure Fraction,Covered,2
+LVV-19215,305139,DMS-REQ-0392-V-03: Latency of Reporting Transients,Covered,2
+LVV-19216,305140,DMS-REQ-0392-V-04: Peak Number of Alerts,Covered,2
+LVV-19217,305144,DMS-REQ-0393-V-02: Peak Number of Alerts Per Visit,Covered,2
+LVV-19218,305146,DMS-REQ-0392-V-05: Max Fraction of Visits With Alert Delays,Covered,2
+LVV-19488,304775,DMS-REQ-0003-V-01: Science Data Archive_1,In Verification,1a
+LVV-19489,304780,DMS-REQ-0398-V-01: Ancillary Data Archiving_1,In Verification,1b
+LVV-19490,304774,DMS-REQ-0066-V-01: Image Archive_1,In Verification,1a
+LVV-19491,304777,DMS-REQ-0399-V-01: Regenerate Un-archived Data Products (Services)_1,Covered,1b
+LVV-20528,306117,DMS-REQ-0298-V-02: Data Product and Raw Data Access - Catalog Data Products,In Verification,1a
+LVV-20578,302306,DMS-REQ-0380-V-02: HiPS Service_Registry,Not Covered,1b
+LVV-20579,302310,DMS-REQ-0380-V-03: HiPS Service_Community,Not Covered,1b
+LVV-20584,304939,DMS-REQ-0382-V-02: HiPS Visualization_NB,In Verification,1b
+LVV-20864,302090,DMS-REQ-0405-V-01: Level 1 Data Product Availability for Solar System Objects_1,Not Covered,1b
+LVV-20865,302096,DMS-REQ-0406-V-01: Level 1 Data Product Availability for Transient Alerts_1,Not Covered,1b
+LVV-20866,302101,DMS-REQ-0402-V-01: Level 1 Data Product Embargo_1,In Verification,1a
+LVV-20867,302098,DMS-REQ-0404-V-01: Level 1 Data Product Pixel Data Embargo in Commissioning_1,In Verification,1a
+LVV-20868,302103,DMS-REQ-0403-V-01: Level 1 Data Product Pixel Data Embargo in Operations_1,Not Covered,1b
+LVV-20869,302099,DMS-REQ-0400-V-01: Secure Data Storage_1,Not Covered,1b
+LVV-20870,302104,DMS-REQ-0401-V-01: Summit to Archive Secure Data Transfer_1,Not Covered,1b
+SYNDT-35,273901,Req Spec Test,Not Covered,
+SYNDT-95,273951,TEST-DMS-REQ-0326-V-01: Storing Approximations of Per-pixel Metadata,Not Covered,
