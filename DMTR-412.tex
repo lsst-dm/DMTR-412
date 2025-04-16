@@ -1,5 +1,5 @@
 % generated from JIRA project LVV
-% using template at /opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
+% using template at /opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
 % using docsteady version 3.0.3
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
@@ -34,7 +34,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-03-27 }
+\date{ 2025-04-16 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -1712,11 +1712,11 @@ Final comment:\\None
 
 
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T153 - Verify implementation of Provide Engineering and Facility Database
+\paragraph{ LVV-T153 - Verify implementation of: Provide Engineering and Facility Database
 Archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T153}{\textit{ LVV-T153 } }
 test case in Jira.
 
@@ -2121,7 +2121,7 @@ Final comment:\\None
 \paragraph{ LVV-T48 - Verify implementation of Exposure Catalog }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T48}{\textit{ LVV-T48 } }
 test case in Jira.
 
@@ -2179,13 +2179,15 @@ both human- and machine-readable.
   Actual Result \\
 {\footnotesize
 In the attached notebook, we have demonstrated that an exposure log of
-ComCam on-sky data is accessible via the consolidated database (ConsDB).
+ComCam on-sky data is accessible via the consolidated database
+(ConsDB).\\
 We show that the ConsDB contains information taken directly from image
 headers, transformed data from the Engineering Facilities Database
-(EFD), and derived data based on image processing. As required, these
-data include information about each exposure, include the telescope and
-instrument configuration, telemetry from the telescope, environmental
-and pointing information, and details about the camera.\\
+(EFD), and derived data based on image processing.\\
+As required, these data include information about each exposure, include
+the telescope and instrument configuration, telemetry from the
+telescope, environmental and pointing information, and details about the
+camera.\\
 \strut \\
 In some examples shown, columns that exist in the database are not yet
 populated. Nonetheless, this test is deemed to \emph{PASS} because we
