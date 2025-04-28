@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 3.0.3
+% using docsteady version 3.0.4
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -34,7 +34,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-04-16 }
+\date{ 2025-04-28 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -177,7 +177,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T85}{LVV-T85}
-& {\small Robert Lupton } & {\small Undefined } &
+& {\small Robert Lupton } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -411,7 +411,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1843}{LVV-T1843}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -680,14 +680,35 @@ None
 &
 \\
  \hfill Execution & LVV-E3503
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using ComCam data as processed by pipelines version
+w\_2025\_10. The results are shown in the notebook test\_LVV-T85.ipynb
+attached to this document\textquotesingle s repository. Additional
+verification of the effectiveness of the crosstalk correction can be
+found on the higher-level (OSS and LSR) tests pertaining to the
+following Verification Elements:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1624}{LVV-1624}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1621}{LVV-1621}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1642}{LVV-1642}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1633}{LVV-1633}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1634}{LVV-1634}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-9802}{LVV-9802}
+\end{itemize}
 \medskip
 \end{minipage}
 &
-      \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2303}{LVV-T2303}
 &
 \\
@@ -1005,14 +1026,16 @@ None
 &
 \\
  \hfill Execution & LVV-E3540
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Tests performed using ComCam on-sky data at the USDF, using w\_2025\_10
+of the science pipelines. See the attached notebook,
+"test\_LVV-T1843.ipynb", for details.
 \medskip
 \end{minipage}
 &
-  \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1757}{LVV-T1757}
 &
 \\
@@ -1435,11 +1458,156 @@ correction matrix.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using ComCam data as processed by pipelines version
+w\_2025\_10. The results are shown in the notebook test\_LVV-T85.ipynb
+attached to this document\textquotesingle s repository. Additional
+verification of the effectiveness of the crosstalk correction can be
+found on the higher-level (OSS and LSR) tests pertaining to the
+following Verification Elements:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1624}{LVV-1624}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1621}{LVV-1621}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1642}{LVV-1642}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1633}{LVV-1633}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1634}{LVV-1634}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-9802}{LVV-9802}
+\end{itemize}
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3503-1243142027:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3503-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify an appropriate calibration dataset that can be used to derive
+the crosstalk correction matrix.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+We use the crosstalk coefficients that were measured by the camera team
+in the lab and ingested as a calibration data product into the butler.
+The creation and ingestion of the ComCam crosstalk curated calibrations
+was done on Jira ticket
+\href{https://rubinobs.atlassian.net/browse/DM-45614}{DM-45614}.\\
+\strut \\
+In the attached notebook, we retrieve a crosstalk dataset from the
+butler via the following:\\
+\strut \\
+INSTRUMENT = "LSSTComCam"\\
+COLLECTION = "LSSTComCam/runs/DRP/DP1/w\_2025\_10/DM-49359"\\
+butler = Butler("/repo/main")\\
+query =
+butler.query\_datasets(\textquotesingle postISRCCD\textquotesingle,
+collections=COLLECTION)\\
+\strut \\
+\# Select the first image and its crosstalk object:\\
+postisrccd = butler.get(query{[}1{]})\\
+crosstalk = butler.get("crosstalk", collections=COLLECTION,
+dataId=query{[}1{]}.dataId)
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3503-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the crosstalk correction matrix is produced and persisted.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A correction matrix quantifying what fraction of the signal detected in
+any given amplifier on each sensor in the focal plane appears in any
+other amplifier.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+As seen in the attached notebook, we retrieved the crosstalk object and
+plotted its values.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3503-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Apply the crosstalk correction to images, and confirm that the
+correction is performing as expected.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A noticeable difference between images before and after applying the
+correction.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook demonstrates applying the crosstalk correction to
+an image, then comparing the image before and after correction. The
+correction has a noticeable effect, and the expected behavior where a
+bright star\textquotesingle s correction appears in adjacent amplifiers
+is observed.\\
+\strut \\
+This test has achieved a PASS via demonstration of well-formed crosstalk
+calibration objects that achieve their goal when applied to images.\\
+\strut \\
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2303 - Verify Image Archive }\mbox{}\\
 
@@ -2428,7 +2596,7 @@ Final comment:\\None
 \paragraph{ LVV-T1843 - Verify calculation of significance of imperfect crosstalk corrections }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Defined}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1843}{\textit{ LVV-T1843 } }
 test case in Jira.
 
@@ -2439,11 +2607,138 @@ crosstalk corrections is less than \textbf{Xtalk = 3 sigma}.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Tests performed using ComCam on-sky data at the USDF, using w\_2025\_10
+of the science pipelines. See the attached notebook,
+"test\_LVV-T1843.ipynb", for details.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3540-1243142058:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3540-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify datasets containing observations of bright stars.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+One or more dataIds of `calexp` images with stars brighter than
+\textasciitilde8th magnitude.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The areas overlapped by four fields (ECDFS, EDFS, Rubin\_SV\_95\_-25,
+and Rubin\_SV\_38\_7) from the w\_2025\_10 processing of the ComCam
+on-sky data were queried to find sources from Gaia DR3 brighter than 8th
+magnitude (in Gaia G-band). This resulted in 5 bright stars with ComCam
+observations.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3540-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Make lists of the (x, y) positions of the bright star observations in
+the `calexp` images, then identify the corresponding positions in other
+amplifiers on each detector where crosstalk artifacts are expected to
+appear.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A list of expected crosstalk image positions in all 16 amplifiers of
+each detector containing a bright star observation.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The butler was queried to identify `calexp` images overlapping these
+bright stars, then their datasetRefs were looped over to extract the
+actual (x, y) positions of the bright stars in the images.\\
+\strut \\
+A function to calculate the corresponding expected crosstalk positions
+was applied to each observation, and a list was made of all expected
+crosstalk artifact positions.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3540-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Measure forced photometry at the expected positions of crosstalk
+artifacts, and confirm that their signal-to-noise is less than 3.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+An ensemble of forced photometry measurements, with none of them
+exceeding 3-sigma excess.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Forced photometry was performed at the positions of expected crosstalk,
+and the following plot of signal-to-noise vs. amplifier (indexed as
+amplifier number relative to the midline of the detector) was generated.
+(See details in the attached notebook.)\\
+\strut \\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater{}\\
+The vast majority of points lie beneath the required Xtalk \textless{} 3
+sigma line, but a handful of points exceed this value. We spot-checked
+the images at many of these positions, and determined that in all cases
+there were stars at the expected crosstalk artifact positions, which
+resulted in large flux measurements unrelated to crosstalk.\\
+\strut \\
+The residual flux significance at the positions of all crosstalk
+corrections (excluding those that overlap obvious stars/galaxies) is
+less than the required Xtalk = 3 sigma limit. We thus deem this test a
+Pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1757 - Verify calculation of photometric repeatability in gri filters }\mbox{}\\
 

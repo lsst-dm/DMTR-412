@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
-% using docsteady version 3.0.3
+% using docsteady version 3.0.4
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -31,7 +31,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-04-16 }
+\date{ 2025-04-28 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -173,7 +173,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3503}{LVV-E3503}
-& {\small Robert Lupton } & {\small Undefined } &
+& {\small Robert Lupton } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -381,7 +381,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3540}{LVV-E3540}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -836,7 +836,28 @@ correction matrix.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using ComCam data as processed by pipelines version
+w\_2025\_10. The results are shown in the notebook test\_LVV-T85.ipynb
+attached to this document\textquotesingle s repository. Additional
+verification of the effectiveness of the crosstalk correction can be
+found on the higher-level (OSS and LSR) tests pertaining to the
+following Verification Elements:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1624}{LVV-1624}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1621}{LVV-1621}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1642}{LVV-1642}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1633}{LVV-1633}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-1634}{LVV-1634}
+\item
+  \href{https://rubinobs.atlassian.net/browse/LVV-9802}{LVV-9802}
+\end{itemize}
 
 
 Detailed steps :
@@ -1339,7 +1360,9 @@ crosstalk corrections is less than \textbf{Xtalk = 3 sigma}.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Tests performed using ComCam on-sky data at the USDF, using w\_2025\_10
+of the science pipelines. See the attached notebook,
+"test\_LVV-T1843.ipynb", for details.
 
 
 Detailed steps :
