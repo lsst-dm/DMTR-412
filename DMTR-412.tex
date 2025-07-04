@@ -1,5 +1,5 @@
 % generated from JIRA project LVV
-% using template at /opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
+% using template at /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
 % using docsteady version 3.0.4
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
@@ -34,7 +34,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-04-28 }
+\date{ 2025-07-04 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -258,7 +258,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T89}{LVV-T89}
-& {\small Eli Rykoff } & {\small Undefined } &
+& {\small Eli Rykoff } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -312,7 +312,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1862}{LVV-T1862}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -321,7 +321,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T115}{LVV-T115}
-& {\small Kian-Tat Lim } & {\small Undefined } &
+& {\small Kian-Tat Lim } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -339,7 +339,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2693}{LVV-T2693}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -348,7 +348,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2699}{LVV-T2699}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -384,7 +384,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1847}{LVV-T1847}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -438,7 +438,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1841}{LVV-T1841}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -793,7 +793,7 @@ None
 & Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-Test executed with science pipelines version w\_2025\_09 in the RSP
+Test executed with science pipelines version w\_2025\_24 in the RSP
 Notebook aspect at the USDF.\\
 \strut \\
 The executed notebook was saved in the repository associated with this
@@ -801,7 +801,7 @@ campaign's test report as ``notebooks/test\_LVV-T153.ipynb."
 \medskip
 \end{minipage}
 &
-    \\\hline
+   \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T88}{LVV-T88}
 &
 \\
@@ -818,10 +818,12 @@ None
 &
 \\
  \hfill Execution & LVV-E3512
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Tests performed using ComCam on-sky data at the USDF, using w\_2025\_10
+of the science pipelines. See the attached notebook,
+"test\_LVV-T89.ipynb", for details.
 \medskip
 \end{minipage}
 &
@@ -894,10 +896,12 @@ campaign's test report as ``notebooks/test\_LVV-T48.ipynb."
 &
 \\
  \hfill Execution & LVV-E3524
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using ComCam data as processed by pipelines version
+w\_2025\_10. The results are shown in the notebook test\_LVV-T1862.ipynb
+attached to this document\textquotesingle s repository.
 \medskip
 \end{minipage}
 &
@@ -906,10 +910,11 @@ None
 &
 \\
  \hfill Execution & LVV-E3525
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF using pipelines version w\_2025\_19, the ci\_cpp
+package, and the "testdata\_latiss\_cpp" dataset.
 \medskip
 \end{minipage}
 &
@@ -930,26 +935,30 @@ None
 &
 \\
  \hfill Execution & LVV-E3530
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF using LSSTComCam data processed with pipelines
+version `w\_2025\_16`. See the attached notebook,
+"test\_LVV-T2693.ipynb", for details.
 \medskip
 \end{minipage}
 &
-  \\\hline
+     \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2699}{LVV-T2699}
 &
 \\
  \hfill Execution & LVV-E3531
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF using LSSTComCam data processed with pipelines
+version `w\_2025\_16`. See the attached notebook,
+"test\_LVV-T2699.ipynb", for details.
 \medskip
 \end{minipage}
 &
-  \\\hline
+     \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T154}{LVV-T154}
 &
 \\
@@ -990,14 +999,19 @@ None
 &
 \\
  \hfill Execution & LVV-E3537
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed with science pipelines version w\_2025\_27 in the RSP
+Notebook aspect at the USDF. Because this test concerns a threshold
+calculated in LVV-T1841, the two tests were executed together.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1841\_1847.ipynb."
 \medskip
 \end{minipage}
 &
-  \\\hline
+     \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T377}{LVV-T377}
 &
 \\
@@ -1068,14 +1082,19 @@ None
 &
 \\
  \hfill Execution & LVV-E3543
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed with science pipelines version w\_2025\_27 in the RSP
+Notebook aspect at the USDF. Because this test concerns a threshold for
+LVV-T1847, the two tests were executed together.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1841\_1847.ipynb."
 \medskip
 \end{minipage}
 &
-  \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1840}{LVV-T1840}
 &
 \\
@@ -1880,8 +1899,7 @@ Final comment:\\None
 
 
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T153 - Verify implementation of: Provide Engineering and Facility Database
-Archive }\mbox{}\\
+\paragraph{ LVV-T153 - Verify implementation of Engineering and Facility Database Archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
 Status \textbf{Approved}.
@@ -1889,14 +1907,13 @@ Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassi
 test case in Jira.
 
 Demonstrate Engineering and Facilities Data (images, associated
-metadata, and observatory environment and control data) are archived and
-available for public access within \textbf{L1PublicT (24 hours)}.~
+metadata, and observatory environment and control data) are archived.
 
 \textbf{ Preconditions}:\\ None
 
 
 Execution status: {\bf Pass }\\
-Final comment:\\Test executed with science pipelines version w\_2025\_09 in the RSP
+Final comment:\\Test executed with science pipelines version w\_2025\_24 in the RSP
 Notebook aspect at the USDF.\\
 \strut \\
 The executed notebook was saved in the repository associated with this
@@ -1914,8 +1931,7 @@ Step LVV-E3510-1 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Execute on-sky observing, ingesting OCS commands, image headers, and
-transformed EFD quantities into the Consolidated Database (ConsDB).~
+Access the EFD archive at the US Data Facility (USDF).
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -1927,13 +1943,19 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
+Active connection with the EFD client at the USDF.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The test was executed during on-sky spectroscopic observing with the
-LATISS instrument on AuxTel at Cerro Pachon.
+The USDF archive of the EFD was accessed from a notebook in the USDF RSP
+via the following lines;\\
+\strut \\
+from lsst\_efd\_client import EfdClient\\
+client = EfdClient(\textquotesingle usdf\_efd\textquotesingle)\\
+\strut \\
+This instantiates the service for queries.
 
 
 }
@@ -1945,9 +1967,9 @@ Step LVV-E3510-2 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-While observing is ongoing (or at least within~\textbf{L1PublicT=24}
-hours), access the ConsDB and confirm that the data products are
-present.
+Query some EFD telemetry topics for a night at least 1 month ago during
+which on-sky observing took place. Query topics that are typically
+populated during on-sky observing, and confirm that they return results.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -1959,57 +1981,94 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The ConsDB contains the expected data, and they were ingested within
-\textbf{L1PublicT=24} hours of the images\textquotesingle{} observation.
+Populated EFD telemetry for topics related to the various aspects of the
+telescope, camera, and facility.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-In the attached notebook, we have demonstrated that the ConsDB contains
-information taken directly from image headers, transformed data from the
-Engineering Facilities Database (EFD), and derived data based on image
-processing. As required, these data include information about each
-exposure, include the telescope and instrument configuration, telemetry
-from the telescope, environmental and pointing information, and details
-about the camera.\\
+In the attached notebook, we have demonstrated that telemetry from a
+wide variety (over 3000) topics is available in the archived EFD. The
+EFD contains topics pertaining to AuxTel (AT*), the Simonyi Telescope
+("MainTel" -\/- denoted MT*), including the telescope mount (MTMount),
+the dome (MTDome), the AOS system (MTAOS), the HVAC system, and LSSTCam
+(MTCamera), among others. We also note that topics include commands,
+logevents, and telemetry from sensors.\\
 \strut \\
-We have furthermore demonstrated that the ConsDB records are populated
-well before the L1PublicT=24 hours requirement.
+We extracted data from the EFD for a half-hour period of LSSTCam
+observing on May 5, 2025 and printed some columns to the screen. The
+following is a subset of the outputs:\\
+\strut \\
+
+\begin{verbatim}
+*** Retrieving lsst.sal.MTMount.azimuth ***
+
+             index                actualPosition  actualPositionTimestamp
+-------------------------------- ---------------- -----------------------
+2025-05-05 03:00:00.017759+00:00 16.6336992840165        1746414036.88586
+2025-05-05 03:00:00.118609+00:00 16.6328785412205        1746414036.98565
+2025-05-05 03:00:00.183883+00:00 16.6324684927823        1746414037.03552 
+
+*** Retrieving lsst.sal.MTMount.elevation ***
+
+             index                actualPosition  actualPositionTimestamp
+-------------------------------- ---------------- -----------------------
+2025-05-05 03:00:00.018120+00:00 60.4935636867039        1746414036.91525
+2025-05-05 03:00:00.119741+00:00 60.4936641347571        1746414037.01558
+2025-05-05 03:00:00.184244+00:00  60.493717586413        1746414037.06586 
+
+*** Retrieving lsst.sal.ESS.temperature ***
+
+             index                     sensorName        temperatureItem0
+-------------------------------- ---------------------- -----------------
+2025-05-05 03:00:00.265538+00:00 MTCameraAssembly-ESS01 9.816399574279785
+2025-05-05 03:00:00.423640+00:00           AuxTel-ESS01                --
+2025-05-05 03:00:00.476175+00:00           Camera-ESS01             11.75 
+
+*** Retrieving lsst.sal.MTAOS.logevent_wavefrontError ***
+
+             index                 nollZernikeValues7   ... sensorId
+-------------------------------- ---------------------- ... --------
+2025-05-05 03:08:29.520446+00:00     0.1901925802230835 ...      191
+2025-05-05 03:08:29.626493+00:00   0.056604646146297455 ...      195
+2025-05-05 03:16:40.393737+00:00 -0.0055709718726575375 ...      191 
+
+*** Retrieving lsst.sal.MTM1M3.accelerometerData ***
+
+             index                  accelerometer0   ...     timestamp     
+-------------------------------- ------------------- ... ------------------
+2025-05-05 03:00:00.008773+00:00 0.03544413298368454 ... 1746414037.0084796
+2025-05-05 03:00:00.029285+00:00 0.03568815067410469 ... 1746414037.0284805
+2025-05-05 03:00:00.049199+00:00 0.03679560497403145 ... 1746414037.0484805 
 
 
-}
-  {
+*** Retrieving lsst.sal.MTRotator.logevent_lowFrequencyVibration ***
 
-\begin{tabular}{p{4cm}p{12cm}}
-\toprule
-Step LVV-E3510-3 & Step Execution Status: \textbf{ Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-From the public access portal to the EFD (ConsDB), execute a query and
-demonstrate that the data are publicly available.
+             index               frequency
+-------------------------------- ---------
+2025-05-05 03:29:15.264806+00:00      0.33 
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Test Data \\
- {\footnotesize
-None
+*** Retrieving lsst.sal.MTCamera.command_takeImages ***
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-A query at the public interface to the EFD successfully executes and
-returns EFD data.
+             index               expTime numImages shutter
+-------------------------------- ------- --------- -------
+2025-05-05 03:07:24.192381+00:00      30         1    True
+2025-05-05 03:08:01.361480+00:00      30         1    True
+2025-05-05 03:11:13.485308+00:00      15         1    True 
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-See the steps above, and the attached notebook. We have demonstrated
-that ConsDB is populated in nearly real-time, and that it contains the
-required telemetry and derived quantities.
+*** Retrieving lsst.sal.MTCamera.logevent_startIntegration ***
+
+             index               exposureTime ... imageNumber
+-------------------------------- ------------ ... -----------
+2025-05-05 03:07:24.311131+00:00           30 ...         336
+2025-05-05 03:08:01.462359+00:00           30 ...         337
+2025-05-05 03:11:13.607377+00:00           15 ...         338 
+\end{verbatim}
+
+\hfill\break
+We have thus demonstrated that the EFD is archived at the USDF, and that
+the data it contains are intact, accessible, and well-formed.
 
 
 }
@@ -2038,7 +2097,7 @@ Final comment:\\None
 \paragraph{ LVV-T89 - Verify implementation of Calibration Image Provenance }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T89}{\textit{ LVV-T89 } }
 test case in Jira.
 
@@ -2048,11 +2107,167 @@ Calibration Data Products.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Tests performed using ComCam on-sky data at the USDF, using w\_2025\_10
+of the science pipelines. See the attached notebook,
+"test\_LVV-T89.ipynb", for details.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3512-1243142036:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3512-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Ingest an appropriate precursor calibration dataset into a Butler repo.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+This test uses calibration frames from the ComCam on-sky campaign in
+late 2024. The images were obtained during daily observing, and
+transferred to the USDF and ingested into the main shared Butler as part
+of routine observing practice.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3512-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute the Calibration Products Production payload. The payload uses
+raw calibration images and information from the Transformed EFD to
+generate a subset of Master Calibration Images and Calibration Database
+entries in the Data Backbone.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+We use the calibrations that were produced as described in the TAXICAB
+ticket
+\href{https://rubinobs.atlassian.net/browse/TAXICAB-23}{TAXICAB-23}.\\
+\strut \\
+In the attached notebook, we retrieve calibration datasets from the
+butler via the following:\\
+\strut \\
+INSTRUMENT = "LSSTComCam"\\
+COLLECTION = "LSSTComCam/runs/DRP/DP1/w\_2025\_10/DM-49359"\\
+butler = Butler("/repo/main")\\
+\strut \\
+\# Select the first bias image and its metadata:\\
+query = butler.query\_datasets(\textquotesingle bias\textquotesingle,
+collections=COLLECTION)\\
+bias = butler.get(query{[}0{]})\\
+bias\_metadata = bias.getMetadata()
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3512-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected Master Calibration images and Calibration
+Database entries are present and well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The images were retrieved successfully, and the following steps serve as
+a demonstration that they were well-formed, and contain all the required
+metadata and provenance information.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3512-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Load the relevant database/Butler data product, and observe that all
+provenance information has been retained.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A dataset consisting of calibration images, with provenance information
+recorded and properly associated with the calibration images.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook ("test\_LVV-T89.ipynb") we have demonstrated
+the retrieval of complete provenance information associated with
+calibration images (and their associated Butler RUN collections),
+including (among other things) the list of input exposures and the range
+of dates over which they were obtained; the processing parameters; the
+calibration products used to derive the images; and a set of metadata
+attributes including the date of creation; the calibration image type
+(e.g. dome flat, superflat, bias, etc); the provenance of the processing
+software; and the instrument configuration including the filter in use,
+where applicable. We thus deem the status of this test a PASS.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T189 - Verify implementation of Summit Facility Infrastructure }\mbox{}\\
 
@@ -2380,11 +2595,166 @@ and determine how often it should be updated.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using ComCam data as processed by pipelines version
+w\_2025\_10. The results are shown in the notebook test\_LVV-T1862.ipynb
+attached to this document\textquotesingle s repository.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3524-1243142043:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3524-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to a dataset containing dark frames (i.e., exposures
+taken with the shutter closed).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+We use the dark correction images for ComCam on-sky data that were
+created and ingested as part of
+\href{https://rubinobs.atlassian.net/browse/TAXICAB-23}{TAXICAB-23}.\\
+\strut \\
+In the attached notebook, we retrieve a crosstalk dataset from the
+butler via the following:\\
+\strut \\
+INSTRUMENT = "LSSTComCam"\\
+COLLECTION = "LSSTComCam/runs/DRP/DP1/w\_2025\_10/DM-49359"\\
+butler = Butler("/repo/main")\\
+query =
+butler.query\_datasets(\textquotesingle postISRCCD\textquotesingle,
+collections=COLLECTION)\\
+\strut \\
+\# Select an image and its dark object:\\
+postisrccd = butler.get(query{[}1{]})\\
+crosstalk = butler.get("dark", collections=COLLECTION,
+dataId=query{[}1{]}.dataId)
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3524-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute the Calibration Products Production payload. The payload uses
+raw calibration images and information from the Transformed EFD to
+generate a subset of Master Calibration Images and Calibration Database
+entries in the Data Backbone.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+As noted in the previous step, we used the calibrations created for the
+"intermittent cumulative DRP" processing of ComCam data with
+`w\_2025\_10`. The processing used the "cpDark.yaml" pipeline to create
+the combined dark frames, and the "verifyDark.yaml" pipeline to create
+the verification data that is reported to the TAXICAB for formal
+approval of calibration products.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3524-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected Master Calibration images and Calibration
+Database entries are present and well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, the dark image was displayed, and its metadata
+examined. All looks well-formed.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3524-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Determining whether the dark correction is being done properly will
+require on-sky science data. The dark correction can be applied to these
+frames and the results inspected to ensure that the correction was
+correctly measured and applied.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Applying the dark correction to a dataset produces noticeable
+differences between the original frame(s) and the corrected outputs.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we applied the dark correction to an input
+`postISRCCD` image, and confirmed that the resulting image was as
+expected.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T115 - Verify implementation of Calibration Production Processing }\mbox{}\\
 
@@ -2399,11 +2769,151 @@ calibration pipeline correctly produces necessary calibration products.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Executed at the USDF using pipelines version w\_2025\_19, the ci\_cpp
+package, and the "testdata\_latiss\_cpp" dataset.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3525-1243142044:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3525-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a suitable set of calibration frames, including biases, dark
+frames, and flat-field frames.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+This test uses the testdata\_latiss\_cpp dataset, a curated dataset used
+for regular testing of calibration products production.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3525-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute the Calibration Products Production payload. The payload uses
+raw calibration images and information from the Transformed EFD to
+generate a subset of Master Calibration Images and Calibration Database
+entries in the Data Backbone.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+After setting up the `ci\_cpp\_gen3` package, we executed the command
+"scons -j 8" (from the ci\_cpp\_gen3 package root directory), which runs
+a scons script that executes a full CPP payload. The full script that is
+executed can be seen at
+\href{https://github.com/lsst/ci_cpp_gen3/blob/main/DATA/SConscript}{this
+link}.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3525-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected Master Calibration images and Calibration
+Database entries are present and well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook ("test\_LVV-T115.ipynb"), we demonstrate
+querying the butler repository and confirming that the calibrations
+collections and datasets have been created.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3525-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected data products are created, and that they have
+the expected properties.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Repos containing valid calibration products that are well-formed and
+ready to be applied to processed datasets.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook retrieves brighter-fatter kernel (bfk), photon
+transfer curve (ptc), bias, dark, and flat-field datasets, and
+~demonstrates that they are well-formed and contain the expected
+information. We have demonstrated that the processing script produces
+the calibration data products, and confirmed that they are well-formed,
+and thus deem the results of this test a pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T98 - Verify implementation of Selection of Datasets }\mbox{}\\
 
@@ -2428,7 +2938,7 @@ Final comment:\\None
 \paragraph{ LVV-T2693 - Verify implementation of Image Provenance Access }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2693}{\textit{ LVV-T2693 } }
 test case in Jira.
 
@@ -2438,16 +2948,170 @@ information can be listed and retrieved.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Executed at the USDF using LSSTComCam data processed with pipelines
+version `w\_2025\_16`. See the attached notebook,
+"test\_LVV-T2693.ipynb", for details.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3530-1243142049:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3530-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Working in a notebook entitled "test\_LVV-T2693.ipynb" on the U.S. Data
+Facility:\\
+\strut \\
+from lsst.daf.butler import Butler\\
+\strut \\
+collection = "LSSTComCam/runs/DRP/DP1/w\_2025\_16/DM-50344"\\
+butler = Butler("/repo/main", collections={[}collection{]})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3530-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Using `Butler.get()`, retrieve a `visit\_image` using a known dataId.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# Define the data dimensions for dataId creation:\\
+tract = 5063\\
+patch = 24\\
+visit = 2024110800246\\
+detector = 4\\
+\strut \\
+\# Retrieve an image:\\
+vis\_im = butler.get(\textquotesingle visit\_image\textquotesingle,
+dataId=\{\textquotesingle visit\textquotesingle:visit,
+\textquotesingle detector\textquotesingle: detector\})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3530-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Use the `DatasetProvenance` class from `lsst.daf.butler` to extract the
+provenance of the image, and display the provenance information to the
+screen.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+\hspace{0pt}A `DatasetProvenance` object \hspace{0pt}containing
+information about \hspace{0pt}the input datasets to the inspected image
+is displayed to the screen.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# Extract the provenance and print to the screen:\\
+vis\_im\_prov = DatasetProvenance.from\_flat\_dict(vis\_im.metadata,
+butler)\\
+vis\_im\_prov{[}0{]}\\
+\strut \\
+OUTPUT:\\
+
+\begin{verbatim}
+DatasetProvenance(inputs=[SerializedDatasetRef(id=UUID('b97a5838-24a4-4d83-9e14-c2c7fdd17afd'), datasetType=SerializedDatasetType(name='visit_summary', storageClass='ExposureCatalog', dimensions=['instrument', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('31b3f43c-a874-4489-b432-d4b3e30ceb97'), datasetType=SerializedDatasetType(name='refit_psf_star', storageClass='ArrowAstropy', dimensions=['instrument', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('2d130454-72f3-4515-a5ab-8bca272d982c'), datasetType=SerializedDatasetType(name='preliminary_visit_image_background', storageClass='Background', dimensions=['instrument', 'detector', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('d97092fb-27db-4121-85f3-d0ae3029d138'), datasetType=SerializedDatasetType(name='post_isr_image', storageClass='Exposure', dimensions=['instrument', 'detector', 'exposure'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'exposure': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('58225fb7-8819-4a3d-b3d7-7032d37d3b2a'), datasetType=SerializedDatasetType(name='background_to_photometric_ratio', storageClass='Image', dimensions=['instrument', 'detector', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None)], quantum_id=UUID('98b2a9c0-a1ef-416d-96f0-ccf508d1dba4'), extras={})
+\end{verbatim}
+
+\hfill\break
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3530-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Repeat steps 2 and 3 for difference images and coadd images.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+See the attached notebook, wherein we repeated the above steps for many
+different image datasets.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2699 - Verify implementation of Catalog Provenance Access }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2699}{\textit{ LVV-T2699 } }
 test case in Jira.
 
@@ -2457,11 +3121,161 @@ can be listed and retrieved.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Executed at the USDF using LSSTComCam data processed with pipelines
+version `w\_2025\_16`. See the attached notebook,
+"test\_LVV-T2699.ipynb", for details.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3531-1243142050:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3531-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Working in a notebook entitled "test\_LVV-T2699.ipynb" on the U.S. Data
+Facility:\\
+\strut \\
+from lsst.daf.butler import Butler\\
+\strut \\
+collection = "LSSTComCam/runs/DRP/DP1/w\_2025\_16/DM-50344"\\
+butler = Butler("/repo/main", collections={[}collection{]})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3531-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Using `Butler.get()`, retrieve a `source` catalog using a known dataId.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# Define the data dimensions for dataId creation:\\
+tract = 5063\\
+patch = 24\\
+visit = 2024110800246\\
+detector = 4\\
+\strut \\
+\# Retrieve a catalog:\\
+src\_unstd =
+butler.get(\textquotesingle source\_unstandardized\textquotesingle,
+dataId=\{\textquotesingle visit\textquotesingle:visit,
+\textquotesingle detector\textquotesingle: detector\})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3531-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Use the `DatasetProvenance` class from `lsst.daf.butler` to extract the
+provenance of the catalog, and display the provenance information to the
+screen.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# Extract the provenance and print to the screen:\\
+src\_unstd\_prov = DatasetProvenance.from\_flat\_dict(src\_unstd.meta,
+butler)\\
+src\_unstd\_prov{[}0{]}\\
+\strut \\
+OUTPUT:\\
+
+\begin{verbatim}
+DatasetProvenance(inputs=[SerializedDatasetRef(id=UUID('b97a5838-24a4-4d83-9e14-c2c7fdd17afd'), datasetType=SerializedDatasetType(name='visit_summary', storageClass='ExposureCatalog', dimensions=['instrument', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('31b3f43c-a874-4489-b432-d4b3e30ceb97'), datasetType=SerializedDatasetType(name='refit_psf_star', storageClass='ArrowAstropy', dimensions=['instrument', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('2d130454-72f3-4515-a5ab-8bca272d982c'), datasetType=SerializedDatasetType(name='preliminary_visit_image_background', storageClass='Background', dimensions=['instrument', 'detector', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('d97092fb-27db-4121-85f3-d0ae3029d138'), datasetType=SerializedDatasetType(name='post_isr_image', storageClass='Exposure', dimensions=['instrument', 'detector', 'exposure'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'exposure': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None), SerializedDatasetRef(id=UUID('58225fb7-8819-4a3d-b3d7-7032d37d3b2a'), datasetType=SerializedDatasetType(name='background_to_photometric_ratio', storageClass='Image', dimensions=['instrument', 'detector', 'visit'], parentStorageClass=None, isCalibration=False), dataId=SerializedDataCoordinate(dataId={'instrument': 'LSSTComCam', 'detector': 4, 'visit': 2024110800246}, records=None), run='LSSTComCam/runs/DRP/DP1/w_2025_16/DM-50344/20250419T134626Z', component=None)], quantum_id=UUID('98b2a9c0-a1ef-416d-96f0-ccf508d1dba4'), extras={})
+\end{verbatim}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3531-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Repeat steps 2 and 3 for catalogs from coadd images.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+See the attached notebook, wherein we repeated the above steps for many
+different catalog datasets.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T154 - Verify implementation of Raw Data Archiving Reliability }\mbox{}\\
 
@@ -2543,11 +3357,161 @@ than~\textbf{SensorFraction = 15 percent.}
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed with science pipelines version w\_2025\_27 in the RSP
+Notebook aspect at the USDF. Because this test concerns a threshold
+calculated in LVV-T1841, the two tests were executed together.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1841\_1847.ipynb."
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3537-1243142055:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3537-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}
+{Identify the path to a dataset containing LSSTCam images.}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# PARAMETERS:\\
+\# Instrument to consider for analysis:\\
+INSTRUMENT = "LSSTCam"\\
+\# Repository containing our data.\\
+REPO = "/repo/main"\\
+\# Collection containing processed exposures to use for metadata scan.\\
+collection = "LSSTCam/calib"
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3537-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Retrieve the `camera` object associated with the images. This will be
+used to extract datasets corresponding to each detector.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A `camera` datasetType, with information about the
+camera\textquotesingle s detectors.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Using the parameters defined in Step 1, the butler was initialized and
+the camera object retrieved as follows:\\
+\strut \\
+butler = Butler(REPO)\\
+camera = butler.get("camera", instrument=INSTRUMENT,\\
+collections=f"\{INSTRUMENT\}/calib")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3537-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+For each detector, load the `defects` dataset, and calculate the
+percentage of pixels that are labeled as defective.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A table containing the percentage of pixels known to be defective for
+each detector.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we loop over all the detectors in the camera
+object. For each detector, we retrieve the `defects` dataset, and
+calculate the percentage of pixels that are flagged as defective.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3537-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Calculate the percentage of detectors that do not meet the
+\textbf{PixFrac} threshold, \textbf{SensorFraction}.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Confirm that less than~\textbf{SensorFraction=15\%~}of detectors have
+\textbf{PixFrac\textgreater1\%~}of defective pixels.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Using the tabulated \textbf{PixFrac} values from the previous step, we
+show (in the attached notebook) that 4\% of the sensors exceed the
+\textbf{PixFrac=1\%~}threshold. This is well below the required value
+of~\textbf{SensorFraction\textless15\%;~}thus, the\textbf{~}requirement
+is met, and this test has a result of \textbf{PASS}.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T377 - Verify Calculation of Photometric Performance Metrics }\mbox{}\\
 
@@ -2596,7 +3560,7 @@ Final comment:\\None
 \paragraph{ LVV-T1843 - Verify calculation of significance of imperfect crosstalk corrections }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1843}{\textit{ LVV-T1843 } }
 test case in Jira.
 
@@ -2949,11 +3913,128 @@ than~\textbf{PixFrac = 1 percent}.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed with science pipelines version w\_2025\_27 in the RSP
+Notebook aspect at the USDF. Because this test concerns a threshold for
+LVV-T1847, the two tests were executed together.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1841\_1847.ipynb."
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3543-1243142061:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3543-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}
+{Identify the path to a dataset containing LSSTCam images.}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\# PARAMETERS:\\
+\# Instrument to consider for analysis:\\
+INSTRUMENT = "LSSTCam"\\
+\# Repository containing our data.\\
+REPO = "/repo/main"\\
+\# Collection containing processed exposures to use for metadata scan.\\
+collection = "LSSTCam/calib"
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3543-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Retrieve the `camera` object associated with the images. This will be
+used to extract datasets corresponding to each detector.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A `camera` datasetType, with information about the
+camera\textquotesingle s detectors.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Using the parameters defined in Step 1, the butler was initialized and
+the camera object retrieved as follows:\\
+\strut \\
+butler = Butler(REPO)\\
+camera = butler.get("camera", instrument=INSTRUMENT,\\
+collections=f"\{INSTRUMENT\}/calib")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3543-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+For each detector, load the `defects` dataset, and calculate the
+percentage of pixels that are labeled as defective.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A table containing the percentage of pixels known to be defective for
+each detector. Most should be less than PixFrac=1\%.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we loop over all the detectors in the camera
+object. For each detector, we retrieve the `defects` dataset, and
+calculate the percentage of pixels that are flagged as defective.\\
+\strut \\
+The related Test Case, LVV-T1847, uses these tabulated~\textbf{PixFrac}
+values to assess whether the~\textbf{SensorFraction~}requirement is met.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1840 - Verify calculation of sky brightness precision }\mbox{}\\
 
