@@ -1,0 +1,311 @@
+﻿Issue key,Issue id,Summary,Assignee,Assignee Id,Custom field (Requirement Priority),Status
+LVV-3,305177,DMS-REQ-0002-V-01: Transient Alert Distribution,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-5,292078,DMS-REQ-0008-V-01: Pipeline Availability,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-6,305826,DMS-REQ-0009-V-01: Simulated Data,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-7,305830,DMS-REQ-0010-V-01: Difference Exposures,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Verified
+LVV-8,305178,DMS-REQ-0018-V-01: Raw Science Image Data Acquisition,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9,305174,DMS-REQ-0020-V-01: Wavefront Sensor Data Acquisition,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1a,In Verification
+LVV-10,302106,DMS-REQ-0022-V-01: Crosstalk Corrected Science Image Data Acquisition,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,2,Descoped
+LVV-11,305828,DMS-REQ-0024-V-01: Raw Image Assembly,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1a,Verified
+LVV-12,305831,DMS-REQ-0029-V-01: Generate Photometric Zeropoint for Visit Image,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-13,305833,DMS-REQ-0030-V-01: Absolute accuracy of WCS,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-14,305176,DMS-REQ-0032-V-01: Image Differencing With Coadd Templates,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-15,305832,DMS-REQ-0033-V-01: Provide Source Detection Software,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-16,292084,DMS-REQ-0034-V-01: Associate Sources to Objects,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-17,292073,DMS-REQ-0042-V-01: Provide Astrometric Model,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-18,293027,DMS-REQ-0043-V-01: Provide Calibrated Photometry,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-19,292075,DMS-REQ-0046-V-01: Provide Photometric Redshifts of Galaxies,Jim Bosch,5c2f5797a217aa69bce53f54,2,In Verification
+LVV-20,305835,DMS-REQ-0047-V-01: Provide PSF for Coadded Images,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-21,292091,DMS-REQ-0052-V-01: Enable a Range of Shape Measurement Approaches,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-22,305175,DMS-REQ-0059-V-01: Bad Pixel Map,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Monitoring
+LVV-23,305837,DMS-REQ-0060-V-01: Bias Residual Image,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-24,305179,DMS-REQ-0061-V-01: Crosstalk Correction Matrix,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-25,292081,DMS-REQ-0062-V-01: Illumination Correction Frame,Jim Bosch,5c2f5797a217aa69bce53f54,1b,In Verification
+LVV-26,292089,DMS-REQ-0063-V-01: Monochromatic Flatfield Data Cube,Jim Bosch,5c2f5797a217aa69bce53f54,1b,In Verification
+LVV-27,292096,DMS-REQ-0065-V-01: Provide Image Access Services,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1b,Covered
+LVV-28,305180,DMS-REQ-0068-V-01: Raw Science Image Metadata,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1a,In Verification
+LVV-29,305183,DMS-REQ-0069-V-01: Processed Visit Images,Jim Bosch,5c2f5797a217aa69bce53f54,1a,In Verification
+LVV-30,305838,DMS-REQ-0070-V-01: Generate PSF for Visit Images,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-31,305843,DMS-REQ-0072-V-01: Processed Visit Image Content,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-32,292099,DMS-REQ-0074-V-01: Difference Exposure Attributes,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-33,305840,DMS-REQ-0075-V-01: Catalog Queries,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1a,Verified
+LVV-34,292094,DMS-REQ-0077-V-01: Maintain Archive Publicly Accessible,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Covered
+LVV-35,305844,DMS-REQ-0078-V-01: Catalog Export Formats,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1a,Verified
+LVV-36,292101,DMS-REQ-0089-V-01: Solar System Objects Available Within Specified Time,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-37,292110,DMS-REQ-0094-V-01: Keep Historical Alert Archive,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-38,292108,DMS-REQ-0096-V-01: Generate Data Quality Report Within Specified Time,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-39,292106,DMS-REQ-0097-V-01: Level 1 Data Quality Report Definition,Leanne Guy,63764f019960988ef6bcba0e,1a,Monitoring
+LVV-40,292104,DMS-REQ-0098-V-01: Generate DMS Performance Report Within Specified Time,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-41,292115,DMS-REQ-0099-V-01: Level 1 Performance Report Definition,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-42,292113,DMS-REQ-0100-V-01: Generate Calibration Report Within Specified Time,Eli Rykoff,62bf9f16de439ce00ee5cc82,1b,Covered
+LVV-43,292118,DMS-REQ-0101-V-01: Level 1 Calibration Report Definition,Eli Rykoff,62bf9f16de439ce00ee5cc82,1a,In Verification
+LVV-44,292124,DMS-REQ-0102-V-01: Provide Engineering & Facility Database Archive,Colin Slater,557058:3ff657ba-216a-44ca-92c7-9f8273ef4816,1a,Verified
+LVV-45,292121,DMS-REQ-0103-V-01: Produce Images for EPO,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-46,292123,DMS-REQ-0106-V-01: Coadded Image Provenance,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-47,292127,DMS-REQ-0119-V-01: DAC resource allocation for Level 3 processing,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-48,292128,DMS-REQ-0120-V-01: Level 3 Data Product Self Consistency,Leanne Guy,63764f019960988ef6bcba0e,2,In Verification
+LVV-49,292125,DMS-REQ-0121-V-01: Provenance for Level 3 processing at DACs,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-50,292130,DMS-REQ-0122-V-01: Access to catalogs for external Level 3 processing,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-51,292126,DMS-REQ-0123-V-01: Access to input catalogs for DAC-based Level 3 processing,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-52,292129,DMS-REQ-0124-V-01: Federation with external catalogs,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,2,Covered
+LVV-53,292131,DMS-REQ-0125-V-01: Software framework for Level 3 catalog processing,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-54,292136,DMS-REQ-0126-V-01: Access to images for external Level 3 processing,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-55,292132,DMS-REQ-0127-V-01: Access to input images for DAC-based Level 3 processing,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-56,292133,DMS-REQ-0128-V-01: Software framework for Level 3 image processing,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-57,305181,DMS-REQ-0130-V-01: Calibration Data Products,Eli Rykoff,62bf9f16de439ce00ee5cc82,1a,In Verification
+LVV-58,292138,DMS-REQ-0131-V-01: Time allowed to process calibs,Eli Rykoff,62bf9f16de439ce00ee5cc82,2,In Verification
+LVV-59,305186,DMS-REQ-0132-V-01: Calibration Image Provenance,Eli Rykoff,62bf9f16de439ce00ee5cc82,1a,Verified
+LVV-60,292135,DMS-REQ-0155-V-01: Provide Data Access Services,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1a,In Verification
+LVV-61,305841,DMS-REQ-0156-V-01: Provide Pipeline Execution Services,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-62,305184,DMS-REQ-0158-V-01: Provide Pipeline Construction Services,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-63,292134,DMS-REQ-0160-V-01: Provide User Interface Services,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1b,In Verification
+LVV-64,292139,"DMS-REQ-0161-V-01: Optimization of Cost, Reliability and Availability in Order",Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-65,292137,DMS-REQ-0162-V-01: Pipeline Throughput,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-66,291961,DMS-REQ-0163-V-01: Re-processing Capacity,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-67,291962,DMS-REQ-0164-V-01: Temporary Storage for Communications Links,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-68,292140,"DMS-REQ-0165-V-01: Infrastructure Sizing for ""catching up""",Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-69,291965,DMS-REQ-0166-V-01: Incorporate Fault-Tolerance,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-70,291963,DMS-REQ-0167-V-01: Incorporate Autonomics,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-71,291968,DMS-REQ-0168-V-01: Summit Facility Data Communications,Joshua Hoblitt,5f722c5aa290960075e2febf,1a,Verified
+LVV-72,291964,DMS-REQ-0170-V-01: Prefer Computing and Storage Down,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-73,305182,DMS-REQ-0171-V-01: Summit to Base Network,Joshua Hoblitt,5f722c5aa290960075e2febf,1a,Verified
+LVV-74,291966,DMS-REQ-0172-V-01: Summit to Base Network Availability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-75,291967,DMS-REQ-0173-V-01: Summit to Base Network Reliability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-76,291969,DMS-REQ-0174-V-01: Summit to Base Network Secondary Link,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-77,291970,DMS-REQ-0175-V-01: Summit to Base Network Ownership and Operation,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Verified
+LVV-78,291972,DMS-REQ-0176-V-01: Summit Facility Infrastructure,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-79,302109,DMS-REQ-0177-V-01: Base Facility Temporary Storage,Robert Gruendl,712020:2b4e40b6-afae-4363-94aa-07f0407def31,,Descoped
+LVV-80,305846,DMS-REQ-0178-V-01: Base Facility Co-Location with Existing Facility,Leanne Guy,63764f019960988ef6bcba0e,1b,Verified
+LVV-81,291971,DMS-REQ-0180-V-01: Base to Archive Network,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,In Verification
+LVV-82,291973,DMS-REQ-0181-V-01: Base to Archive Network Availability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,In Verification
+LVV-83,291975,DMS-REQ-0182-V-01: Base to Archive Network Reliability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,In Verification
+LVV-84,291976,DMS-REQ-0183-V-01: Base to Archive Network Secondary Link,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-85,291980,DMS-REQ-0185-V-01: Archive Center,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-86,291974,DMS-REQ-0186-V-01: Archive Center Disaster Recovery,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-87,305849,DMS-REQ-0187-V-01: Archive Center Co-Location with Existing Facility,Leanne Guy,63764f019960988ef6bcba0e,1b,Verified
+LVV-88,291977,DMS-REQ-0188-V-01: Archive to Data Access Center Network,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-89,291978,DMS-REQ-0189-V-01: Archive to Data Access Center Network Availability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-90,291979,DMS-REQ-0190-V-01: Archive to Data Access Center Network Reliability,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-91,291986,DMS-REQ-0191-V-01: Archive to Data Access Center Network Secondary Link,Joshua Hoblitt,5f722c5aa290960075e2febf,1b,Covered
+LVV-92,291982,DMS-REQ-0193-V-01: Data Access Centers,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-93,291981,DMS-REQ-0194-V-01: Data Access Center Simultaneous Connections,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-94,291983,DMS-REQ-0196-V-01: Data Access Center Geographical Distribution,Kevin Siruno,712020:c1938f6d-4366-437d-93ec-0834d1dda97c,1b,Verified
+LVV-95,291988,DMS-REQ-0197-V-01: No Limit on Data Access Centers,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,In Verification
+LVV-96,291985,DMS-REQ-0265-V-01: Guider Calibration Data Acquisition,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1a,In Verification
+LVV-97,291987,DMS-REQ-0266-V-01: Exposure Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-98,291984,DMS-REQ-0267-V-01: Source Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-99,305848,DMS-REQ-0268-V-01: Forced-Source Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-100,291989,DMS-REQ-0269-V-01: DIASource Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-101,291994,DMS-REQ-0270-V-01: Faint DIASource Measurements,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-102,305190,DMS-REQ-0271-V-01: Max nearby galaxies associated with DIASource,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-103,291990,DMS-REQ-0272-V-01: DIAObject Attributes,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-104,291995,DMS-REQ-0273-V-01: SSObject Catalog,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-105,291996,DMS-REQ-0274-V-01: Alert Content,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-106,291991,DMS-REQ-0275-V-01: Object Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-107,291993,DMS-REQ-0276-V-01: Object Characterization,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-108,302120,DMS-REQ-0277-V-01: Coadd Source Catalog,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Descoped
+LVV-109,305853,DMS-REQ-0278-V-01: Coadd Image Method Constraints,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-110,291992,DMS-REQ-0279-V-01: Deep Detection Coadds,Jim Bosch,5c2f5797a217aa69bce53f54,1b,In Verification
+LVV-111,305185,DMS-REQ-0280-V-01: Template Coadds,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-112,292001,DMS-REQ-0281-V-01: Multi-band Coadds,Jim Bosch,5c2f5797a217aa69bce53f54,1b,In Verification
+LVV-113,305851,DMS-REQ-0282-V-01: Dark Current Correction Frame Creation,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-114,305187,DMS-REQ-0283-V-01: Fringe Correction Frame,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-115,292003,DMS-REQ-0284-V-01: Level-1 Production Completeness,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-116,291997,DMS-REQ-0285-V-01: Level 1 Source Association,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-117,292000,DMS-REQ-0286-V-01: SSObject Precovery,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-118,291998,DMS-REQ-0287-V-01: Max look-back time for precovery,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-119,291999,DMS-REQ-0288-V-01: Use of External Orbit Catalogs,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-120,305188,DMS-REQ-0289-V-01: Calibration Production Processing,Eli Rykoff,62bf9f16de439ce00ee5cc82,1a,Verified
+LVV-121,292002,DMS-REQ-0290-V-01: Level 3 Data Import,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-122,292005,DMS-REQ-0291-V-01: Query Repeatability,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Covered
+LVV-123,305856,DMS-REQ-0292-V-01: Uniqueness of IDs Across Data Releases,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1a,Verified
+LVV-124,292006,DMS-REQ-0293-V-01: Selection of Datasets,Jim Bosch,5c2f5797a217aa69bce53f54,1a,In Verification
+LVV-125,305193,DMS-REQ-0294-V-01: Processing of Datasets,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-126,292004,DMS-REQ-0295-V-01: Transparent Data Access,Leanne Guy,63764f019960988ef6bcba0e,2,In Verification
+LVV-127,305854,"DMS-REQ-0296-V-01: Pre-cursor, and Real Data",Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-128,305859,DMS-REQ-0297-V-01: DMS Initialization Component,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-129,305191,DMS-REQ-0298-V-01: Data Product and Raw Data Access - Image Data Products,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-130,305867,DMS-REQ-0299-V-01: Data Product Ingest,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-131,292007,DMS-REQ-0300-V-01: Bulk Download Service,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-132,292011,DMS-REQ-0301-V-01: Control of Level-1 Production,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-133,305857,DMS-REQ-0302-V-01: Production Orchestration,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-134,305863,DMS-REQ-0303-V-01: Production Monitoring,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-135,305865,DMS-REQ-0304-V-01: Production Fault Tolerance,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-136,305861,DMS-REQ-0305-V-01: Task Specification,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-137,305869,DMS-REQ-0306-V-01: Task Configuration,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-138,292010,DMS-REQ-0307-V-01: Unique Processing Coverage,Jim Bosch,5c2f5797a217aa69bce53f54,2,In Verification
+LVV-139,305189,DMS-REQ-0308-V-01: Software Architecture to Enable Community Re-Use,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-140,292008,DMS-REQ-0309-V-01: Raw Data Archiving Reliability,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-141,292009,DMS-REQ-0310-V-01: Un-Archived Data Product Cache,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-142,292013,DMS-REQ-0311-V-01: Regenerate Un-archived Data Products (Software),Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-143,292026,DMS-REQ-0312-V-01: Level 1 Data Product Access,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-144,292012,DMS-REQ-0313-V-01: Level 1 & 2 Catalog Access,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Covered
+LVV-145,305192,DMS-REQ-0314-V-01: Compute Platform Heterogeneity,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-146,302111,DMS-REQ-0315-V-01: DMS Communication with OCS,Leanne Guy,63764f019960988ef6bcba0e,1a,Descoped
+LVV-147,305194,DMS-REQ-0316-V-01: Commissioning Cluster,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-148,305871,DMS-REQ-0317-V-01: DIAForcedSource Catalog,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Verified
+LVV-149,292015,DMS-REQ-0318-V-01: Data Management Unscheduled Downtime,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-150,292016,DMS-REQ-0319-V-01: Characterizing Variability,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-151,292019,DMS-REQ-0320-V-01: Processing of Data From Special Programs,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,2,Covered
+LVV-152,292029,DMS-REQ-0321-V-01: Level 1 Processing of Special Programs Data,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,2,Covered
+LVV-153,292021,DMS-REQ-0322-V-01: Special Programs Database,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,1b,Covered
+LVV-154,292023,DMS-REQ-0323-V-01: Calculating SSObject Parameters,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,3,In Verification
+LVV-155,292017,DMS-REQ-0324-V-01: Matching DIASources to Objects,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-156,292027,DMS-REQ-0325-V-01: Regenerating L1 Data Products During Data Release Processing,Jim Bosch,5c2f5797a217aa69bce53f54,2,Covered
+LVV-157,292031,DMS-REQ-0326-V-01: Storing Approximations of Per-pixel Metadata,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-158,306392,DMS-REQ-0327-V-01: Background Model Calculation,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Verified
+LVV-159,292030,DMS-REQ-0328-V-01: Documenting Image Characterization,Jeffrey Carlin,60a6a73675e875006f46e758,1b,Covered
+LVV-160,292024,DMS-REQ-0329-V-01: All-Sky Visualization of Data Releases,Leanne Guy,63764f019960988ef6bcba0e,2,In Verification
+LVV-161,306389,DMS-REQ-0330-V-01: Best Seeing Coadds,Jim Bosch,5c2f5797a217aa69bce53f54,2,Verified
+LVV-162,292022,DMS-REQ-0331-V-01: Computing Derived Quantities,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,1b,Covered
+LVV-163,292033,DMS-REQ-0332-V-01: Denormalizing Database Tables,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,In Verification
+LVV-164,292042,DMS-REQ-0333-V-01: Maximum Likelihood Values and Covariances,Jim Bosch,5c2f5797a217aa69bce53f54,1b,Covered
+LVV-165,306404,DMS-REQ-0334-V-01: Persisting Data Products,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Verified
+LVV-166,306400,DMS-REQ-0335-V-01: PSF-Matched Coadds,Jim Bosch,5c2f5797a217aa69bce53f54,2,Verified
+LVV-167,305196,DMS-REQ-0336-V-01: Regenerating Data Products from Previous Data Releases,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-168,292035,DMS-REQ-0337-V-01: Detecting faint variable objects,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,2,In Verification
+LVV-169,292043,DMS-REQ-0338-V-01: Targeted Coadds,Jim Bosch,5c2f5797a217aa69bce53f54,2,In Verification
+LVV-170,292038,DMS-REQ-0339-V-01: Tracking Characterization Changes Between Data Releases,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-171,292045,DMS-REQ-0340-V-01: Access Controls of Level 3 Data Products,Leanne Guy,63764f019960988ef6bcba0e,2,In Verification
+LVV-172,292036,DMS-REQ-0341-V-01: Max elapsed time for precovery results,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,In Verification
+LVV-173,292051,DMS-REQ-0342-V-01: Alert Filtering Service,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-174,292040,DMS-REQ-0343-V-01: Number of full-size alerts,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-175,292047,DMS-REQ-0004-V-01: Time to L1 public release,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,1b,Covered
+LVV-176,292048,DMS-REQ-0345-V-01: Logging of catalog queries,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,In Verification
+LVV-177,305195,DMS-REQ-0346-V-01: Data Availability,Gregory Dubois-Felsmann,557058:5afef4b4-f1bc-4238-977f-9f8d3183e55c,1b,In Verification
+LVV-178,306398,DMS-REQ-0347-V-01: Measurements in catalogs,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Verified
+LVV-179,292050,DMS-REQ-0348-V-01: Pre-defined alert filters,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,2,Covered
+LVV-180,292063,DMS-REQ-0349-V-01: Detecting extended  low surface brightness objects,Jim Bosch,5c2f5797a217aa69bce53f54,2,In Verification
+LVV-181,292055,DMS-REQ-0350-V-01: Associating Objects across data releases,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-182,306395,DMS-REQ-0351-V-01: Provide Beam Projector Coordinate Calculation Software,Robert Lupton,557058:719f74fd-1fab-4eb3-bbb5-2697dbed33ef,1a,Verified
+LVV-183,292053,DMS-REQ-0352-V-01: Base Wireless LAN (WiFi),Leanne Guy,63764f019960988ef6bcba0e,2,Verified
+LVV-184,292057,DMS-REQ-0353-V-01: Publishing predicted visit schedule,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,In Verification
+LVV-185,305197,DMS-REQ-0354-V-01: Result latency for high-volume complex queries,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,In Verification
+LVV-186,292058,DMS-REQ-0355-V-01: Max time to retrieve Prompt Products Database query results,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-187,292060,DMS-REQ-0356-V-01: Radius for low-volume query,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Covered
+LVV-188,305199,DMS-REQ-0357-V-01: Result latency for high-volume full-sky queries on the Object table,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,In Verification
+LVV-189,292070,DMS-REQ-0363-V-01: Access to Previous Data Releases,Leanne Guy,63764f019960988ef6bcba0e,3,Covered
+LVV-190,292069,DMS-REQ-0364-V-01: Total number of data releases,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,3,Covered
+LVV-191,292065,DMS-REQ-0365-V-01: Operations Subsets,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-192,292062,DMS-REQ-0366-V-01: Subsets Support,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-193,292067,DMS-REQ-0367-V-01: Access Services Performance,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,2,Covered
+LVV-194,292072,DMS-REQ-0368-V-01: Implementation Provisions,Leanne Guy,63764f019960988ef6bcba0e,3,Covered
+LVV-195,305198,DMS-REQ-0369-V-01: Evolution,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,In Verification
+LVV-196,292074,DMS-REQ-0370-V-01: Older Release Behavior,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,3,Covered
+LVV-197,292085,DMS-REQ-0371-V-01: Query Availability,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,3,Covered
+LVV-3394,291910,DMS-REQ-0377-V-01: Min number of simultaneous single-CCD coadd cutout image users,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-3395,291912,"DMS-REQ-0374-V-01: Max time to retrieve single-CCD, single-visit PVI image",Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-3396,291914,DMS-REQ-0376-V-01: Max time to retrieve all PVI images for single visit,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-3397,291911,DMS-REQ-0373-V-01: Min number of simultaneous large-area coadd image users,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-3398,291921,DMS-REQ-0375-V-01: Max time to retrieve single-object postage stamp images,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-3399,291915,DMS-REQ-0378-V-01: Simultaneous Image Access Performance,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-3400,291913,DMS-REQ-0358-V-01: Min number of simultaneous DM EFD query users,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-3401,306362,DMS-REQ-0359-V-01: RMS photometric repeatability in uzy,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-3402,306363,DMS-REQ-0360-V-01: Median astrometric error on 20 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-3403,305606,DMS-REQ-0361-V-01: Simultaneous users for high-volume queries,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,In Verification
+LVV-3404,305609,DMS-REQ-0362-V-01: Median residual PSF ellipticity correlations on 5 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9637,307021,DMS-REQ-0372-V-01: Archiving Camera Test Data,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9740,292154,DMS-REQ-0004-V-02: Latency of reporting optical transients,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9741,306967,DMS-REQ-0030-V-02: Minimum astrometric standards per CCD,Jim Bosch,5c2f5797a217aa69bce53f54,1a,Verified
+LVV-9742,291959,DMS-REQ-0271-V-02: Max nearby stars associated with DIASource,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9743,291960,DMS-REQ-0271-V-03: Radius considered nearby,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9744,292159,DMS-REQ-0344-V-02: Latency of reporting optical transients,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-9745,292157,DMS-REQ-0131-V-02: Max number of calibs to be processed,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-9746,292165,DMS-REQ-0287-V-02: Max time from acquisition to L1 data release,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9747,292162,DMS-REQ-0287-V-03: Lifetime of archived L1 data products,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9748,292167,DMS-REQ-0343-V-02: Number of simultaneous users,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-9749,292170,DMS-REQ-0341-V-02: Min number of precovery service connections,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-9750,298002,DMS-REQ-0364-V-02: Length of survey,Leanne Guy,63764f019960988ef6bcba0e,3,Not Covered
+LVV-9751,292187,DMS-REQ-0359-V-02: Max fraction of sensors with excess unusable pixels,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9752,306943,DMS-REQ-0359-V-03: Max fraction of outliers among non-saturated sources,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9753,292172,DMS-REQ-0359-V-04: Accuracy of zero point for colors with u-band,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9754,306983,DMS-REQ-0359-V-05: Repeatability outlier limit in gri,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9755,292175,DMS-REQ-0359-V-06: Accuracy of photometric transformation,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9756,292178,DMS-REQ-0359-V-07: RMS width of zero point in u-band,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9757,292180,DMS-REQ-0359-V-08: Max cross-talk imperfections,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9758,306955,DMS-REQ-0359-V-09: Repeatability outlier limit in uzy,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9759,293030,DMS-REQ-0359-V-10: RMS photometric repeatability in gri,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9760,292182,DMS-REQ-0359-V-11: Fraction of zero point outliers,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9761,292185,DMS-REQ-0359-V-12: Max fraction of unusable pixels per sensor,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9762,292192,DMS-REQ-0359-V-13: Max sky brightness error,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9763,292194,DMS-REQ-0359-V-14: RMS width of zero point in all bands except u,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9764,292190,DMS-REQ-0359-V-15: Percentage of image area with ghosts,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9765,292206,DMS-REQ-0359-V-16: Accuracy of zero point for colors without u-band,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9766,292199,DMS-REQ-0359-V-17: Max RMS of resolved/unresolved flux ratio,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9767,293024,DMS-REQ-0360-V-02: Max fraction exceeding limit on 5 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9768,306963,DMS-REQ-0360-V-03: Median astrometric error on 5 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9769,306976,"DMS-REQ-0360-V-04: Median absolute error in RA, Dec",Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9770,293029,DMS-REQ-0360-V-05: Outlier limit on 20 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9771,293032,DMS-REQ-0360-V-06: Color difference outlier limit relative to r-band,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9773,293035,DMS-REQ-0360-V-07: Outlier limit on 5 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9774,293034,DMS-REQ-0360-V-08: Median astrometric error on 200 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Monitoring
+LVV-9775,293045,DMS-REQ-0360-V-09: Outlier limit on 200 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Monitoring
+LVV-9776,293039,DMS-REQ-0360-V-10: Max fraction exceeding limit on 20 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9777,293037,DMS-REQ-0360-V-11: Max fraction of r-band color difference outliers,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9778,293047,DMS-REQ-0360-V-12: RMS difference between r-band and other filter separation,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-9779,305552,DMS-REQ-0360-V-13: Max fraction exceeding limit on 200 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1a,Monitoring
+LVV-9780,305554,DMS-REQ-0362-V-02: Max fraction of excess ellipticity residuals on 1 and 5 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9781,305563,DMS-REQ-0362-V-03: Outlier limit on 5 arcmin scales - ellipticity,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9782,305555,DMS-REQ-0362-V-04: Median residual PSF ellipticity correlations on 1 arcmin scales,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9783,305562,DMS-REQ-0362-V-05: Outlier limit on scales < 5 arcmin - ellipticity,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9784,292197,DMS-REQ-0355-V-02: Min number of simultaneous Prompt Products query users,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Covered
+LVV-9785,298004,DMS-REQ-0356-V-02: Max size of low-volume query results,Colin Slater,712020:b072dfd7-3389-46bd-a80d-b7de63d521e7,1b,Covered
+LVV-9786,305557,DMS-REQ-0356-V-03: Min number of simultaneous low-volume query users,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9787,305556,DMS-REQ-0356-V-04: Max time to retrieve low-volume query results,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-9788,292201,DMS-REQ-0358-V-02: Max time to retrieve DM EFD query results,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-9789,298003,DMS-REQ-0373-V-02: Max time to retrieve large-area coadd image,Leanne Guy,63764f019960988ef6bcba0e,2,Not Covered
+LVV-9790,298006,DMS-REQ-0374-V-02: Min number of simultaneous PVI image users,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9791,298005,DMS-REQ-0374-V-03: Uncached L1 data product lifetime - single-CCD,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9792,298009,DMS-REQ-0375-V-02: Min size of postage stamp cutout,Leanne Guy,63764f019960988ef6bcba0e,2,Not Covered
+LVV-9793,298013,DMS-REQ-0375-V-03: Uncached L1 data product lifetime - postage stamp,Leanne Guy,63764f019960988ef6bcba0e,2,Not Covered
+LVV-9794,292204,DMS-REQ-0375-V-04: Min number of simultaneous postage stamp users,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-9795,298007,DMS-REQ-0376-V-02: Min number of simultaneous users retrieving all PVI images,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9796,298008,DMS-REQ-0376-V-03: Uncached L1 data product lifetime - focal-plane,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9797,299700,DMS-REQ-0377-V-02: Max time to retrieve single-CCD coadd cutout image,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-9803,299698,DMS-REQ-0004-V-03: Time to availability of Solar System Object orbits,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-18222,304689,DMS-REQ-0384-V-01: Export MOCs As FITS_1,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-18223,304688,DMS-REQ-0381-V-01: HiPS Linkage to Coadds_1,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18224,292677,DMS-REQ-0380-V-01: HiPS Service_IVOA-compliant,Leanne Guy,63764f019960988ef6bcba0e,1b,Verified
+LVV-18225,292272,DMS-REQ-0382-V-01: HiPS Visualization_PRTL,Leanne Guy,63764f019960988ef6bcba0e,1b,Verified
+LVV-18226,304693,DMS-REQ-0385-V-01: MOC Visualization_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18227,292276,DMS-REQ-0379-V-01: Produce All-Sky HiPS Map_1,Leanne Guy,63764f019960988ef6bcba0e,1b,Verified
+LVV-18228,304690,DMS-REQ-0383-V-01: Produce MOC Maps_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18229,304692,DMS-REQ-0344-V-01: Time to L1 public release,Melissa Graham,712020:4bc6880a-9b76-4872-8191-7c22d1fb8ab4,2,Covered
+LVV-18230,304691,DMS-REQ-0386-V-01: Archive Processing Provenance_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18231,304694,DMS-REQ-0387-V-01: Serve Archived Provenance_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18232,304696,DMS-REQ-0388-V-01: Provide Re-Run Tools_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18233,304695,DMS-REQ-0390-V-01: Re-Runs on Other Systems_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18234,304697,DMS-REQ-0389-V-01: Re-Runs on Similar Systems_1,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-18295,304699,DMS-REQ-0394-V-01: Data Management Nightly Reporting,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-18297,304698,DMS-REQ-0391-V-01: Alert Stream Distribution nStreams,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18298,304701,DMS-REQ-0392-V-01: Fraction of Alerts Transmitted,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18299,304700,DMS-REQ-0393-V-01: Average Number of Alerts Per Visit,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18339,304710,DMS-REQ-0359-V-18: Outlier limit on zero points,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-18465,292294,DMS-REQ-0395-V-01: Scientific Visualization of Camera Image Data,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-18491,304713,DMS-REQ-0352-V-02: Base Voice Over IP (VOIP),Joshua Hoblitt,5f722c5aa290960075e2febf,2,Covered
+LVV-18841,304606,DMS-REQ-0396-V-01: Data Products Processing Infrastructure,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18847,304618,DMS-REQ-0397-V-01: Prompt/DR Processing of Data from Special Programs,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-18881,305878,DMS-REQ-0282-V-02: Dark Current Correction Frame Effectiveness,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-18911,304639,DMS-REQ-0391-V-02: Alert Stream Distribution Latency,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19214,305138,DMS-REQ-0392-V-02: Max Alert Failure Fraction,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19215,305139,DMS-REQ-0392-V-03: Latency of Reporting Transients,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19216,305140,DMS-REQ-0392-V-04: Peak Number of Alerts,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19217,305144,DMS-REQ-0393-V-02: Peak Number of Alerts Per Visit,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19218,305146,DMS-REQ-0392-V-05: Max Fraction of Visits With Alert Delays,Leanne Guy,63764f019960988ef6bcba0e,2,Covered
+LVV-19488,304775,DMS-REQ-0003-V-01: Science Data Archive_1,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-19489,304780,DMS-REQ-0398-V-01: Ancillary Data Archiving,Colin Slater,557058:3ff657ba-216a-44ca-92c7-9f8273ef4816,1b,In Verification
+LVV-19490,304774,DMS-REQ-0066-V-01: Image Archive_1,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-19491,304777,DMS-REQ-0399-V-01: Regenerate Un-archived Data Products (Services),Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20528,306117,DMS-REQ-0298-V-02: Data Product and Raw Data Access - Catalog Data Products,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-20578,302306,DMS-REQ-0380-V-02: HiPS Service_Registry,Leanne Guy,63764f019960988ef6bcba0e,1b,Not Covered
+LVV-20579,302310,DMS-REQ-0380-V-03: HiPS Service_Community,Leanne Guy,63764f019960988ef6bcba0e,1b,Not Covered
+LVV-20584,304939,DMS-REQ-0382-V-02: HiPS Visualization_NB,Leanne Guy,63764f019960988ef6bcba0e,1b,In Verification
+LVV-20864,302090,DMS-REQ-0405-V-01: Level 1 Data Product Availability for Solar System Objects,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20865,302096,DMS-REQ-0406-V-01: Level 1 Data Product Availability for Transient Alerts,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20866,302101,DMS-REQ-0402-V-01: Level 1 Data Product Embargo,Leanne Guy,63764f019960988ef6bcba0e,1a,In Verification
+LVV-20867,302098,DMS-REQ-0404-V-01: Level 1 Data Product Pixel Data Embargo in Commissioning,Leanne Guy,63764f019960988ef6bcba0e,1a,Verified
+LVV-20868,302103,DMS-REQ-0403-V-01: Level 1 Data Product Pixel Data Embargo in Operations,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20869,302099,DMS-REQ-0400-V-01: Secure Data Storage,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20870,302104,DMS-REQ-0401-V-01: Summit to Archive Secure Data Transfer,Leanne Guy,63764f019960988ef6bcba0e,1b,Covered
+LVV-20908,319315,DMS-REQ-0032-V-02: Image Differencing With Single Exposure Templates,Eric Bellm,557058:49aa4cb9-303e-4a6b-9428-6c8646cbc11d,1b,Not Covered
+LVV-20922,324291,DMS-REQ-0407-V-01: Archive Center Support for Level-3 Products,Jeffrey Carlin,60a6a73675e875006f46e758,2,Not Covered
