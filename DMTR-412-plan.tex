@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
-% using docsteady version 3.0.4
+% using docsteady version 3.0.5
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -31,7 +31,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-07-09 }
+\date{ 2025-07-22 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -165,7 +165,7 @@ Jeffrey Carlin }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3502}{LVV-E3502}
-& {\small Jim Bosch } & {\small Undefined } &
+& {\small Jim Bosch } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -181,7 +181,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3504}{LVV-E3504}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -197,7 +197,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3506}{LVV-E3506}
-& {\small Eric Bellm } & {\small Undefined } &
+& {\small Eric Bellm } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -261,7 +261,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3520}{LVV-E3520}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -413,7 +413,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3544}{LVV-E3544}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -493,7 +493,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3558}{LVV-E3558}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -517,7 +517,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3561}{LVV-E3561}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -817,7 +817,9 @@ from pathologies, and that these pathologies are encoded in at least
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Executed at the USDF using the DP1 butler repository and pipelines
+version w\_2025\_27. The notebook containing the test execution is
+attached to the Test Report repository as "test\_LVV-T83.ipynb".
 
 
 Detailed steps :
@@ -876,7 +878,7 @@ processing provenance.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Will be verified using DP1 data at /repo/dp1.
 
 
 Detailed steps :
@@ -916,7 +918,9 @@ signature (including crosstalk) has been applied properly.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Executed at the USDF with pipelines version w\_2025\_29, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T38.ipynb".
 
 
 Detailed steps :
@@ -1459,7 +1463,9 @@ less than \textbf{SBPrec = 1 percent.}
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Executed at the USDF with pipelines version w\_2025\_28, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T1840.ipynb".
 
 
 Detailed steps :
@@ -1681,7 +1687,9 @@ DRP and AP products.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test performed in the RSP using public Data Preview 1 (DP1) data
+products, which are based on on-sky LSSTComCam data. The notebook is
+attached to this test repository as "test\_LVV-T129.ipynb".
 
 
 Detailed steps :
@@ -1735,7 +1743,7 @@ necessary to reproduce them. ~Verify that the archive is scalable to the
 data from the full survey and all Data Releases.\\
 \strut \\
 This requirement will be verified by analysis. Verification must
-demonstrate that we have a a written plan for how data will be archived
+demonstrate that we have a written plan for how data will be archived
 and that the storage systems needed exist. The plan should include
 details on recovery. ~This is needed before commissioning to support
 commissioning data taking.~

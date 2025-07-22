@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 3.0.4
+% using docsteady version 3.0.5
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -34,7 +34,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-07-09 }
+\date{ 2025-07-22 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -168,7 +168,7 @@ Jeffrey Carlin }
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T83}{LVV-T83}
-& {\small Jim Bosch } & {\small Undefined } &
+& {\small Jim Bosch } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -186,7 +186,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2303}{LVV-T2303}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -204,7 +204,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T38}{LVV-T38}
-& {\small Eric Bellm } & {\small Undefined } &
+& {\small Eric Bellm } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -276,7 +276,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T197}{LVV-T197}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -447,7 +447,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1840}{LVV-T1840}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -537,7 +537,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T129}{LVV-T129}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -564,7 +564,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2297}{LVV-T2297}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -668,10 +668,12 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 &
 \\
  \hfill Execution & LVV-E3502
-& Not Executed &
+& Initial Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF using the DP1 butler repository and pipelines
+version w\_2025\_27. The notebook containing the test execution is
+attached to the Test Report repository as "test\_LVV-T83.ipynb".
 \medskip
 \end{minipage}
 &
@@ -713,14 +715,14 @@ following Verification Elements:
 &
 \\
  \hfill Execution & LVV-E3504
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Will be verified using DP1 data at /repo/dp1.
 \medskip
 \end{minipage}
 &
-  \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T33}{LVV-T33}
 &
 \\
@@ -737,10 +739,12 @@ None
 &
 \\
  \hfill Execution & LVV-E3506
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF with pipelines version w\_2025\_29, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T38.ipynb".
 \medskip
 \end{minipage}
 &
@@ -844,7 +848,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3520
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -1099,10 +1103,12 @@ campaign's test report as ``notebooks/test\_LVV-T1841\_1847.ipynb."
 &
 \\
  \hfill Execution & LVV-E3544
-& Not Executed &
+& Pass w/ Deviation &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Executed at the USDF with pipelines version w\_2025\_28, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T1840.ipynb".
 \medskip
 \end{minipage}
 &
@@ -1245,10 +1251,12 @@ None
 &
 \\
  \hfill Execution & LVV-E3558
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test performed in the RSP using public Data Preview 1 (DP1) data
+products, which are based on on-sky LSSTComCam data. The notebook is
+attached to this test repository as "test\_LVV-T129.ipynb".
 \medskip
 \end{minipage}
 &
@@ -1285,7 +1293,7 @@ campaign's test report as ``notebooks/test\_LVV-T29.ipynb."
 &
 \\
  \hfill Execution & LVV-E3561
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -1456,11 +1464,93 @@ from pathologies, and that these pathologies are encoded in at least
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Initial Pass }\\
+Final comment:\\Executed at the USDF using the DP1 butler repository and pipelines
+version w\_2025\_27. The notebook containing the test execution is
+attached to the Test Report repository as "test\_LVV-T83.ipynb".
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3502-1243142026:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3502-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Interrogate the calibRegistry for the metadata associated with a bad
+pixel map, where the validity range contains the date of interest.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A bad pixel map for the requested date has been returned.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The following code was used to query for defect masks (the name for the
+bad pixel mask datasets), and select the first result:\\
+\strut \\
+\# Query for all defects datasets in the collection:\\
+defects\_refs =
+butler.query\_datasets(\textquotesingle defects\textquotesingle)\\
+\strut \\
+\# Select the first from the list:\\
+defects0 = butler.get(\textquotesingle defects\textquotesingle,
+dataId=defects\_refs{[}0{]}.dataId)
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3502-2 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Check that the bad pixel pathologies are encoded as at least 32-bit
+values, and that the various pathologies are represented by different
+encoding.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Bad pixel values can be decoded to determine their pathologies using
+their 32-bit values.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, it was demonstrated that the pixels flagged as
+"BAD" can be determined from the `defects` dataset. However, the
+encoding is a simple boolean (True/False) for "BAD", rather than the
+required 32-bit encoding of different pathologies. We grant this test an
+"Initial Pass" status, pending the improvement of the bad pixel masks to
+encode more detailed status about each bad pixel.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T85 - Verify implementation of Crosstalk Correction Matrix }\mbox{}\\
 
@@ -1631,7 +1721,7 @@ calibration objects that achieve their goal when applied to images.\\
 \paragraph{ LVV-T2303 - Verify Image Archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2303}{\textit{ LVV-T2303 } }
 test case in Jira.
 
@@ -1643,11 +1733,358 @@ processing provenance.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Will be verified using DP1 data at /repo/dp1.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3504-1243142028:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3504-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+By listing calibration objects and ancillary files (e.g., reference
+catalogs), demonstrate that they have been retained. Examine some
+examples from the various types, and confirm that they are well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Demonstration that calibration and ancillary data products have been
+retained and are available for use.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+DP1 data are archived at the USDF in repository /repo/dp1, collection
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260. Here we will demonstrate via
+queries that the datasets are present in this repo.\\
+\strut \\
+\textbf{Raw images:}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$\\
+\strut ~butler query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 raw \textbar{} wc\\
+\strut ~~16129~~161270 2402925\\
+\textbf{Reference catalog (The Monster):}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$\\
+\strut ~butler query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 the\_monster\_20250219
+-\/-limit 1000000 \textbar{} wc\\
+\strut ~131076~~524296 13500624\\
+\textbf{Photon transfer curve (ptc):}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 ptc -\/-limit 1000000
+\textbar{} wc\\
+\strut ~ ~ ~22 ~ ~~100~ ~~2682\\
+\textbf{Bias:}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 bias -\/-limit 1000000
+\textbar{} wc\\
+\strut ~ ~ ~31 ~ ~~145~ ~~3917\\
+\textbf{Darks:}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 dark -\/-limit 1000000
+\textbar{} wc\\
+31 145 3917\\
+\strut \\
+Examine some of the files to confirm they\textquotesingle re
+well-formed. First open an ipython session in a terminal, then:\\
+\strut \\
+In {[}1{]}: from lsst.daf.butler import Butler\\
+In {[}\textbf{2}{]}: butler =
+Butler(\textquotesingle/repo/dp1\textquotesingle,
+collections={[}\textquotesingle LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260\textquotesingle{]})\\
+In {[}\textbf{3}{]}:~refs =
+butler.query\_datasets(\textquotesingle bias\textquotesingle)\\
+In {[}\textbf{4}{]}:~bias = butler.get(refs{[}0{]})\\
+In {[}\textbf{5}{]}:~bias\\
+Out{[}\textbf{5}{]}:~\textless lsst.afw.image.\_exposure.ExposureF at
+0x7f9898f98830\textgreater{}\\
+In {[}\textbf{6}{]}:~bias.getBBox()\\
+Out{[}\textbf{6}{]}:~Box2I(corner=Point2I(0, 0),
+dimensions=Extent2I(4072, 4000))\\
+In {[}7{]}: import numpy as np\\
+In {[}\textbf{8}{]}:~np.nanmedian(bias.image.array)\\
+Out{[}\textbf{8}{]}:~np.float32(-0.030564716)\\
+In {[}\textbf{9}{]}:~np.nanstd(bias.image.array)\\
+Out{[}\textbf{9}{]}: np.float32(51.034676)\\
+\strut \\
+We see that the bias has an ExposureF object containing a 4072x4000
+image, with median pixel value of roughly zero, as expected for a
+bias.\\
+\strut \\
+In {[}\textbf{10}{]}: refs =
+butler.query\_datasets(\textquotesingle ptc\textquotesingle)\\
+In {[}\textbf{11}{]}: ptc = butler.get(refs{[}0{]})\\
+In {[}\textbf{12}{]}:~ptc\\
+Out{[}\textbf{12}{]}:~\textless lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset
+at 0x7f98835e7b60\textgreater{}\\
+In {[}\textbf{16}{]}:~ptc.ampNames\\
+Out{[}\textbf{16}{]}:~\\
+{[}\textquotesingle C10\textquotesingle,\\
+\strut ~\textquotesingle C11\textquotesingle,\\
+\strut ~\textquotesingle C12\textquotesingle,\\
+\strut ~\textquotesingle C13\textquotesingle,\\
+\strut ~\textquotesingle C14\textquotesingle,\\
+\strut ~\textquotesingle C15\textquotesingle,\\
+\strut ~\textquotesingle C16\textquotesingle,\\
+\strut ~\textquotesingle C17\textquotesingle,\\
+\strut ~\textquotesingle C07\textquotesingle,\\
+\strut ~\textquotesingle C06\textquotesingle,\\
+\strut ~\textquotesingle C05\textquotesingle,\\
+\strut ~\textquotesingle C04\textquotesingle,\\
+\strut ~\textquotesingle C03\textquotesingle,\\
+\strut ~\textquotesingle C02\textquotesingle,\\
+\strut ~\textquotesingle C01\textquotesingle,\\
+\strut ~\textquotesingle C00\textquotesingle{]}\\
+In
+{[}\textbf{18}{]}:~ptc.rawMeans{[}\textquotesingle C00\textquotesingle{]}\\
+Out{[}\textbf{18}{]}:~\\
+array({[}~~477.57498519, ~~501.49237042, ~~524.90948954,
+~~573.17176074,\\
+\strut ~ ~ ~ ~ ~596.76702405, ~~644.59139216, ~~668.02285215,
+~~716.23392347,\\
+\strut ~ ~ ~ ~ ~763.24476975, ~~811.23738884, ~~859.54939063,
+~~906.64399373,\\
+\strut ~ ~ ~ ~
+~955.51931685,~~1002.10624225,~~1073.70054479,~~1145.25495219,\\
+\strut ~ ~ ~
+~~1217.23845867,~~1288.23956527,~~1359.81858928,~~1431.82314398,\\
+\strut ~ ~ ~
+~~1526.58121014,~~1598.74978101,~~1694.24779853,~~1813.49611823,\\
+\strut ~ ~ ~
+~~1909.33584092,~~2027.05957533,~~2147.44780151,~~2266.2842281 ,\\
+\strut ~ ~ ~
+~~2410.70133852,~~2552.78638784,~~2719.77980282,~~2864.07477037,\\
+\strut ~ ~ ~
+~~3055.03274106,~~3220.66074203,~~3409.42372835,~~3627.26838956,\\
+\strut ~ ~ ~
+~~3843.16076696,~~4054.48361054,~~4317.80036862,~~4557.32071885,\\
+\strut ~ ~ ~
+~~4841.25384465,~~5126.05976276,~~5440.94992003,~~5748.07510771,\\
+\strut ~ ~ ~
+~~6103.33323664,~~6460.96708419,~~6841.90397705,~~7252.25422254,\\
+\strut ~ ~ ~
+~~7678.92116404,~~8134.10338573,~~8632.14541315,~~9135.05460446,\\
+\strut ~ ~ ~ ~~9679.13393687, 10260.602575~~, 10875.75470457,
+11522.94852991,\\
+\strut ~ ~ ~ ~12216.72837329, 12927.88795107, 13719.11391032,
+14531.25388077,\\
+\strut ~ ~ ~ ~15377.98879657, 16321.97483095, 17287.47766898,
+18323.39558752,\\
+\strut ~ ~ ~ ~19421.33133832, 20556.0394046 , 21768.06500356,
+23100.1279195 ,\\
+\strut ~ ~ ~ ~24474.0624525 , 25943.35062 ~~, 27460.23492076,
+29080.34980963,\\
+\strut ~ ~ ~ ~30847.10709202, 32669.31365131, 34646.53475428,
+36684.81383157,\\
+\strut ~ ~ ~ ~38878.02287999, 41209.17659742, 43672.70153375,
+46254.6859343 ,\\
+\strut ~ ~ ~ ~49013.94299117, 51927.32674726, 55029.64463467,
+58275.2070528 ,\\
+\strut ~ ~ ~ ~61765.78259758, 65461.33012346, 69356.02744116,
+73410.62451029,\\
+\strut ~ ~ ~ ~77697.41695487, 82098.44878214, 85549.37710251,
+87751.70902655,\\
+\strut ~ ~ ~ ~88826.46248014, 89393.47497459, 89481.88443297,
+89659.39305075,\\
+\strut ~ ~ ~ ~89740.31328478, 89770.10853101, 89759.45925516,
+89816.45895709{]})\\
+\strut \\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3504-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+List `visit\_image` and `deep\_coadd` exposures to demonstrate that they
+have been retained. Examine some examples, and confirm that they are
+well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+窶汽emonstration that 窶久isit and coadd images are present in the
+archive.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\textbf{visit\_images:}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 visit\_image -\/-limit
+1000000 \textbar{} wc\\
+15976 143766 2731556\textbf{\hfill\break
+deep\_coadds:}\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 deep\_coadd -\/-limit 1000000
+\textbar{} wc\\
+2648 18522 362504\textbf{\hfill\break
+}\\
+Open an ipython terminal and inspect sample images:\\
+\strut \\
+In {[}1{]}:~from lsst.daf.butler import Butler\\
+In {[}2{]}: butler = Butler(\textquotesingle/repo/dp1\textquotesingle,
+collections={[}\textquotesingle LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260\textquotesingle{]})\\
+In {[}\textbf{3}{]}: refs =
+butler.query\_datasets(\textquotesingle visit\_image\textquotesingle)\\
+In {[}\textbf{5}{]}: vis\_im = butler.get(refs{[}0{]})\\
+In {[}\textbf{6}{]}:~vis\_im\\
+Out{[}\textbf{6}{]}:~\textless lsst.afw.image.\_exposure.ExposureF at
+0x7f2816f392f0\textgreater{}\\
+\strut \\
+In {[}\textbf{7}{]}:~vis\_im.getBBox()\\
+Out{[}\textbf{7}{]}:~Box2I(corner=Point2I(0, 0),
+dimensions=Extent2I(4072, 4000))\\
+\strut \\
+In {[}8{]}: import numpy as np\\
+\strut \\
+In {[}\textbf{9}{]}:~np.nanmedian(vis\_im.image.array)\\
+Out{[}\textbf{9}{]}:~np.float32(3.851969)\\
+\strut \\
+In {[}\textbf{10}{]}:~np.nanstd(vis\_im.image.array)\\
+Out{[}\textbf{10}{]}: np.float32(218.97614)\\
+\strut \\
+In {[}\textbf{11}{]}: refs =
+butler.query\_datasets(\textquotesingle deep\_coadd\textquotesingle)\\
+In {[}\textbf{12}{]}: deepcoadd\_im = butler.get(refs{[}0{]})\\
+In {[}\textbf{13}{]}:~deepcoadd\_im\\
+Out{[}\textbf{13}{]}:~\textless lsst.afw.image.\_exposure.ExposureF at
+0x7f27de353830\textgreater{}\\
+\strut \\
+In {[}\textbf{14}{]}:~deepcoadd\_im.getWcs()\\
+Out{[}\textbf{14}{]}:~\\
+FITS standard SkyWcs:\\
+Sky Origin: (94.0540540541, -24.5454545455)\\
+Pixel Origin: (14999, 14999)\\
+Pixel Scale: 0.2 arcsec/pixel\\
+\strut \\
+In {[}\textbf{15}{]}:~deepcoadd\_im.getBBox()\\
+Out{[}\textbf{15}{]}:~Box2I(corner=Point2I(-200, 5800),
+dimensions=Extent2I(3400, 3400))\\
+\strut \\
+In {[}\textbf{16}{]}:~np.nanmedian(deepcoadd\_im.image.array)\\
+Out{[}\textbf{16}{]}:~np.float32(2.913166)\\
+\strut \\
+In {[}\textbf{17}{]}:~np.nanstd(deepcoadd\_im.image.array)\\
+Out{[}\textbf{17}{]}: np.float32(1393.8081)\\
+\strut \\
+The sample images seem to be well-formed, with metadata such as a
+bounding box and WCS, and have reasonable pixel values.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3504-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+For an intermediate data product that is not retained for data releases
+(e.g., `preliminary\_visit\_image`), identify appropriate inputs, and
+run pipeline tasks to recreate that data product.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Image data products resulting from the executed processing are present
+and well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Because the archived DP1 data products are in a read-only butler (at
+/repo/dp1), we demonstrate this capability based on the DP1 processing
+that is in /repo/main. The initial ISR processing steps to go from raw
+images to `preliminary\_visit\_image`s (which are not retained in DP1,
+and thus must be reproduced) can be run as follows:\\
+\strut \\
+pipetask run -j 12 -b /repo/main -i
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 -p
+\$DRP\_PIPE\_DIR/pipelines/LSSTComCam/DRP-v2.yaml\#step1a-single-visit-detectors
+-o u/jcarlin/dp1\_repro\_pvi -\/-instrument lsst.obs.lsst.LsstComCam
+-\/-register-dataset-types -d
+"skymap=\textquotesingle lsst\_cells\_v1\textquotesingle{} AND visit IN
+(2024121100609, 2024121100610, 2024121100611)" 2\textgreater\&1
+\textbar{} tee dp1\_repro\_pvi\_test.log\\
+\strut \\
+After that pipeline task has successfully executed, one can open
+ipython, then execute the following to load the
+`preliminary\_visit\_image` and examine it:\\
+\strut \\
+from lsst.daf.butler import Butler\\
+butler = Butler(\textquotesingle/repo/main\textquotesingle,
+collections={[}\textquotesingle u/jcarlin/dp1\_repro\_pvi\textquotesingle{]})\\
+\strut \\
+\% load dataset references from the output collection containing the
+data that was just processed:\\
+In {[}\textbf{12}{]}:~refs =
+butler.query\_datasets(\textquotesingle preliminary\_visit\_image\textquotesingle,
+collections={[}\textquotesingle u/jcarlin/dp1\_repro\_pvi/20250715T193639Z\textquotesingle{]})\\
+\strut \\
+In {[}\textbf{13}{]}:~len(refs)\\
+Out{[}\textbf{13}{]}: 27\\
+\strut \\
+\% There are 27 datasets because we processed 3 visits, each of which
+contains 9 detectors.\\
+\strut \\
+In {[}\textbf{14}{]}:~pvi = butler.get(refs{[}13{]})\\
+\strut \\
+In {[}\textbf{15}{]}:~pvi\\
+Out{[}\textbf{15}{]}: \textless lsst.afw.image.\_exposure.ExposureF at
+0x7f58baa81930\textgreater{}\\
+\strut \\
+In {[}\textbf{18}{]}:~pvi.getBBox()\\
+Out{[}\textbf{18}{]}: Box2I(corner=Point2I(0, 0),
+dimensions=Extent2I(4072, 4000))\\
+\strut \\
+We see that the image is an ExposureF object with the expected extent,
+and thus conclude that the processing recreated the expected
+intermediate data products.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T33 - Verify implementation of Raw Science Image Metadata }\mbox{}\\
 
@@ -1687,11 +2124,126 @@ signature (including crosstalk) has been applied properly.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Executed at the USDF with pipelines version w\_2025\_29, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T38.ipynb".
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3506-1243142030:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3506-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify suitable precursor datasets containing unprocessed raw images.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Use the LSSTComCam data that became Data Preview 1 (DP1), as processed
+with v29 Science Pipelines.\\
+\strut \\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3506-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+from lsst.daf.butler import Butler\\
+collection = "LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260"\\
+repo = "/repo/dp1"\\
+butler = Butler.from\_config(repo, collections=collection)
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3506-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Run the initial steps (including instrument signature removal and
+calibration) of Data Release (or Prompt) Processing on these data.
+Verify that Processed Visit Images are generated at the correct size and
+with significant instrumental artifacts removed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Raw precursor dataset images have been processed into Processed Visit
+Images, with instrumental artifacts corrected.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we examine a `visit\_image`, comparing it to
+the `raw` frame of the same observation to confirm that it has been
+transformed via instrument signature removal. We further explore the
+image to show that it contains a WCS, PSF, and mask and variance planes.
+The image is well-formed and contains all expected data.\\
+\strut \\
+We have thus confirmed that the PVIs are being created as expected in
+the Science Pipelines. We note that the requirement mentions a "standard
+visit", which was originally expected to contain 2x15s "snaps" that
+would be combined. Commissioning data from LSSTComCam showed that this
+is likely unnecessary, and the standard visit is likely to be redefined
+as a single 30s exposure. If instead the 2x15s snaps are retained, this
+test should be re-executed demonstrating the combination of snaps.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T103 - Verify implementation of Generate Data Quality Report Within Specified
 Time }\mbox{}\\
@@ -2456,11 +3008,89 @@ prompt processing, DRP, and data access needs.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3520-1243142039:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3520-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze design and sizing model
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The archive center is set up to execute numerous processing streams
+nearly continuously. These include (1) nightly (Prompt) processing,
+including Solar System association, on reserved nodes, and (2)
+ongoing/regular DRP processing.\\
+\strut \\
+\textbf{Nightly/prompt processing:}\\
+This is executed in Kubernetes environments, configured via the\\
+\href{https://github.com/lsst-sqre/phalanx/blob/main/applications/prompt-keda-lsstcam/values-usdfprod-prompt-processing.yaml}{prompt
+processing config} that is managed by
+\href{https://phalanx.lsst.io/}{Phalanx}.\\
+\strut \\
+The following portion of the prompt processing configuration in Phalanx
+demonstrates the setup of pipelines to be executed, among other
+things.\\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater This is followed by execution of the AP pipelines,
+including:\\
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\$\{PROMPT\_PROCESSING\_DIR\}/pipelines/LSSTCam/ApPipe-noForced.yaml}
+\item
+  \texttt{\$PROMPT\_PROCESSING\_DIR/pipelines/LSSTCam/ApPipe.yaml}
+\item
+  \texttt{\$AP\_PIPE\_DIR/pipelines/LSSTCam/ApPipe.yaml}
+\item
+  \texttt{\$AP\_PIPE\_DIR/pipelines/\_ingredients/ApPipeWithIsrTaskLSST.yaml}
+\item
+  \texttt{\$AP\_PIPE\_DIR/pipelines/\_ingredients/ApPipe.yaml}
+\end{itemize}
+
+\hfill\break
+There is also consistently a DRP processing run being executed. The
+configuration, logs, and submission scripts are archived on the Jira
+ticket for each processing run. An example is
+\href{https://rubinobs.atlassian.net/browse/DM-50260}{DM-50260} (from
+the DP1 processing), which includes a summary that looks like the
+following:\\
+\pandocbounded{\includegraphics[keepaspectratio]{https://cloudfront.tm4j.smartbear.com/tenant/eda8235d-f9b3-3651-8805-cde8801fc677/project/10277/9e34f964-faa5-4dc4-8687-bb6567d81553-1752712543554-1752712543554.png}}\\
+The storage and archiving provisions have been demonstrated on the Test
+Case for DMS-REQ-0003. The sizing model
+(\url{https://dmtn-135.lsst.io/}) details plans to accommodate future
+processing and storage needs.\\
+\strut \\
+These simultaneous and ongoing processing streams, plus additional
+processing, analysis, and data access activities by Pipelines and other
+teams, demonstrate a functioning Archive Center.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T198 - Verify implementation of Archive Center Disaster Recovery }\mbox{}\\
 
@@ -4026,9 +4656,10 @@ each detector. Most should be less than PixFrac=1\%.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-In the attached notebook, we loop over all the detectors in the camera
-object. For each detector, we retrieve the `defects` dataset, and
-calculate the percentage of pixels that are flagged as defective.\\
+In the attached notebook (test\_LVV-T1841\_1847.ipynb), we loop over all
+the detectors in the camera object. For each detector, we retrieve the
+`defects` dataset, and calculate the percentage of pixels that are
+flagged as defective.\\
 \strut \\
 The related Test Case, LVV-T1847, uses these tabulated~\textbf{PixFrac}
 values to assess whether the~\textbf{SensorFraction~}requirement is met.
@@ -4039,7 +4670,7 @@ values to assess whether the~\textbf{SensorFraction~}requirement is met.
 \paragraph{ LVV-T1840 - Verify calculation of sky brightness precision }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1840}{\textit{ LVV-T1840 } }
 test case in Jira.
 
@@ -4050,11 +4681,180 @@ less than \textbf{SBPrec = 1 percent.}
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass w/ Deviation }\\
+Final comment:\\Executed at the USDF with pipelines version w\_2025\_28, using
+LSSTComCam data from DP1. The resulting notebook is attached to the Test
+Report repository as "test\_LVV-T1840.ipynb".
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3544-1243142062:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3544-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify an appropriate processed precursor dataset containing process
+visit images.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Use the LSSTComCam data that became Data Preview 1 (DP1), as processed
+with v29 Science Pipelines:\\
+\strut \\
+collection = "LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260"\\
+repo = "/repo/dp1"\\
+butler = Butler.from\_config(repo, collections=collection)
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3544-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+For each visit-level image, calculate the 1-sigma standard deviation of
+the flux level measured via "sky sources" (9-pixel aperture fluxes, well
+separated from detected sources).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A set of sky standard deviations, one for each visit.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, g-band `visit\_images` are loaded in
+succession, calculating the clipped standard deviation of the background
+using a defined function called "deriveBgNoise". In addition, the
+standard deviation of "sky sources" as measured in the associated
+`source` table is calculated via a function called
+"deriveSkySourceNoise". These two methods should produce similar
+results, but may differ, as the sky sources are 9-pixel apertures placed
+in "empty" regions of the image, while the image-based method uses all
+pixels that are not part of a detected source.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3544-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Compare the standard deviation of sky fluxes from the previous step to
+the sky pedestal value that has been subtracted from the image to
+estimate the fractional error in the determination of the sky background
+for each visit.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Estimation of the precision of the sky background measurement for a set
+of visits.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The std deviation measurements from the previous step are compared to
+the background level that has been subtracted from each image, producing
+the following figure for the fractional error in the determination of
+the sky background:\\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater{}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3544-4 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+窶祈ind the maximum value of the fractional errors estimated in the
+previous step, and compare it to the SBPrec threshold.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Comparison of the maximum sky background precision to the threshold
+\textbf{SBPrec}.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+None of the examined visits meet the SBPrec threshold of 0.01 (1\%), so
+this test should technically \textbf{Fail.} However, as detailed in the
+notebook, this is unsurprising, as the measurement essentially captures
+a signal-to-noise ratio, and its floor is set by the Poisson statistics
+of the initial sky brightness. We thus do not expect to be able to reach
+SBPrec \textless{} 1\% consistently, and propose an alternate metric for
+tracking surface brightness limits.\\
+\strut \\
+The proposed metric is the limiting surface brightness, as defined by\\
+Roman et al. (2020, A\&A, 644, 42), using sky sources for a given visit
+and detector. This is defined as 3x the standard deviation of the
+background flux distribution, averaged over 10" x 10" scales. A version
+of this metric is being implemented in `analysis\_tools` on
+\href{https://rubinobs.atlassian.net/browse/DM-51537}{DM-51537}, and
+will be regularly monitored in future processing. For the sample of
+images used in this test, the limiting surface brightness is measured to
+be typically around 27.5-28 mag per square arcsecond, as seen in the
+following figure:\\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater{}
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1839 - Verify calculation of RMS width of photometric zeropoint }\mbox{}\\
 
@@ -5315,11 +6115,211 @@ DRP and AP products.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test performed in the RSP using public Data Preview 1 (DP1) data
+products, which are based on on-sky LSSTComCam data. The notebook is
+attached to this test repository as "test\_LVV-T129.ipynb".
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3558-1243142076:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3558-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Rather than the Butler, we used the public Qserv tables served via TAP
+with DP1. In this way we ensure that we are verifying against
+public-facing data products.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3558-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Ingest the data products from an appropriate DRP-processed dataset.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we check each of the Object, Source,
+DiaObject, DiaSource, ForcedSource, and ForcedSourceOnDiaObject tables,
+by executing a spatial query of the DP1 dataset over a small area. Here
+is an example query:\\
+\strut \\
+results = service.search("SELECT coord\_ra, coord\_dec, g\_psfFlux,
+r\_cModelFlux FROM dp1.Object as obj WHERE
+CONTAINS(POINT(\textquotesingle ICRS\textquotesingle, coord\_ra,
+coord\_dec), CIRCLE(\textquotesingle ICRS\textquotesingle, 53.13,
+-28.10, 0.05)) = 1").to\_table()
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3558-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that AB-calibrated magnitudes and fluxes are available for all
+measured Sources and Objects. {[}An enhanced verification could include
+matching the sources to an external source catalog and comparing the
+magnitudes to show that they are well-calibrated.{]}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Calibrated fluxes and magnitudes are available for all sources, as well
+as tools to convert measured fluxes to magnitudes (and vice-versa).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, each table is checked to confirm that its
+units are calibrated to (and specified as) nJy. The units are reported
+as being in nJy for all columns containing flux measurements.\\
+\strut \\
+We further checked that the fluxes converted to magnitudes produce
+reasonable outputs. The following plot illustrates this for two flux/mag
+measurements from the Object table:\\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater{}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3558-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Ingest the data products from an appropriate AP processing dataset.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+See step 2, where this was already performed.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3558-5 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that AB-calibrated magnitudes and fluxes are available for all
+measured Sources, DIASources, and Objects. {[}An enhanced verification
+could include matching the sources to an external source catalog and
+comparing the magnitudes to show that they are well-calibrated.{]}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Calibrated fluxes and magnitudes are available for all Sources,
+DIASources, and Objects, as well as tools to convert measured fluxes to
+magnitudes (and vice-versa).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, each table is checked to confirm that its
+units are calibrated to (and specified as) nJy. The units are reported
+as being in nJy for all columns containing flux measurements, with the
+exception of the `dipoleMeanFlux` column from the DiaSource table.\\
+\strut \\
+We confirmed that the units on the `dipoleMeanFlux` column are simply
+listed incorrectly in the table schema.~A ticket has been filed to fix
+this:~\href{https://rubinobs.atlassian.net/browse/DM-51812}{DM-51812:
+"DP1 dipole flux description inconsistencies"}. The error is simply a
+mistake in moving the schema from its location in the Science Pipelines
+codebase to the DP1 repository.\\
+\strut \\
+We further checked that the `dipoleMeanFluxes` converted to magnitudes
+produce reasonable outputs. The following plot illustrates this for the
+dipole fluxes with and without their errors added:\\
+\textless{}\textbf{Image Download Error}\textgreater Image Download
+Error\textgreater{}\\
+We have thus confirmed that all fluxes are provided as calibrated values
+in nJy, with the single exception of one column in the DiaSource table,
+which is being fixed. The result of this test is thus a Pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T30 - Verify implementation of Wavefront Sensor Data Acquisition }\mbox{}\\
 
@@ -5464,7 +6464,7 @@ ingest them into the Butler. The result of this test is a \textbf{Pass}.
 \paragraph{ LVV-T2297 - Verify implementation of Science Data Archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2297}{\textit{ LVV-T2297 } }
 test case in Jira.
 
@@ -5474,7 +6474,7 @@ necessary to reproduce them. ~Verify that the archive is scalable to the
 data from the full survey and all Data Releases.\\
 \strut \\
 This requirement will be verified by analysis. Verification must
-demonstrate that we have a a written plan for how data will be archived
+demonstrate that we have a written plan for how data will be archived
 and that the storage systems needed exist. The plan should include
 details on recovery. ~This is needed before commissioning to support
 commissioning data taking.~
@@ -5482,11 +6482,378 @@ commissioning data taking.~
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3561-1243142079:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3561-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Check that all LSST public data products have been archived at the
+Science Data Archive
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+DP1 data are archived at the USDF in repository /repo/dp1, collection
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260. Here we will demonstrate via
+queries that the datasets are present in this repo.\\
+\strut \\
+butler query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 raw \textbar{} wc\\
+16129 161270 2402925\\
+\strut \\
+butler query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 visit\_image \textbar{} wc\\
+15976 143766 2731556\\
+\strut \\
+butler query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 difference\_image \textbar{}
+wc\\
+15976 143766 2811426\\
+\strut \\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 dia\_source \textbar{} wc\\
+29 135 3404\\
+\strut \\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 deep\_coadd \textbar{} wc\\
+2648 18522 362504\\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ butler
+query-datasets /repo/dp1 -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0/DM-50260 object \textbar{} wc\\
+33 155 3784\\
+\strut \\
+Now confirm that the same numbers of each dataset type are present in
+the repository at /repo/main:\\
+\strut \\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 object \textbar{} wc\\
+33 155 3908\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 deep\_coadd \textbar{}
+wc 2648 18522 373088\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 difference\_image
+\textbar{} wc\\
+15976 143766 2875322\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 dia\_source \textbar{}
+wc\\
+29 135 3512\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 visit\_image \textbar{}
+wc\\
+15976 143766 2795452\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098
+preliminary\_visit\_image \textbar{} wc\\
+16129 145143 3015751\\
+butler query-datasets /repo/main -\/-collections
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 raw \textbar{} wc\\
+16129 161270 2402925\\
+\strut \\
+We see that the number of datasets agrees, suggesting that the full DP1
+dataset has indeed been archived at /repo/dp1.\\
+\strut \\
+Furthermore, the raw images that contributed to DP1 are archived
+separately. Examine the file tree to confirm that the files are there.\\
+\strut \\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ ls
+/sdf/data/rubin/lsstdata/offline/instrument/LSSTComCam/\\
+20240801/ 20241024/ 20241031/ 20241107/ 20241114/ 20241121/ 20241128/
+20241205/ gen2repo/ log/ reingest\_log\_20201111.txt\\
+20240806/ 20241025/ 20241101/ 20241108/ 20241115/ 20241122/ 20241129/
+20241206/ gen2repo\_20200716/ \textbf{reingest\_day.sh}*
+reingest\_log\_20201130.txt\\
+20240807/ 20241026/ 20241102/ 20241109/ 20241116/ 20241123/ 20241130/
+20241207/ gen2repo\_20200721/ reingest\_log\_20200716.txt
+\textbf{remake\_gen2repo.sh}*\\
+20240808/ 20241027/ 20241103/ 20241110/ 20241117/ 20241124/ 20241201/
+20241208/ gen2repo\_20200727/ reingest\_log\_20200721.txt
+\textbf{remake\_gen3repo.sh}*\\
+20241021/ 20241028/ 20241104/ 20241111/ 20241118/ 20241125/ 20241202/
+20241209/ gen3repo/ reingest\_log\_20200727.txt storage/\\
+20241022/ 20241029/ 20241105/ 20241112/ 20241119/ 20241126/ 20241203/
+20241210/ gen3repo\_20201111/ reingest\_log\_20201022.txt
+tempfilelist\_single\\
+20241023/ 20241030/ 20241106/ 20241113/ 20241120/ 20241127/ 20241204/
+20241211/ gen3repo\_20201130/ reingest\_log\_20201109.txt\\
+\strut \\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ ls
+/sdf/data/rubin/lsstdata/offline/instrument/LSSTComCam/20241024/\\
+CC\_O\_20241024\_000001/ CC\_O\_20241024\_000033/
+CC\_O\_20241024\_000065/ CC\_O\_20241024\_000097/
+CC\_O\_20241024\_000129/ CC\_O\_20241024\_000161/
+CC\_O\_20241024\_000193/\\
+CC\_O\_20241024\_000002/ CC\_O\_20241024\_000034/
+CC\_O\_20241024\_000066/ CC\_O\_20241024\_000098/
+CC\_O\_20241024\_000130/ CC\_O\_20241024\_000162/
+CC\_O\_20241024\_000194/\\
+CC\_O\_20241024\_000003/ CC\_O\_20241024\_000035/
+CC\_O\_20241024\_000067/ CC\_O\_20241024\_000099/
+CC\_O\_20241024\_000131/ CC\_O\_20241024\_000163/
+CC\_O\_20241024\_000195/\\
+CC\_O\_20241024\_000004/ CC\_O\_20241024\_000036/
+CC\_O\_20241024\_000068/ CC\_O\_20241024\_000100/
+CC\_O\_20241024\_000132/ CC\_O\_20241024\_000164/
+CC\_O\_20241024\_000196/\\
+CC\_O\_20241024\_000005/ CC\_O\_20241024\_000037/
+CC\_O\_20241024\_000069/ CC\_O\_20241024\_000101/
+CC\_O\_20241024\_000133/ CC\_O\_20241024\_000165/
+CC\_O\_20241024\_000197/\\
+CC\_O\_20241024\_000006/ CC\_O\_20241024\_000038/
+CC\_O\_20241024\_000070/ CC\_O\_20241024\_000102/
+CC\_O\_20241024\_000134/ CC\_O\_20241024\_000166/
+CC\_O\_20241024\_000198/\\
+CC\_O\_20241024\_000007/ CC\_O\_20241024\_000039/
+CC\_O\_20241024\_000071/ CC\_O\_20241024\_000103/
+CC\_O\_20241024\_000135/ CC\_O\_20241024\_000167/
+CC\_O\_20241024\_000199/\\
+CC\_O\_20241024\_000008/ CC\_O\_20241024\_000040/
+CC\_O\_20241024\_000072/ CC\_O\_20241024\_000104/
+CC\_O\_20241024\_000136/ CC\_O\_20241024\_000168/
+CC\_O\_20241024\_000200/\\
+CC\_O\_20241024\_000009/ CC\_O\_20241024\_000041/
+CC\_O\_20241024\_000073/ CC\_O\_20241024\_000105/
+CC\_O\_20241024\_000137/ CC\_O\_20241024\_000169/
+CC\_O\_20241024\_000201/\\
+CC\_O\_20241024\_000010/ CC\_O\_20241024\_000042/
+CC\_O\_20241024\_000074/ CC\_O\_20241024\_000106/
+CC\_O\_20241024\_000138/ CC\_O\_20241024\_000170/
+CC\_O\_20241024\_000202/\\
+CC\_O\_20241024\_000011/ CC\_O\_20241024\_000043/
+CC\_O\_20241024\_000075/ CC\_O\_20241024\_000107/
+CC\_O\_20241024\_000139/ CC\_O\_20241024\_000171/
+CC\_O\_20241024\_000203/\\
+CC\_O\_20241024\_000012/ CC\_O\_20241024\_000044/
+CC\_O\_20241024\_000076/ CC\_O\_20241024\_000108/
+CC\_O\_20241024\_000140/ CC\_O\_20241024\_000172/
+CC\_O\_20241024\_000204/\\
+CC\_O\_20241024\_000013/ CC\_O\_20241024\_000045/
+CC\_O\_20241024\_000077/ CC\_O\_20241024\_000109/
+CC\_O\_20241024\_000141/ CC\_O\_20241024\_000173/
+CC\_O\_20241024\_000205/\\
+CC\_O\_20241024\_000014/ CC\_O\_20241024\_000046/
+CC\_O\_20241024\_000078/ CC\_O\_20241024\_000110/
+CC\_O\_20241024\_000142/ CC\_O\_20241024\_000174/
+CC\_O\_20241024\_000206/\\
+CC\_O\_20241024\_000015/ CC\_O\_20241024\_000047/
+CC\_O\_20241024\_000079/ CC\_O\_20241024\_000111/
+CC\_O\_20241024\_000143/ CC\_O\_20241024\_000175/
+CC\_O\_20241024\_000207/\\
+CC\_O\_20241024\_000016/ CC\_O\_20241024\_000048/
+CC\_O\_20241024\_000080/ CC\_O\_20241024\_000112/
+CC\_O\_20241024\_000144/ CC\_O\_20241024\_000176/
+CC\_O\_20241024\_000208/\\
+CC\_O\_20241024\_000017/ CC\_O\_20241024\_000049/
+CC\_O\_20241024\_000081/ CC\_O\_20241024\_000113/
+CC\_O\_20241024\_000145/ CC\_O\_20241024\_000177/
+CC\_O\_20241024\_000209/\\
+CC\_O\_20241024\_000018/ CC\_O\_20241024\_000050/
+CC\_O\_20241024\_000082/ CC\_O\_20241024\_000114/
+CC\_O\_20241024\_000146/ CC\_O\_20241024\_000178/
+CC\_O\_20241024\_000210/\\
+CC\_O\_20241024\_000019/ CC\_O\_20241024\_000051/
+CC\_O\_20241024\_000083/ CC\_O\_20241024\_000115/
+CC\_O\_20241024\_000147/ CC\_O\_20241024\_000179/
+CC\_O\_20241024\_000211/\\
+CC\_O\_20241024\_000020/ CC\_O\_20241024\_000052/
+CC\_O\_20241024\_000084/ CC\_O\_20241024\_000116/
+CC\_O\_20241024\_000148/ CC\_O\_20241024\_000180/
+CC\_O\_20241024\_000212/\\
+CC\_O\_20241024\_000021/ CC\_O\_20241024\_000053/
+CC\_O\_20241024\_000085/ CC\_O\_20241024\_000117/
+CC\_O\_20241024\_000149/ CC\_O\_20241024\_000181/
+CC\_O\_20241024\_000213/\\
+CC\_O\_20241024\_000022/ CC\_O\_20241024\_000054/
+CC\_O\_20241024\_000086/ CC\_O\_20241024\_000118/
+CC\_O\_20241024\_000150/ CC\_O\_20241024\_000182/
+CC\_O\_20241024\_000214/\\
+CC\_O\_20241024\_000023/ CC\_O\_20241024\_000055/
+CC\_O\_20241024\_000087/ CC\_O\_20241024\_000119/
+CC\_O\_20241024\_000151/ CC\_O\_20241024\_000183/
+CC\_O\_20241024\_000215/\\
+CC\_O\_20241024\_000024/ CC\_O\_20241024\_000056/
+CC\_O\_20241024\_000088/ CC\_O\_20241024\_000120/
+CC\_O\_20241024\_000152/ CC\_O\_20241024\_000184/
+CC\_O\_20241024\_000216/\\
+CC\_O\_20241024\_000025/ CC\_O\_20241024\_000057/
+CC\_O\_20241024\_000089/ CC\_O\_20241024\_000121/
+CC\_O\_20241024\_000153/ CC\_O\_20241024\_000185/
+CC\_O\_20241024\_000217/\\
+CC\_O\_20241024\_000026/ CC\_O\_20241024\_000058/
+CC\_O\_20241024\_000090/ CC\_O\_20241024\_000122/
+CC\_O\_20241024\_000154/ CC\_O\_20241024\_000186/
+CC\_O\_20241024\_000218/\\
+CC\_O\_20241024\_000027/ CC\_O\_20241024\_000059/
+CC\_O\_20241024\_000091/ CC\_O\_20241024\_000123/
+CC\_O\_20241024\_000155/ CC\_O\_20241024\_000187/
+CC\_O\_20241024\_000219/\\
+CC\_O\_20241024\_000028/ CC\_O\_20241024\_000060/
+CC\_O\_20241024\_000092/ CC\_O\_20241024\_000124/
+CC\_O\_20241024\_000156/ CC\_O\_20241024\_000188/\\
+CC\_O\_20241024\_000029/ CC\_O\_20241024\_000061/
+CC\_O\_20241024\_000093/ CC\_O\_20241024\_000125/
+CC\_O\_20241024\_000157/ CC\_O\_20241024\_000189/\\
+CC\_O\_20241024\_000030/ CC\_O\_20241024\_000062/
+CC\_O\_20241024\_000094/ CC\_O\_20241024\_000126/
+CC\_O\_20241024\_000158/ CC\_O\_20241024\_000190/\\
+CC\_O\_20241024\_000031/ CC\_O\_20241024\_000063/
+CC\_O\_20241024\_000095/ CC\_O\_20241024\_000127/
+CC\_O\_20241024\_000159/ CC\_O\_20241024\_000191/\\
+CC\_O\_20241024\_000032/ CC\_O\_20241024\_000064/
+CC\_O\_20241024\_000096/ CC\_O\_20241024\_000128/
+CC\_O\_20241024\_000160/ CC\_O\_20241024\_000192/\\
+\strut \\
+(lsst-scipipe-10.0.0) {[}jcarlin@sdfiana032 archive\_tests{]}\$ ls
+/sdf/data/rubin/lsstdata/offline/instrument/LSSTComCam/20241024/CC\_O\_20241024\_000125/\\
+CC\_O\_20241024\_000125\_R22\_S00.fits~~CC\_O\_20241024\_000125\_R22\_S02.json~~CC\_O\_20241024\_000125\_R22\_S12.fits~~CC\_O\_20241024\_000125\_R22\_S21.json\\
+CC\_O\_20241024\_000125\_R22\_S00.json~~CC\_O\_20241024\_000125\_R22\_S10.fits~~CC\_O\_20241024\_000125\_R22\_S12.json~~CC\_O\_20241024\_000125\_R22\_S22.fits\\
+CC\_O\_20241024\_000125\_R22\_S01.fits~~CC\_O\_20241024\_000125\_R22\_S10.json~~CC\_O\_20241024\_000125\_R22\_S20.fits~~CC\_O\_20241024\_000125\_R22\_S22.json\\
+CC\_O\_20241024\_000125\_R22\_S01.json~~CC\_O\_20241024\_000125\_R22\_S11.fits~~CC\_O\_20241024\_000125\_R22\_S20.json\\
+CC\_O\_20241024\_000125\_R22\_S02.fits
+CC\_O\_20241024\_000125\_R22\_S11.json
+CC\_O\_20241024\_000125\_R22\_S21.fits\\
+\strut \\
+We note also that Prompt data products will be in
+/sdf/data/rubin/repo/prompt/.\\
+\strut \\
+We have demonstrated that the DP1 data products are archived.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3561-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Test that the public data products can be reproduced from the raw data
+stored at the archive.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Because the archived DP1 data products are in a read-only butler (at
+/repo/dp1), we demonstrate this capability based on the DP1 processing
+that is in /repo/main. The initial ISR processing steps to go from raw
+images to `preliminary\_visit\_image`s (which are not retained in DP1,
+and thus must be reproduced) can be run as follows:\\
+\strut \\
+pipetask run -j 12 -b /repo/main -i
+LSSTComCam/runs/DRP/DP1/v29\_0\_0\_rc6/DM-50098 -p
+\$DRP\_PIPE\_DIR/pipelines/LSSTComCam/DRP-v2.yaml\#step1a-single-visit-detectors
+-o u/jcarlin/dp1\_repro\_pvi -\/-instrument lsst.obs.lsst.LsstComCam
+-\/-register-dataset-types -d
+"skymap=\textquotesingle lsst\_cells\_v1\textquotesingle{} AND visit IN
+(2024121100609, 2024121100610, 2024121100611)" 2\textgreater\&1
+\textbar{} tee dp1\_repro\_pvi\_test.log\\
+\strut \\
+After that pipeline task has successfully executed, one can open
+ipython, then execute the following to load the
+`preliminary\_visit\_image` and examine it:\\
+\strut \\
+from lsst.daf.butler import Butler\\
+butler = Butler(\textquotesingle/repo/main\textquotesingle,
+collections={[}\textquotesingle u/jcarlin/dp1\_repro\_pvi\textquotesingle{]})\\
+\strut \\
+\% load dataset references from the output collection containing the
+data that was just processed:\\
+In {[}\textbf{12}{]}:~refs =
+butler.query\_datasets(\textquotesingle preliminary\_visit\_image\textquotesingle,
+collections={[}\textquotesingle u/jcarlin/dp1\_repro\_pvi/20250715T193639Z\textquotesingle{]})\\
+\strut \\
+In {[}\textbf{13}{]}:~len(refs)\\
+Out{[}\textbf{13}{]}: 27\\
+\strut \\
+\% There are 27 datasets because we processed 3 visits, each of which
+contains 9 detectors.\\
+\strut \\
+In {[}\textbf{14}{]}:~pvi = butler.get(refs{[}13{]})\\
+\strut \\
+In {[}\textbf{15}{]}:~pvi\\
+Out{[}\textbf{15}{]}: \textless lsst.afw.image.\_exposure.ExposureF at
+0x7f58baa81930\textgreater{}\\
+\strut \\
+In {[}\textbf{18}{]}:~pvi.getBBox()\\
+Out{[}\textbf{18}{]}: Box2I(corner=Point2I(0, 0),
+dimensions=Extent2I(4072, 4000))\\
+\strut \\
+We see that the image is an ExposureF object with the expected extent,
+and thus conclude that the processing recreated the expected
+intermediate data products.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3561-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Test that the archive is scalable to the full survey data volume.~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+All raws, data releases, and prompt data products will be accessible via
+Weka S3 object store (as they are currently at the SDF). Weka is
+scalable storage, so the archive is easily scalable to the full survey
+data volume.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1612 - Verify Summit - Base Network Integration (System Level) }\mbox{}\\
 
