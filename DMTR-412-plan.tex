@@ -31,7 +31,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-07-22 }
+\date{ 2025-07-25 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -558,6 +558,14 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 \medskip
 \end{minipage}
 \\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3734}{LVV-E3734}
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
+\medskip
+\end{minipage}
+\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3735}{LVV-E3735}
 & {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
@@ -587,6 +595,14 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Leanne Guy }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4013}{LVV-E4013}
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
 \medskip
 \end{minipage}
 \\ \hline
@@ -756,6 +772,9 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3651}{LVV-E3651}
 &  1.0(d)
 \\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3734}{LVV-E3734}
+&  1.0(d)
+\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3735}{LVV-E3735}
 &  1.0(d)
 \\
@@ -766,6 +785,9 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3750}{LVV-E3750}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4013}{LVV-E4013}
 &  1.0(d)
 \\
 \\\hline
@@ -1914,6 +1936,30 @@ Final comment:\\None
 
 Detailed steps :
 
+\paragraph{ LVV-E3734 - Verify calculation of median relative astrometric measurement error on
+200 arcminute scales }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3734}{\textit{ LVV-E3734 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the median
+relative astrometric measurement error on 200 arcminute scales and
+assess whether it meets the requirement that it shall be no more than
+AM3 = 15 milliarcseconds.
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\Test executed with science pipelines version w\_2024\_34 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1751\_AM1\_AM2.ipynb."
+
+
+Detailed steps :
+
 \paragraph{ LVV-E3735 - Verify calculation of fraction of relative astrometric measurement error
 on 200 arcminute scales exceeding outlier limit }\mbox{}\\
 
@@ -2001,6 +2047,27 @@ and were correctly reported by the batch system as failures.
 
 This test does not test the processing, only the batch system on the
 commissioning cluster
+
+
+Detailed steps :
+
+\paragraph{ LVV-E4013 - Verify Engineering and Facility Database Availability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4013}{\textit{ LVV-E4013 } }
+test case in Jira.
+
+Demonstrate Engineering and Facilities Data are available for public
+access within~\textbf{L1PublicT (24 hours)}.~
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\Test executed with science pipelines version w\_2025\_24 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T3155.ipynb."
 
 
 Detailed steps :

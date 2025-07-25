@@ -34,7 +34,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-07-22 }
+\date{ 2025-07-25 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -610,6 +610,15 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 \end{minipage}
 \\ \hline
 
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1751}{LVV-T1751}
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
+\medskip
+\end{minipage}
+\\ \hline
+
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1752}{LVV-T1752}
 & {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
@@ -642,6 +651,15 @@ Kollross (NCSA), Tony Johnson (SLAC), Gregg Thayer (SLAC) }
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Leanne Guy }
+\medskip
+\end{minipage}
+\\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3155}{LVV-T3155}
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
 \medskip
 \end{minipage}
 \\ \hline
@@ -1349,6 +1367,22 @@ None
 \end{minipage}
 &
     \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1751}{LVV-T1751}
+&
+\\
+ \hfill Execution & LVV-E3734
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+Test executed with science pipelines version w\_2024\_34 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1751\_AM1\_AM2.ipynb."
+\medskip
+\end{minipage}
+&
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1752}{LVV-T1752}
 &
 \\
@@ -1413,6 +1447,22 @@ commissioning cluster
 \end{minipage}
 &
           \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T3155}{LVV-T3155}
+&
+\\
+ \hfill Execution & LVV-E4013
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+Test executed with science pipelines version w\_2025\_24 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T3155.ipynb."
+\medskip
+\end{minipage}
+&
+    \\\hline
      \caption{Test Campaign Summary}
 \label{table:summary}
 \end{longtable}
@@ -7396,6 +7446,209 @@ Ping Time: 14.934 ms
 
 }
   % end if not not executed - no steps if not executed
+\paragraph{ LVV-T1751 - Verify calculation of median relative astrometric measurement error on
+200 arcminute scales }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1751}{\textit{ LVV-T1751 } }
+test case in Jira.
+
+Verify that the DM system has provided the code to calculate the median
+relative astrometric measurement error on 200 arcminute scales and
+assess whether it meets the requirement that it shall be no more than
+AM3 = 15 milliarcseconds.
+
+\textbf{ Preconditions}:\\ None
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed with science pipelines version w\_2024\_34 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T1751\_AM1\_AM2.ipynb."
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3734-1288390608:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3734-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a dataset containing at least one field with multiple
+overlapping visits, and that has previously gone through Data Release
+Processing, including calculation of data quality metrics.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A dataset that has been ingested into a Butler repository.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+For this test we use a recent reprocessing of the Subaru+HSC RC2
+dataset. The data were processed with the w\_2024\_34 pipelines.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3734-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Retrieve the AM1 and AM2 metrics calculated for this dataset to
+demonstrate that they have been measured and are well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+AM1 and AM2 metrics for the dataset.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we demonstrate the retrieval of these metrics.
+The results are as follows:\\
+\strut \\
+
+\begin{verbatim}
+Tract 9615:
+
+g_AM1 = 3.8231023494070002 mas
+r_AM1 = 3.228288002351153 mas
+i_AM1 = 3.728593216447628 mas
+
+
+g_AM2 = 3.7467052200092983 mas
+r_AM2 = 3.132794128702427 mas
+i_AM2 = 3.6810483122240245 mas
+
+Tract 9697:
+
+g_AM1 = 6.658043997359657 mas
+r_AM1 = 6.140262782686699 mas
+i_AM1 = 3.5977059787241354 mas
+
+
+g_AM2 = 6.993080826381683 mas
+r_AM2 = 6.28257099305163 mas
+i_AM2 = 3.497105717983318 mas
+
+Tract 9813:
+
+g_AM1 = 4.994415732783283 mas
+r_AM1 = 4.472256088715839 mas
+i_AM1 = 4.839994490987725 mas
+
+
+g_AM2 = 5.155219088191533 mas
+r_AM2 = 4.512034918398069 mas
+i_AM2 = 4.957150406798739 mas
+\end{verbatim}
+
+\hfill\break
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3734-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+The same pipelines tasks that produce AM1 and AM2 can be reconfigured to
+calculate the metric at any spatial scale. Demonstrate via inspection of
+the relevant code that this is the case.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Code snippets that show the configurability of the size scale for AMx
+metrics.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The
+\href{https://github.com/lsst/analysis_tools/blob/2b45b7d01314f84ce12d05144fb9ae7110de62b8/python/lsst/analysis/tools/atools/astrometricRepeatability.py\#L209-L215}{task}
+to calculate the AMx (i.e., AM1, AM2, AM3) metrics begins with the
+following configuration options:\\
+\strut \\
+class AstrometricRelativeRepeatability(AnalysisTool):\\
+"""Calculate the AMx, ADx, AFx metrics and make histograms showing the
+data\\
+used to compute the metrics.\\
+"""\\
+\strut \\
+fluxType = Field{[}str{]}(doc="Flux type to calculate repeatability
+with", default="psfFlux")\\
+xValue = Field{[}int{]}(doc="Metric suffix corresponding to annulus size
+(1, 2, or 3)", default=1)\\
+\strut \\
+The
+\href{https://github.com/lsst/analysis_tools/blob/w.2024.34/pipelines/matchedVisitQualityCore.yaml}{pipeline}
+that calls this task is where the annulus size for calculation is
+specified. Here are the relevant lines from the pipeline YAML
+configuration for AM1, AM2, and AM3:\\
+\strut \\
+\strut ~ ~ ~ atools.stellarAstrometricRepeatability1:
+AstrometricRelativeRepeatability\\
+atools.stellarAstrometricRepeatability1.xValue: 1\\
+atools.stellarAstrometricRepeatability1.process.calculateActions.rms.annulus:
+5\\
+atools.stellarAstrometricRepeatability2:
+AstrometricRelativeRepeatability\\
+atools.stellarAstrometricRepeatability2.xValue: 2\\
+atools.stellarAstrometricRepeatability2.process.calculateActions.rms.annulus:
+20\\
+atools.stellarAstrometricRepeatability3:
+AstrometricRelativeRepeatability\\
+atools.stellarAstrometricRepeatability3.xValue: 3\\
+atools.stellarAstrometricRepeatability3.process.calculateActions.rms.annulus:
+200\\
+\strut \\
+We have thus demonstrated that the pipelines contain the code to
+calculate AM3 once we have datasets that are sufficient for the purpose.
+
+
+}
+  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1752 - Verify calculation of fraction of relative astrometric measurement error
 on 200 arcminute scales exceeding outlier limit }\mbox{}\\
 
@@ -8626,6 +8879,144 @@ writePreSourceTable\_metadata\\
 \strut \\
 \textgreater{} ~butler query-datasets /repo/LSSTComCam -\/-collections
 *LVV-T191*
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T3155 - Verify Engineering and Facility Database Availability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3155}{\textit{ LVV-T3155 } }
+test case in Jira.
+
+Demonstrate Engineering and Facilities Data are available for public
+access within~\textbf{L1PublicT (24 hours)}.~
+
+\textbf{ Preconditions}:\\ None
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed with science pipelines version w\_2025\_24 in the RSP
+Notebook aspect at the USDF.\\
+\strut \\
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T3155.ipynb."
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E4013-1650631565:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4013-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}{Execute on-sky observing,
+ingesting OCS commands, image headers, and transformed EFD quantities
+into the Consolidated Database (ConsDB).~}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The test was executed during observing with LSSTCam at Cerro Pachon.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4013-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}
+{While observing is ongoing (or at least within \textbf{L1PublicT=24}
+hours), access the ConsDB and confirm that the data products are
+present.}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we have demonstrated that the ConsDB contains
+information taken directly from image headers, transformed data from the
+Engineering Facilities Database (EFD), and derived data based on image
+processing. As required, these data include information about each
+exposure, include the telescope and instrument configuration, telemetry
+from the telescope, environmental and pointing information, and details
+about the camera.\\
+\strut \\
+We have furthermore demonstrated that the ConsDB records are populated
+well before the L1PublicT=24 hours requirement.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4013-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}
+{From the public access portal to the EFD (ConsDB), execute a query and
+demonstrate that the data are publicly available.}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+\protect\phantomsection\label{isPasted}
+{A query at the public interface to the EFD successfully executes and
+returns EFD data.}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+See the steps above, and the attached notebook. We have demonstrated
+that ConsDB is populated in nearly real-time, and that it contains the
+required telemetry and derived quantities.\\
+\strut \\
+While the ConsDB accessed via TAP service is not yet publicly available,
+this test was performed with the architecture and access mechanisms that
+will be available to users in DP2, and thus demonstrates that the
+capability is in place.
 
 
 }
