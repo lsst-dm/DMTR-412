@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 3.0.5
+% using docsteady version 3.0.7
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -24,6 +24,10 @@
 
 \providecommand{\ul}[1]{\textbf{#1}}
 
+
+% Pandoc >= 3.2.1 introduces \pandocbounded; fallback for older/custom templates
+\providecommand{\pandocbounded}[1]{#1}
+
 \begin{document}
 
 \def\milestoneName{LDM-503-19a (All P1a DM requirements verified)}
@@ -34,7 +38,7 @@
 
 \title{LVV-P117: LDM-503-19a (All P1a DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-08-19 }
+\date{ 2025-08-22 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -249,7 +253,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T88}{LVV-T88}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -465,7 +469,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1838}{LVV-T1838}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -546,7 +550,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T30}{LVV-T30}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -829,10 +833,11 @@ campaign's test report as ``notebooks/test\_LVV-T153.ipynb."
 &
 \\
  \hfill Execution & LVV-E3511
-& Not Executed &
+& Initial Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed in the RSP at the USDF using pipelines version
+w\_2025\_33.
 \medskip
 \end{minipage}
 &
@@ -1154,14 +1159,15 @@ None
 &
 \\
  \hfill Execution & LVV-E3546
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed at the USDF RSP, using w\_2025\_33. The resulting notebook
+is attached to this test repository as "test\_LVV-T1838.ipynb".
 \medskip
 \end{minipage}
 &
-  \\\hline
+   \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1837}{LVV-T1837}
 &
 \\
@@ -1290,7 +1296,7 @@ attached to this test repository as "test\_LVV-T129.ipynb".
 &
 \\
  \hfill Execution & LVV-E3559
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2504,13 +2510,12 @@ wavefront sensor images can be retrieved, as well as the shutter motion
 profile.\\
 \strut \\
 Guider image:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}\\
+\textbf{Image Download Error}\\
 Wavefront sensor image:\\
-\pandocbounded{\includegraphics[keepaspectratio]{https://cloudfront.tm4j.smartbear.com/tenant/eda8235d-f9b3-3651-8805-cde8801fc677/project/10277/18fefffb-da3e-4efc-bb5f-3a10ba659618-1755563440221-1755563440221.png}}\\
+\textbf{Image Download Error}\\
 Finally, we extract the shutter motion profile. The following shows the
 position of the shutter with time for one exposure:\\
-\pandocbounded{\includegraphics[keepaspectratio]{https://cloudfront.tm4j.smartbear.com/tenant/eda8235d-f9b3-3651-8805-cde8801fc677/project/10277/18fefffb-da3e-4efc-bb5f-3a10ba659618-1755563487904-1755563487904.png}}
+\textbf{Image Download Error}
 
 
 }
@@ -2775,8 +2780,7 @@ entering the date and instrument into the boxes at the left. The
 following screenshot shows the top of the report, as well as the
 interface (on the left side) for changing the configuration of the
 report:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}
+\textbf{Image Download Error}
 
 
 }
@@ -3050,11 +3054,202 @@ corrections.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Initial Pass }\\
+Final comment:\\Test executed in the RSP at the USDF using pipelines version
+w\_2025\_33.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3511-1243142035:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3511-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a suitable set of calibration frames, including biases, dark
+frames, and flat-field frames.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+For this test, we use the most recent LSSTCam on-sky data processing.
+The butler initialization is as follows:\\
+\strut \\
+butler = Butler(\textquotesingle/repo/embargo\textquotesingle,
+collections="LSSTCam/runs/DRP/20250604\_20250814/w\_2025\_33/DM-52202")\\
+\strut \\
+Note that this chains in the
+\textquotesingle LSSTCam/calib\textquotesingle{} collection, which
+contains all the approved calibrations for LSSTCam.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3511-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute the Calibration Products Production payload. The payload uses
+raw calibration images and information from the Transformed EFD to
+generate a subset of Master Calibration Images and Calibration Database
+entries in the Data Backbone.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The creation of the most recent set of calibrations is documented on
+the~\href{https://rubinobs.atlassian.net/browse/TAXICAB-43}{TAXICAB-43}
+Jira ticket.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3511-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected Master Calibration images and Calibration
+Database entries are present and well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The following steps (executed in the attached notebook
+test\_LVV-T88.ipynb) demonstrate that these calibration products are
+present and queryable in the database.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3511-4 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the expected data products are created, and that they have
+the expected properties.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A full set of calibration data products has been created, and they are
+well-formed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook retrieves brighter-fatter kernel (bfk), defects
+mask, photon transfer curve (ptc), crosstalk object, bias, dark, and
+flat-field datasets, and demonstrates that they are well-formed and
+contain the expected information. We have demonstrated that the
+processing produces these calibration data products, and confirmed that
+they are well-formed.\\
+\strut \\
+However, we are not yet capable (mostly due to hardware limitations) of
+creating the monochromatic flats, synthetic broad-band flats, or fringe
+and illumination corrections, and thus deem the results of this test an
+"initial pass". This test will be executed again once the additional
+capabilities have been finalized.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3511-5 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Test that the calibration products are archived, and can readily be
+applied to science data to produce the desired corrections.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Confirmation that application of the calibration products to processed
+data has the desired effects.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+This has been demonstrated in test case executions focused on each of
+the different calibration datasets separately. For example,
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/190696387}{LVV-T84}
+verified the biases,
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-T85}{LVV-T85}
+and
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-T1843}{LVV-T1843}
+confirmed the effectiveness of the crosstalk corrections, and
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-T90}{LVV-T90}
+verified the dark current corrections.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T89 - Verify implementation of Calibration Image Provenance }\mbox{}\\
 
@@ -3464,9 +3659,8 @@ processing config} that is managed by
 The following portion of the prompt processing configuration in Phalanx
 demonstrates the setup of pipelines to be executed, among other
 things.\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater This is followed by execution of the AP pipelines,
-including:\\
+\textbf{Image Download Error}This is followed by execution of the AP
+pipelines, including:\\
 
 \begin{itemize}
 \tightlist
@@ -3489,7 +3683,7 @@ ticket for each processing run. An example is
 \href{https://rubinobs.atlassian.net/browse/DM-50260}{DM-50260} (from
 the DP1 processing), which includes a summary that looks like the
 following:\\
-\pandocbounded{\includegraphics[keepaspectratio]{https://cloudfront.tm4j.smartbear.com/tenant/eda8235d-f9b3-3651-8805-cde8801fc677/project/10277/9e34f964-faa5-4dc4-8687-bb6567d81553-1752712543554-1752712543554.png}}\\
+\textbf{Image Download Error}\\
 The storage and archiving provisions have been demonstrated on the Test
 Case for DMS-REQ-0003. The sizing model
 (\url{https://dmtn-135.lsst.io/}) details plans to accommodate future
@@ -5046,8 +5240,7 @@ and the following plot of signal-to-noise vs. amplifier (indexed as
 amplifier number relative to the midline of the detector) was generated.
 (See details in the attached notebook.)\\
 \strut \\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}\\
+\textbf{Image Download Error}\\
 The vast majority of points lie beneath the required Xtalk \textless{} 3
 sigma line, but a handful of points exceed this value. We spot-checked
 the images at many of these positions, and determined that in all cases
@@ -5527,8 +5720,7 @@ The std deviation measurements from the previous step are compared to
 the background level that has been subtracted from each image, producing
 the following figure for the fractional error in the determination of
 the sky background:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}\\
+\textbf{Image Download Error}\\
 
 
 }
@@ -5578,8 +5770,7 @@ will be regularly monitored in future processing. For the sample of
 images used in this test, the limiting surface brightness is measured to
 be typically around 27.5-28 mag per square arcsecond, as seen in the
 following figure:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}
+\textbf{Image Download Error}
 
 
 }
@@ -5608,7 +5799,7 @@ Final comment:\\None
 \paragraph{ LVV-T1838 - Verify calculation of image fraction affected by ghosts }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1838}{\textit{ LVV-T1838 } }
 test case in Jira.
 
@@ -5620,11 +5811,93 @@ of more than 1/3 of the sky noise over 1 arcsec is less than
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed at the USDF RSP, using w\_2025\_33. The resulting notebook
+is attached to this test repository as "test\_LVV-T1838.ipynb".
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3546-1243142064:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3546-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+For this test we used LSSTCam on-sky data processed with pipelines
+version w\_2025\_33. The butler was initialized as follows:\\
+\strut \\
+butler = Butler(\textquotesingle/repo/embargo\textquotesingle,
+collections="LSSTCam/runs/DRP/20250604\_20250814/w\_2025\_33/DM-52202")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3546-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Examine a large number of warped visit images, confirming that less than
+1\% of their pixels have been masked due to ghosts.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A table or histogram of percentages of pixels flagged as ghosts in a
+large number of images (to constitute a representative sample).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, we looped over 5000
+`compare\_warp\_artifact\_mask` datasets, extracting for each one the
+percentage of pixels that were flagged as CLIPPED during the masking.
+The resulting histogram, shown below, demonstrates that we are meeting
+the requirement that less than 1\% of pixels are affected by ghosts.\\
+\strut \\
+We note that the artifact rejection code identifies all anomalous
+pixels, and not just those that are due to ghosts. Thus the statistics
+we have measured represent an upper limit on the fraction of pixels
+affected by ghosts, as other features such as asteroids contribute to
+the CLIPPED mask plane as well.\\
+\strut \\
+\textbf{Image Download Error}
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1837 - Verify calculation of band-to-band color zero-point accuracy }\mbox{}\\
 
@@ -6960,8 +7233,7 @@ as being in nJy for all columns containing flux measurements.\\
 We further checked that the fluxes converted to magnitudes produce
 reasonable outputs. The following plot illustrates this for two flux/mag
 measurements from the Object table:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}
+\textbf{Image Download Error}
 
 
 }
@@ -7040,8 +7312,7 @@ codebase to the DP1 repository.\\
 We further checked that the `dipoleMeanFluxes` converted to magnitudes
 produce reasonable outputs. The following plot illustrates this for the
 dipole fluxes with and without their errors added:\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}\\
+\textbf{Image Download Error}\\
 We have thus confirmed that all fluxes are provided as calibrated values
 in nJy, with the single exception of one column in the DiaSource table,
 which is being fixed. The result of this test is thus a Pass.
@@ -7061,11 +7332,82 @@ Verify successful ingestion of wavefront sensor data from LSSTCam
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R275-LVV-E3559-1243142077:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3559-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute the test script DMTR-412/notebooks/test\_LVV-T30.ipynb in
+https://github.com/lsst-dm/DMTR-412/tree/main
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Notebook ran successfully on all LSSTCam commissioning data taken from
+the date of first photon until mid August.~
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3559-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Look at the statistics reported, check that we have acquired the data
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Well-formed wavefront sensor image data with appropriate associated
+metadata.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\begin{verbatim}
+From 2025-04-15 through 2025-08-16  172728 wavefront sensor (ccd) images have been recorded  in a total of 21591 unique science exposures with LSSTCam. 
+The exposures are stored in files at the USDF. The files were read in and the images inspected
+All exposures have the full 8 wavefront sensor images, as expected. None are missing ccd images.
+
+For a random selection of 3 exposures, thhe wavefront sensor images are inspected and show well formed images with donuts.
+This notebook that the DMS can acquire raw, full-frame exposures from the camera wavefront sensors.
+\end{verbatim}
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T29 - Verify implementation of Raw Science Image Data Acquisition }\mbox{}\\
 
@@ -7691,8 +8033,7 @@ Data transfers at or exceeding rates specified in LDM-142.
 {\footnotesize
 Summit - Base links are operational. It has been used many times during
 night runs. The link is 6x100 and 2x100\\
-\textless{}\textbf{Image Download Error}\textgreater Image Download
-Error\textgreater{}
+\textbf{Image Download Error}
 
 
 }
@@ -8047,9 +8388,8 @@ Connection to network is successful
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Connection successful with full strength
-showing~\textless{}\textbf{Image Download Error}\textgreater Image
-Download Error\textgreater{}
+Connection successful with full strength showing~\textbf{Image Download
+Error}
 
 
 }
